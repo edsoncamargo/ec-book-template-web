@@ -1,0 +1,16 @@
+@mixin generate-classes($type, $primary-color, $secondary-color) {
+  .pcn-blob--#{$type} {
+    --pcn-color-blob-primary: rgb(var(#{$primary-color}));
+    --pcn-color-blob-secondary: rgb(var(#{$secondary-color}));
+
+    svg {
+      stop.pcn-blob__start {
+        stop-color: var(--pcn-color-blob-primary);
+      }
+
+      stop.pcn-blob__end {
+        stop-color: var(--pcn-color-blob-secondary);
+      }
+    }
+  }
+}
