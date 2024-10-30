@@ -1,0 +1,65 @@
+@use '../mixins/colors';
+
+$colors: (
+  primary: (
+    68,
+    78,
+    70,
+  ),
+  // #444E46
+  secondary:
+    (
+      209,
+      174,
+      108,
+    ),
+  // #D1AE6C
+  on-bg:
+    (
+      255,
+      255,
+      255,
+    ),
+  // #FFFFFF
+  neutral-100:
+    (
+      0,
+      0,
+      0,
+    ),
+  // #000000
+  neutral-60:
+    (
+      51,
+      51,
+      51,
+    ),
+  // #333333
+  neutral-40:
+    (
+      94,
+      94,
+      94,
+    ),
+  // #5E5E5E
+  neutral-30:
+    (
+      111,
+      111,
+      111,
+    ),
+  // #6F6F6F
+  neutral-0:
+    (
+      255,
+      255,
+      255,
+    ),
+  // #ffffff
+);
+
+:root {
+  @include colors.generate-vars($colors);
+}
+
+@include colors.generate-classes($colors);

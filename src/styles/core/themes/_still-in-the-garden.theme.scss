@@ -1,0 +1,28 @@
+@use '../mixins/colors';
+
+$colors: (
+  primary: (
+    68,
+    78,
+    70,
+  ),
+  // #444E46
+  secondary:
+    (
+      209,
+      174,
+      108,
+    ),
+  // #D1AE6C
+  on-bg:
+    (
+      255,
+      255,
+      255,
+    ),
+  // #FFFFFF
+);
+
+.pcn-still-in-the-garden-theme {
+  @include colors.generate-vars($colors);
+}

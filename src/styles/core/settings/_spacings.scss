@@ -1,0 +1,36 @@
+@use '../mixins/spacings';
+
+$spacings: (
+  0: 0px,
+  // No Spacing
+  xs: 4px,
+  // Micro Spacing
+  sm: 8px,
+  // Small Spacing
+  xsm: 12px,
+  // Small-Medium Spacing
+  md: 16px,
+  // Medium Spacing
+  mdg: 20px,
+  // Medium-Large Spacing
+  lg: 24px,
+  // Large Spacing
+  lxm: 32px,
+  // Large-Medium Spacing
+  xl: 48px,
+  // Very Large Spacing
+  xxl: 64px,
+  // Exaggerated Spacing
+  xxxl: 80px,
+  // Extra Exaggerated Spacing
+  giga: 96px,
+  // Gigantic Spacing
+  colossal: 128px,
+  // Colossal Spacing
+);
+
+:root {
+  @include spacings.generate-vars($spacings);
+}
+
+@include spacings.generate-classes($spacings);

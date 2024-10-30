@@ -1,0 +1,28 @@
+@use '../mixins/colors';
+
+$colors: (
+  primary: (
+    224,
+    202,
+    181,
+  ),
+  // #E0CAB5
+  secondary:
+    (
+      140,
+      17,
+      22,
+    ),
+  // #8C1116
+  on-bg:
+    (
+      0,
+      0,
+      0,
+    ),
+  // #000000
+);
+
+.pcn-bread-and-fish-theme {
+  @include colors.generate-vars($colors);
+}

@@ -1,0 +1,28 @@
+@use '../mixins/colors';
+
+$colors: (
+  primary: (
+    209,
+    185,
+    154,
+  ),
+  // #D1B99A
+  secondary:
+    (
+      99,
+      81,
+      59,
+    ),
+  //  #63513B
+  on-bg:
+    (
+      0,
+      0,
+      0,
+    ),
+  // #000000
+);
+
+.pcn-card-board-theme {
+  @include colors.generate-vars($colors);
+}
