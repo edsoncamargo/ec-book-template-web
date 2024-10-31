@@ -1,0 +1,48 @@
+@use './raleway';
+@use './roboto';
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.pcn-font-emphasis {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--pcn-font-size-colossal);
+  font-weight: var(--pcn-font-weight-semibold);
+  letter-spacing: -4%;
+  line-height: 68px;
+  color: rgb(var(--pcn-color-secondary));
+}
+
+.pcn-font-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--pcn-font-size-xl);
+  font-weight: var(--pcn-font-weight-bold);
+  letter-spacing: 22%;
+  color: rgb(var(--pcn-color-neutral-40));
+}
+
+.pcn-font-subheading {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--pcn-font-size-lxm);
+  font-weight: var(--pcn-font-weight-bold);
+  letter-spacing: 22%;
+  color: rgb(var(--pcn-color-neutral-40));
+}
+
+.pcn-font-caption {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--pcn-font-size-lg);
+  font-weight: var(--pcn-font-weight-bold);
+  letter-spacing: 22%;
+  color: rgb(var(--pcn-color-neutral-30));
+}
+
+.pcn-font-body {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--pcn-font-size-xsm);
+  font-weight: var(--pcn-font-weight-regular);
+  line-height: 22px;
+  color: rgb(var(--pcn-color-neutral-30));
+}

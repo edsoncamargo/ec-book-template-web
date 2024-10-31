@@ -1,0 +1,11 @@
+@mixin generate-font-size-vars($font-sizes) {
+  @each $name, $size in $font-sizes {
+    --pcn-font-size-#{$name}: #{$size};
+  }
+}
+
+@mixin generate-font-weight-vars($weights) {
+  @each $name, $weight in $weights {
+    --pcn-font-weight-#{"#{$name}"}: #{$weight};
+  }
+}
