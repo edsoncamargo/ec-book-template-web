@@ -47,12 +47,19 @@ type EmphasisProps = {
 };
 
 function Emphasis({ children }: Readonly<EmphasisProps>) {
-  return <p className='pcn-banner__title pcn-font-emphasis'>{children}</p>;
+  return (
+    <p
+      className='pcn-banner__title pcn-font-emphasis'
+      dangerouslySetInnerHTML={{
+        __html: typeof children === 'string' ? children : '',
+      }}
+    ></p>
+  );
 }
 
 type AboutProps = {
   actor: string;
-  categories: string;
+  categories?: string;
 };
 
 function About({ actor, categories }: Readonly<AboutProps>) {

@@ -1,29 +1,34 @@
 import Banner from '../components/banner/banner.component';
 import Button from '../components/button/button.component';
 import { CurrentThemeContext } from '../context';
+import Line from '../components/line/line.component';
 import { useContext } from 'react';
 
 export function Home() {
-  const { currentTheme } = useContext(CurrentThemeContext);
-
-  console.log(currentTheme);
+  const { currentTheme, bookContent } = useContext(CurrentThemeContext);
+  const content = bookContent!.content.pt;
 
   return (
-    <Banner>
-      <Banner.Book currentTheme={currentTheme} />
+    <>
+      <Banner>
+        <Banner.Book currentTheme={currentTheme} />
 
-      <Banner.Content>
-        <Banner.Emphasis>
-          Uma jornada interior na presença de <strong>Deus</strong>.
-        </Banner.Emphasis>
+        <Banner.Content>
+          <Banner.Emphasis>{content.title}</Banner.Emphasis>
 
-        <Banner.About
-          actor='Paulo Cesar Nascimento dos Santos'
-          categories='Religioso, Inspiracional & Religioso, Espiritualidade, Vida Cristã, Religião.'
-        ></Banner.About>
+          <Banner.About
+            actor={content.author}
+            categories={
+              content.category.length > 0
+                ? content.category?.join(', ').concat('.').trim()
+                : ''
+            }
+          ></Banner.About>
 
-        <Button>LEIA UM POUCO</Button>
-      </Banner.Content>
-    </Banner>
+          <Button>{content.button}</Button>
+        </Banner.Content>
+      </Banner>
+      <Line />
+    </>
   );
 }

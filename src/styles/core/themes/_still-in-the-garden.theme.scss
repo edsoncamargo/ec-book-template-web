@@ -2,25 +2,23 @@
 
 $colors: (
   primary: (
+    // #444E46
     68,
     78,
     70,
   ),
-  // #444E46
-  secondary:
-    (
-      209,
-      174,
-      108,
-    ),
-  // #D1AE6C
-  on-bg:
-    (
-      255,
-      255,
-      255,
-    ),
-  // #FFFFFF
+  secondary: (
+    // #D1AE6C
+    209,
+    174,
+    108,
+  ),
+  on-bg: (
+    // #FFFFFF
+    255,
+    255,
+    255,
+  ),
 );
 
 .pcn-still-in-the-garden-theme {
