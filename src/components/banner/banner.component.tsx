@@ -1,6 +1,8 @@
 import './banner.component.scss';
 
 import { ReactNode } from 'react';
+import { THEME_MAPPINGS } from '../../constants/theme.constants';
+import { ThemeKeys } from '../../enums/theme.enum';
 
 type BannerProps = {
   children: ReactNode;
@@ -14,8 +16,22 @@ function Banner({ children }: Readonly<BannerProps>) {
   );
 }
 
-function Book() {
-  return <div className='pcn-banner__body__book'></div>;
+type BookProps = {
+  currentTheme: string;
+};
+
+function Book({
+  currentTheme = THEME_MAPPINGS[ThemeKeys.AindaNoJardim],
+}: Readonly<BookProps>) {
+  return (
+    <div className='pcn-banner__body__book'>
+      <img
+        alt='Capa do Livro'
+        title='Capa do Livro'
+        src={`/assets/images/books/${currentTheme.replace('-theme', '')}.svg`}
+      ></img>
+    </div>
+  );
 }
 
 type ContentProps = {

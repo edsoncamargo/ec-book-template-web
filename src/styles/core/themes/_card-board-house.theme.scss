@@ -23,6 +23,6 @@ $colors: (
   // #000000
 );
 
-.pcn-card-board-theme {
+.pcn-card-board-house-theme {
   @include colors.generate-vars($colors);
 }

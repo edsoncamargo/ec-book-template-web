@@ -1,14 +1,34 @@
+@use '../../styles/core/settings/patterns';
+
 .pcn-banner {
   $banner: &;
+  position: relative;
   background-color: rgba(var(--pcn-color-primary), 0.9);
   padding: var(--pcn-spacing-giga) var(--pcn-spacing-lg);
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @extend .pcn-pattern-clouds;
+  }
+
   &__body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: var(--pcn-spacing-md);
 
     &__book {
+      width: 355px;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: absolute;
+        bottom: -192px;
+      }
     }
 
     &__content {
