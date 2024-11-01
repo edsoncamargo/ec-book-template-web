@@ -3,3 +3,8 @@
 @use './core/blobs/blobs';
 @use './core/themes/themes';
 @use './fonts/fonts';
+
+.pcn-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}

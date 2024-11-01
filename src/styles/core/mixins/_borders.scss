@@ -1,0 +1,5 @@
+@mixin generate-border-radius-vars($border-radius) {
+  @each $name, $size in $border-radius {
+    --pcn-border-radius-#{$name}: #{$size};
+  }
+}

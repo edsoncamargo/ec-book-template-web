@@ -1,0 +1,39 @@
+.pcn-banner {
+  $banner: &;
+  background-color: rgba(var(--pcn-color-primary), 0.9);
+  padding: var(--pcn-spacing-giga) var(--pcn-spacing-lg);
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--pcn-spacing-md);
+
+    &__book {
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--pcn-spacing-md);
+
+      #{$banner}__title {
+        max-width: 680px;
+      }
+
+      #{$banner}__about {
+        font-size: var(--pcn-font-size-xsm);
+        color: rgb(var(--pcn-color-on-bg));
+
+        p {
+          display: flex;
+          flex-direction: column;
+          gap: var(--pcn-spacing-sm);
+
+          small {
+            font-size: var(--pcn-font-size-xs);
+          }
+        }
+      }
+    }
+  }
+}
