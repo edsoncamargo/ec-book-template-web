@@ -64,14 +64,12 @@ type AboutProps = {
 
 function About({ actor, categories }: Readonly<AboutProps>) {
   return (
-    <div className='pcn-banner__about'>
-      <p>
-        <span>
-          Por <strong>{actor}</strong>
-        </span>
-        <small>{categories}</small>
-      </p>
-    </div>
+    <p className='pcn-banner__about'>
+      <span>
+        Por <strong>{actor}</strong>
+      </span>
+      <small>{categories}</small>
+    </p>
   );
 }
 

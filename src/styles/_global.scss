@@ -5,6 +5,7 @@
 @use './fonts/fonts';
 
 .pcn-container {
+  width: 100%;
   max-width: var(--breakpoint-lg);
   margin: 0 auto;
 }

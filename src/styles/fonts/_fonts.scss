@@ -35,7 +35,7 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-lg);
   font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: 22%;
+  letter-spacing: -0.04em;
   color: rgb(var(--pcn-color-neutral-30));
 }
 
@@ -47,6 +47,18 @@ html {
   color: rgb(var(--pcn-color-neutral-30));
 }
 
+.pcn-font-number {
+  font-family: 'Roboto', sans-serif;
+}
+
 strong {
   font-weight: var(--pcn-font-weight-extra-bold);
+}
+
+.pcn-uppercase {
+  text-transform: uppercase;
+}
+
+.pcn-text-align-justify {
+  text-align: justify;
 }

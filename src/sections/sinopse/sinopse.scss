@@ -1,0 +1,12 @@
+.pcn-sinopse {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pcn-spacing-lg);
+  margin-top: var(--pcn-spacing-colossal);
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pcn-spacing-lxm);
+  }
+}

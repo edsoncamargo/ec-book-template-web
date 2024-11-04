@@ -1,7 +1,7 @@
-import Banner from '../components/banner/banner.component';
-import Button from '../components/button/button.component';
-import { CurrentThemeContext } from '../context';
-import Line from '../components/line/line.component';
+import Banner from '../../components/banner/banner.component';
+import Button from '../../components/button/button.component';
+import { CurrentThemeContext } from '../../context';
+import Line from '../../components/line/line.component';
 import { useContext } from 'react';
 
 export function Home() {
@@ -9,7 +9,7 @@ export function Home() {
   const content = bookContent!.content.pt;
 
   return (
-    <>
+    <section>
       <Banner>
         <Banner.Book currentTheme={currentTheme} />
 
@@ -29,6 +29,6 @@ export function Home() {
         </Banner.Content>
       </Banner>
       <Line />
-    </>
+    </section>
   );
 }

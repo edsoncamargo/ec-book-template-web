@@ -1,8 +1,12 @@
+import './app.scss';
+
 import { BookContent, getBookContentById } from './data/books-content';
 import { useEffect, useMemo, useState } from 'react';
 
 import { CurrentThemeContext } from './context';
-import { Home } from './sections/home';
+import Footer from './components/footer/footer';
+import { Home } from './sections/home/home';
+import Sinopse from './sections/sinopse/sinopse';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
 import { useLocation } from 'react-router-dom';
@@ -40,9 +44,11 @@ function App() {
   );
 
   return (
-    <main className={`pcn-${currentTheme}`}>
+    <main className={`pcn-${currentTheme} pcn-app`}>
       <CurrentThemeContext.Provider value={contextValue}>
         <Home />
+        <Sinopse />
+        <Footer />
       </CurrentThemeContext.Provider>
     </main>
   );
