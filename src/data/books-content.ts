@@ -47,9 +47,8 @@ export interface BookContent {
         partners: string[];
       };
       footer: {
-        logo: string;
-        menu: string[];
-        rights: string;
+        menu: Array<Array<{ label: string; link: string }>>;
+        rights: { label: string; year: string };
         developer: string;
       };
     };
@@ -186,17 +185,43 @@ export const BOOKS_CONTENT = [
           ],
         },
         footer: {
-          logo: 'caminho/para/logo.jpg',
           menu: [
-            'Home',
-            'Sinopse',
-            'Características',
-            'Onde adquirir o livro?',
-            'Sobre o autor',
-            'Outras publicações',
+            [
+              {
+                label: 'Home',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'sinopse',
+                link: '',
+              },
+              {
+                label: 'Características',
+                link: '',
+              },
+              {
+                label: 'Onde adquirir o livro?',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'Sobre o autor',
+                link: '',
+              },
+              {
+                label: 'Outras publicações',
+                link: '',
+              },
+            ],
           ],
-          rights: 'Todos os direitos reservados 2024.',
-          developer: 'Desenvolvido por edsoncamargo.dev',
+          rights: {
+            label: 'Todos os direitos reservados',
+            year: '2024',
+          },
+          developer: 'Desenvolvido por',
         },
       },
     },
@@ -325,17 +350,43 @@ export const BOOKS_CONTENT = [
           ],
         },
         footer: {
-          logo: 'caminho/para/logo.jpg',
           menu: [
-            'Home',
-            'Sinopse',
-            'Características',
-            'Onde adquirir o livro?',
-            'Sobre o autor',
-            'Outras publicações',
+            [
+              {
+                label: 'Home',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'sinopse',
+                link: '',
+              },
+              {
+                label: 'Características',
+                link: '',
+              },
+              {
+                label: 'Onde adquirir o livro?',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'Sobre o autor',
+                link: '',
+              },
+              {
+                label: 'Outras publicações',
+                link: '',
+              },
+            ],
           ],
-          rights: 'Todos os direitos reservados 2024.',
-          developer: 'Desenvolvido por edsoncamargo.dev',
+          rights: {
+            label: 'Todos os direitos reservados',
+            year: '2024',
+          },
+          developer: 'Desenvolvido por',
         },
       },
     },
@@ -462,17 +513,43 @@ export const BOOKS_CONTENT = [
           ],
         },
         footer: {
-          logo: 'caminho/para/logo.jpg',
           menu: [
-            'Home',
-            'Sinopse',
-            'Características',
-            'Onde adquirir o livro?',
-            'Sobre o autor',
-            'Outras publicações',
+            [
+              {
+                label: 'Home',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'sinopse',
+                link: '',
+              },
+              {
+                label: 'Características',
+                link: '',
+              },
+              {
+                label: 'Onde adquirir o livro?',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'Sobre o autor',
+                link: '',
+              },
+              {
+                label: 'Outras publicações',
+                link: '',
+              },
+            ],
           ],
-          rights: 'Todos os direitos reservados 2024.',
-          developer: 'Desenvolvido por edsoncamargo.dev',
+          rights: {
+            label: 'Todos os direitos reservados',
+            year: '2024',
+          },
+          developer: 'Desenvolvido por',
         },
       },
     },
@@ -600,17 +677,43 @@ export const BOOKS_CONTENT = [
           ],
         },
         footer: {
-          logo: 'caminho/para/logo.jpg',
           menu: [
-            'Home',
-            'Sinopse',
-            'Características',
-            'Onde adquirir o livro?',
-            'Sobre o autor',
-            'Outras publicações',
+            [
+              {
+                label: 'Home',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'sinopse',
+                link: '',
+              },
+              {
+                label: 'Características',
+                link: '',
+              },
+              {
+                label: 'Onde adquirir o livro?',
+                link: '',
+              },
+            ],
+            [
+              {
+                label: 'Sobre o autor',
+                link: '',
+              },
+              {
+                label: 'Outras publicações',
+                link: '',
+              },
+            ],
           ],
-          rights: 'Todos os direitos reservados 2024.',
-          developer: 'Desenvolvido por edsoncamargo.dev',
+          rights: {
+            label: 'Todos os direitos reservados',
+            year: '2024',
+          },
+          developer: 'Desenvolvido por',
         },
       },
     },
