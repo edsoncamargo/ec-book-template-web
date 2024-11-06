@@ -93,6 +93,8 @@ button {
   text-decoration: none;
   vertical-align: baseline;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  hyphens: auto;
 }
 
 a {
@@ -115,22 +117,26 @@ nav,
 section {
   display: block;
 }
-/* HTML5 hidden-attribute fix for newer browsers */
+
 *[hidden] {
   display: none;
 }
+
 body {
   line-height: 1;
 }
+
 menu,
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -138,6 +144,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

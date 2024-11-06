@@ -3,7 +3,7 @@
 
   background-color: rgb(var(--pcn-color-primary));
   font-size: var(--pcn-font-size-xs);
-  letter-spacing: 0.22rem;
+  letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-secondary));
   padding: var(--pcn-spacing-lg);
 
@@ -52,6 +52,7 @@
       top: 1px solid rgb(var(--pcn-color-secondary));
       bottom: 1px solid rgb(var(--pcn-color-secondary));
     }
+    text-align: center;
   }
 
   &__bottom {

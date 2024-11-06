@@ -9,7 +9,7 @@ export function Home() {
   const content = bookContent!.content.pt;
 
   return (
-    <section>
+    <section id='inicio'>
       <Banner>
         <Banner.Book currentTheme={currentTheme} />
 

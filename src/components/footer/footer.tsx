@@ -26,7 +26,7 @@ export default function Footer() {
               <ul key={items.toString() + index}>
                 {items.map((item) => (
                   <li key={item.label}>
-                    <a href='#/home'>{item.label}</a>
+                    <a href={item.link}>{item.label}</a>
                   </li>
                 ))}
               </ul>

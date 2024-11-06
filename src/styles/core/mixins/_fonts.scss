@@ -9,3 +9,9 @@
     --pcn-font-weight-#{"#{$name}"}: #{$weight};
   }
 }
+
+@mixin generate-letter-spacing-vars($letter-spacing) {
+  @each $name, $size in $letter-spacing {
+    --pcn-letter-spacing-#{$name}: #{$size};
+  }
+}

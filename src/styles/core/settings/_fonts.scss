@@ -41,7 +41,13 @@ $font-weights: (
   black: 900,
 );
 
+$letter-spacings: (
+  xs: -0.04em,
+  sm: 0.22em,
+);
+
 :root {
   @include fonts.generate-font-size-vars($font-sizes);
+  @include fonts.generate-letter-spacing-vars($letter-spacings);
   @include fonts.generate-font-weight-vars($font-weights);
 }

@@ -1,10 +1,11 @@
 @use '../../styles/core/settings/patterns';
+@use '../../styles/core/settings/breakpoints';
 
 .pcn-banner {
   $banner: &;
   position: relative;
   background-color: rgba(var(--pcn-color-primary), 0.9);
-  padding: var(--pcn-spacing-giga) var(--pcn-spacing-lg);
+  padding: var(--pcn-spacing-giga) 0px;
 
   &::before {
     content: '';
@@ -28,6 +29,16 @@
         width: 100%;
         position: absolute;
         bottom: -192px;
+      }
+    }
+
+    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      flex-wrap: wrap;
+
+      #{$banner}__body__book {
+        img {
+          position: static;
+        }
       }
     }
 

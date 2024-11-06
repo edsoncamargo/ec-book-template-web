@@ -1,11 +1,13 @@
 @use './core/helpers/helpers';
 @use './core/settings/settings';
+@use './core/settings/breakpoints';
 @use './core/blobs/blobs';
 @use './core/themes/themes';
 @use './fonts/fonts';
 
 .pcn-container {
-  width: 100%;
-  max-width: var(--breakpoint-lg);
+  width: calc(100% - var(--pcn-spacing-lg) * 2);
+  max-width: breakpoints.$pcn-breakpoint-lg;
   margin: 0 auto;
+  padding: 0px var(--pcn-spacing-lg);
 }

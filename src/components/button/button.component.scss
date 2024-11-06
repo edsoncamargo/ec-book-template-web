@@ -1,7 +1,7 @@
 .pcn-button {
   align-self: flex-start;
   font-weight: var(--pcn-font-weight-extra-bold);
-  letter-spacing: -0.04em;
+  letter-spacing: var(--pcn-letter-spacing-xs);
   border-radius: var(--pcn-border-radius-sm);
   padding: var(--pcn-spacing-lg) var(--pcn-spacing-lxm);
   cursor: pointer;

@@ -8,7 +8,7 @@ export default function Sinopse() {
   const content = bookContent!.content.pt;
 
   return (
-    <section className='pcn-sinopse pcn-container'>
+    <section id='sinopse' className='pcn-sinopse pcn-container'>
       <h2 className='pcn-font-heading pcn-uppercase'>
         {content.synopsis.title}
       </h2>

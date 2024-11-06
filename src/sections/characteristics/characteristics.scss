@@ -1,0 +1,36 @@
+.pcn-characteristics {
+  $characteristics: &;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--pcn-spacing-lg);
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pcn-spacing-md);
+
+    #{$characteristics}__line {
+      display: flex;
+      gap: var(--pcn-spacing-md);
+
+      & > .pcn-characteristics__item {
+        display: flex;
+        font-size: var(--pcn-font-size-xsm);
+
+        &:nth-child(1) {
+          flex: 1;
+
+          * {
+            font-weight: var(--pcn-font-weight-semibold);
+            text-align: center;
+          }
+        }
+
+        &:nth-child(2) {
+          flex: 2;
+        }
+      }
+    }
+  }
+}

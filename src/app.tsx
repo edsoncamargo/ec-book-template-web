@@ -3,9 +3,11 @@ import './app.scss';
 import { BookContent, getBookContentById } from './data/books-content';
 import { useEffect, useMemo, useState } from 'react';
 
+import Characteristics from './sections/characteristics/characteristics';
 import { CurrentThemeContext } from './context';
 import Footer from './components/footer/footer';
 import { Home } from './sections/home/home';
+import OurPartiners from './sections/our-partners/our-partners';
 import Sinopse from './sections/sinopse/sinopse';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
@@ -48,6 +50,8 @@ function App() {
       <CurrentThemeContext.Provider value={contextValue}>
         <Home />
         <Sinopse />
+        <Characteristics />
+        <OurPartiners />
         <Footer />
       </CurrentThemeContext.Provider>
     </main>

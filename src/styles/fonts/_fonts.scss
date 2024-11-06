@@ -1,5 +1,6 @@
 @use './raleway';
 @use './roboto';
+@use '../core/settings/breakpoints';
 
 html {
   font-family: 'Raleway', sans-serif;
@@ -10,24 +11,32 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-colossal);
   font-weight: var(--pcn-font-weight-semibold);
-  letter-spacing: -4%;
+  letter-spacing: var(--pcn-letter-spacing-xs);
   line-height: 68px;
   color: rgb(var(--pcn-color-secondary));
+
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    font-size: var(--pcn-font-size-xxxl);
+  }
 }
 
 .pcn-font-heading {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-xl);
   font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: 22%;
+  letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-neutral-40));
+
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    font-size: var(--pcn-font-size-lg);
+  }
 }
 
 .pcn-font-subheading {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-lxm);
   font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: 22%;
+  letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-neutral-40));
 }
 
@@ -35,7 +44,7 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-lg);
   font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: -0.04em;
+  letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-neutral-30));
 }
 
@@ -43,7 +52,7 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: var(--pcn-font-size-xsm);
   font-weight: var(--pcn-font-weight-regular);
-  line-height: 22px;
+  line-height: 24px;
   color: rgb(var(--pcn-color-neutral-30));
 }
 

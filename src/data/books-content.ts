@@ -44,7 +44,7 @@ export interface BookContent {
       };
       partners: {
         title: string;
-        partners: string[];
+        logos: string[];
       };
       footer: {
         menu: Array<Array<{ label: string; link: string }>>;
@@ -121,7 +121,7 @@ export const BOOKS_CONTENT = [
               value: '9786501130637',
             },
             {
-              type: 'Número de páginas',
+              type: 'N° de páginas',
               value: '156',
             },
             {
@@ -175,13 +175,14 @@ export const BOOKS_CONTENT = [
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
-          partners: [
-            'Brasil Formaturas',
-            'IATD',
-            'Demandante Tech',
-            'RCCA',
-            'Arimat',
-            'Olympus',
+          logos: [
+            'brasil-formulas.jpeg',
+            'aa.jpeg',
+            'iatd.jpeg',
+            'demandas-tech.png',
+            'rcca.jpeg',
+            'bruno-moreno.jpeg',
+            'olympus.svg',
           ],
         },
         footer: {
@@ -189,31 +190,31 @@ export const BOOKS_CONTENT = [
             [
               {
                 label: 'Home',
-                link: '',
+                link: '#inicio',
               },
             ],
             [
               {
                 label: 'sinopse',
-                link: '',
+                link: '#sinopse',
               },
               {
                 label: 'Características',
-                link: '',
+                link: '#caracteristicas',
               },
               {
                 label: 'Onde adquirir o livro?',
-                link: '',
+                link: '#onde-adquirir-o-livro',
               },
             ],
             [
               {
                 label: 'Sobre o autor',
-                link: '',
+                link: '#sobre-o-autor',
               },
               {
                 label: 'Outras publicações',
-                link: '',
+                link: '#outras-publicações',
               },
             ],
           ],
@@ -286,7 +287,7 @@ export const BOOKS_CONTENT = [
               value: '9786501130637',
             },
             {
-              type: 'Número de páginas',
+              type: 'N° de páginas',
               value: '156',
             },
             {
@@ -340,13 +341,14 @@ export const BOOKS_CONTENT = [
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
-          partners: [
-            'Brasil Formaturas',
-            'IATD',
-            'Demandante Tech',
-            'RCCA',
-            'Arimat',
-            'Olympus',
+          logos: [
+            'brasil-formulas.jpeg',
+            'aa.jpeg',
+            'iatd.jpeg',
+            'demandas-tech.png',
+            'rcca.jpeg',
+            'bruno-moreno.jpeg',
+            'olympus.svg',
           ],
         },
         footer: {
@@ -354,31 +356,31 @@ export const BOOKS_CONTENT = [
             [
               {
                 label: 'Home',
-                link: '',
+                link: '#inicio',
               },
             ],
             [
               {
                 label: 'sinopse',
-                link: '',
+                link: '#sinopse',
               },
               {
                 label: 'Características',
-                link: '',
+                link: '#caracteristicas',
               },
               {
                 label: 'Onde adquirir o livro?',
-                link: '',
+                link: '#onde-adquirir-o-livro',
               },
             ],
             [
               {
                 label: 'Sobre o autor',
-                link: '',
+                link: '#sobre-o-autor',
               },
               {
                 label: 'Outras publicações',
-                link: '',
+                link: '#outras-publicações',
               },
             ],
           ],
@@ -449,7 +451,7 @@ export const BOOKS_CONTENT = [
               value: '9786501130637',
             },
             {
-              type: 'Número de páginas',
+              type: 'N° de páginas',
               value: '156',
             },
             {
@@ -503,13 +505,14 @@ export const BOOKS_CONTENT = [
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
-          partners: [
-            'Brasil Formaturas',
-            'IATD',
-            'Demandante Tech',
-            'RCCA',
-            'Arimat',
-            'Olympus',
+          logos: [
+            'brasil-formulas.jpeg',
+            'aa.jpeg',
+            'iatd.jpeg',
+            'demandas-tech.png',
+            'rcca.jpeg',
+            'bruno-moreno.jpeg',
+            'olympus.svg',
           ],
         },
         footer: {
@@ -517,31 +520,31 @@ export const BOOKS_CONTENT = [
             [
               {
                 label: 'Home',
-                link: '',
+                link: '#inicio',
               },
             ],
             [
               {
                 label: 'sinopse',
-                link: '',
+                link: '#sinopse',
               },
               {
                 label: 'Características',
-                link: '',
+                link: '#caracteristicas',
               },
               {
                 label: 'Onde adquirir o livro?',
-                link: '',
+                link: '#onde-adquirir-o-livro',
               },
             ],
             [
               {
                 label: 'Sobre o autor',
-                link: '',
+                link: '#sobre-o-autor',
               },
               {
                 label: 'Outras publicações',
-                link: '',
+                link: '#outras-publicações',
               },
             ],
           ],
@@ -613,7 +616,7 @@ export const BOOKS_CONTENT = [
               value: '9786501130637',
             },
             {
-              type: 'Número de páginas',
+              type: 'N° de páginas',
               value: '156',
             },
             {
@@ -667,13 +670,14 @@ export const BOOKS_CONTENT = [
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
-          partners: [
-            'Brasil Formaturas',
-            'IATD',
-            'Demandante Tech',
-            'RCCA',
-            'Arimat',
-            'Olympus',
+          logos: [
+            'brasil-formulas.jpeg',
+            'aa.jpeg',
+            'iatd.jpeg',
+            'demandas-tech.png',
+            'rcca.jpeg',
+            'bruno-moreno.jpeg',
+            'olympus.svg',
           ],
         },
         footer: {
@@ -681,31 +685,31 @@ export const BOOKS_CONTENT = [
             [
               {
                 label: 'Home',
-                link: '',
+                link: '#inicio',
               },
             ],
             [
               {
                 label: 'sinopse',
-                link: '',
+                link: '#sinopse',
               },
               {
                 label: 'Características',
-                link: '',
+                link: '#caracteristicas',
               },
               {
                 label: 'Onde adquirir o livro?',
-                link: '',
+                link: '#onde-adquirir-o-livro',
               },
             ],
             [
               {
                 label: 'Sobre o autor',
-                link: '',
+                link: '#sobre-o-autor',
               },
               {
                 label: 'Outras publicações',
-                link: '',
+                link: '#outras-publicações',
               },
             ],
           ],
