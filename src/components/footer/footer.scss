@@ -1,3 +1,5 @@
+@use '../../styles/core/settings/breakpoints';
+
 .pcn-footer {
   $this: &;
 
@@ -5,7 +7,7 @@
   font-size: var(--pcn-font-size-xs);
   letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-secondary));
-  padding: var(--pcn-spacing-lg);
+  padding: var(--pcn-spacing-lg) 0px;
 
   &__body {
     display: flex;
@@ -19,6 +21,10 @@
     justify-content: space-between;
     gap: var(--pcn-spacing-lg);
 
+    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      flex-direction: column;
+    }
+
     #{$this}__cover {
       img {
         width: 42px;
@@ -31,6 +37,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: var(--pcn-spacing-lxm);
+
+      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+        flex-direction: column;
+      }
 
       ul {
         display: flex;
@@ -61,6 +71,7 @@
     #{$this}__developer {
       width: 100%;
       display: flex;
+      align-items: center;
       justify-content: end;
       color: rgb(var(--pcn-color-on-bg));
 

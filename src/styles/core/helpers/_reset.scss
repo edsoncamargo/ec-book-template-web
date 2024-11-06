@@ -3,6 +3,14 @@
    License: none (public domain)
 */
 
+* {
+  &:focus-visible {
+    outline: 2px dashed;
+    outline-offset: 4px;
+    transition: none !important;
+  }
+}
+
 html,
 body,
 div,

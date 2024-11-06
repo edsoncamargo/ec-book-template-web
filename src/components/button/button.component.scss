@@ -10,13 +10,13 @@
   &--cta {
     background-color: transparent;
     color: rgb(var(--pcn-color-secondary));
-    outline: solid 2px rgb(var(--pcn-color-secondary));
+    border: solid 2px rgb(var(--pcn-color-secondary));
     box-shadow: 0 0 8px rgb(var(--pcn-color-secondary));
 
     @mixin mouseEffect {
       background-color: rgb(var(--pcn-color-secondary));
       color: rgb(var(--pcn-color-primary));
-      outline: solid 2px rgb(var(--pcn-color-secondary));
+      border: solid 2px rgb(var(--pcn-color-secondary));
       box-shadow: 0 0 0px rgb(var(--pcn-color-secondary));
     }
 
@@ -26,7 +26,7 @@
       @media (hover: none) {
         background-color: transparent;
         color: rgb(var(--pcn-color-secondary));
-        outline: solid 2px rgb(var(--pcn-color-secondary));
+        border: solid 2px rgb(var(--pcn-color-secondary));
         box-shadow: 0 0 8px rgb(var(--pcn-color-secondary));
       }
     }

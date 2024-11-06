@@ -56,11 +56,11 @@
         flex-direction: column;
         font-size: var(--pcn-font-size-xsm);
         color: rgb(var(--pcn-color-on-bg));
+        gap: var(--pcn-spacing-sm);
 
         p {
           display: flex;
           flex-direction: column;
-          gap: var(--pcn-spacing-xs);
 
           small {
             font-size: var(--pcn-font-size-xs);
