@@ -38,6 +38,7 @@
         gap: var(--pcn-spacing-md);
 
         a {
+          font-weight: var(--pcn-font-weight-bold);
           color: rgb(var(--pcn-color-secondary));
         }
       }
@@ -53,6 +54,7 @@
       bottom: 1px solid rgb(var(--pcn-color-secondary));
     }
     text-align: center;
+    font-weight: var(--pcn-font-weight-bold);
   }
 
   &__bottom {
