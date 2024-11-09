@@ -2,10 +2,6 @@
 @use '../../styles/core/settings/breakpoints';
 
 .pcn-our-books {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
   background-color: rgba(var(--pcn-color-primary), 0.9);
   padding: var(--pcn-spacing-md) 0px;
@@ -32,6 +28,7 @@
     text-align: center;
     padding: 0px var(--pcn-spacing-md);
     padding-bottom: var(--pcn-spacing-sm);
+    margin: 0 auto;
 
     @media (max-width: breakpoints.$pcn-breakpoint-md) {
       max-width: 244px;
