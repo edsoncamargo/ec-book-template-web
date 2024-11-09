@@ -32,6 +32,7 @@
 
     @media (max-width: breakpoints.$pcn-breakpoint-md) {
       max-width: 244px;
+      min-width: 244px;
     }
 
     small {
