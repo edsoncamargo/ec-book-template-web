@@ -1,0 +1,108 @@
+@use '../../styles/core/settings/patterns';
+@use '../../styles/core/settings/breakpoints';
+
+.pcn-our-books {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(var(--pcn-color-primary), 0.9);
+  padding: var(--pcn-spacing-md) 0px;
+  padding-bottom: var(--pcn-spacing-xl);
+
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    padding-bottom: var(--pcn-spacing-xl);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @extend .pcn-pattern-clouds;
+  }
+
+  &__title {
+    max-width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    padding: 0px var(--pcn-spacing-md);
+    padding-bottom: var(--pcn-spacing-sm);
+
+    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      max-width: 244px;
+    }
+
+    small {
+      font-size: 96px;
+      margin-bottom: -8px;
+
+      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+        font-size: var(--pcn-font-size-xxl);
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__slider {
+    .slick-track,
+    .slick-list {
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .slick-slide {
+      transform: scale(1);
+      z-index: 1;
+      transition: all 0.3s ease;
+
+      &.slick-current {
+        position: relative;
+        transform: scale(1.2);
+        z-index: 2;
+
+        img {
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  &__carousel {
+    max-width: 600px;
+    margin: 0 auto;
+
+    img {
+      height: 300px;
+      min-width: 200px;
+      max-width: 200px;
+      position: relative;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+      transition: all 0.6s ease;
+      cursor: pointer;
+    }
+  }
+}
+
+.slick-dots {
+  li {
+    button:before {
+      font-size: 8px;
+      color: rgb(var(--pcn-color-secondary));
+      transition: all 0.3s ease;
+    }
+
+    &.slick-active {
+      button:before {
+        color: rgb(var(--pcn-color-secondary));
+        opacity: 1;
+      }
+    }
+  }
+}

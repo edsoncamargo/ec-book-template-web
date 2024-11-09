@@ -8,6 +8,13 @@ const button = tv({
   variants: {
     variant: {
       cta: 'pcn-button--cta',
+      amazon: 'pcn-button--amazon',
+      americanas: 'pcn-button--americanas',
+      ml: 'pcn-button--ml',
+      ev: 'pcn-button--ev',
+      gp: 'pcn-button--gp',
+      rakuten: 'pcn-button--rakuten',
+      apple: 'pcn-button--apple',
     },
   },
   defaultVariants: {

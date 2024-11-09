@@ -1,8 +1,14 @@
+@use '../../styles/core/settings/breakpoints';
+
 .pcn-sinopse {
   display: flex;
   flex-direction: column;
   gap: var(--pcn-spacing-lg);
   margin-top: var(--pcn-spacing-colossal);
+
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    margin-top: var(--pcn-spacing-0);
+  }
 
   &__contents {
     display: flex;

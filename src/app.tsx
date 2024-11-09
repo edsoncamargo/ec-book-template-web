@@ -1,13 +1,18 @@
 import './app.scss';
+import 'aos/dist/aos.css';
 
 import { BookContent, getBookContentById } from './data/books-content';
 import { useEffect, useMemo, useState } from 'react';
 
+import AOS from 'aos';
+import About from './sections/about/about';
+import Buy from './sections/buy/buy';
 import Characteristics from './sections/characteristics/characteristics';
 import { CurrentThemeContext } from './context';
 import Footer from './components/footer/footer';
 import { Home } from './sections/home/home';
-import OurPartiners from './sections/our-partners/our-partners';
+import OurBooks from './sections/our-books/our-books';
+import OurPartners from './sections/our-partners/our-partners';
 import Sinopse from './sections/sinopse/sinopse';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
@@ -28,6 +33,8 @@ function App() {
   );
 
   useEffect(() => {
+    AOS.init();
+
     const updatedThemeKey = location.pathname
       ?.split('/')[1]
       ?.trim() as ThemeKeys;
@@ -50,8 +57,11 @@ function App() {
       <CurrentThemeContext.Provider value={contextValue}>
         <Home />
         <Sinopse />
+        <Buy />
         <Characteristics />
-        <OurPartiners />
+        <About />
+        <OurBooks />
+        <OurPartners />
         <Footer />
       </CurrentThemeContext.Provider>
     </main>

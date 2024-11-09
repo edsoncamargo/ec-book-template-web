@@ -11,13 +11,17 @@ export default function Characteristics() {
 
   return (
     <section id='caracteristicas' className='pcn-characteristics pcn-container'>
-      <h2 className='pcn-font-heading pcn-uppercase'>
+      <h2 className='pcn-font-heading pcn-uppercase' data-aos='fade-up'>
         {content.characteristics.title}
       </h2>
 
       <div className='pcn-characteristics__items pcn-uppercase'>
         {content.characteristics.details.map((detail) => (
-          <div key={detail.value} className='pcn-characteristics__line'>
+          <div
+            key={detail.value}
+            className='pcn-characteristics__line'
+            data-aos='fade-up'
+          >
             <div className='pcn-characteristics__item'>
               <Card variant='left'>
                 <p>{detail.type}</p>

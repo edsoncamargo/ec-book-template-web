@@ -19,13 +19,23 @@ export interface BookContent {
         price: {
           physical: {
             label: string;
+            prefix: string;
             value: string;
-            platforms: { name: string; button: string }[];
+            suffix: string;
+            platforms: {
+              name: string;
+              button: string;
+            }[];
           };
           ebook: {
             label: string;
+            prefix: string;
             value: string;
-            platforms: { name: string; button: string }[];
+            suffix: string;
+            platforms: {
+              name: string;
+              button: string;
+            }[];
           };
         };
       };
@@ -40,7 +50,7 @@ export interface BookContent {
       };
       other_publications: {
         title: string;
-        books: { title: string; cover_image: string }[];
+        books: { title: string; cover_image: string; link: string }[];
       };
       partners: {
         title: string;
@@ -93,22 +103,26 @@ export const BOOKS_CONTENT = [
           price: {
             physical: {
               label: 'FÍSICO',
-              value: 'R$49,19',
+              prefix: 'R$',
+              value: '49',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Americanas', button: 'COMPRE AGORA' },
-                { name: 'Mercado Livre', button: 'COMPRE AGORA' },
-                { name: 'Estante Virtual', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'americanas', button: 'COMPRE AGORA' },
+                { name: 'ml', button: 'COMPRE AGORA' },
+                { name: 'ev', button: 'COMPRE AGORA' },
               ],
             },
             ebook: {
               label: 'eBOOK',
-              value: 'R$26,19',
+              prefix: 'R$',
+              value: '26',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Google Play', button: 'COMPRE AGORA' },
-                { name: 'Kobo Rakuten', button: 'COMPRE AGORA' },
-                { name: 'Apple', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'gp', button: 'COMPRE AGORA' },
+                { name: 'rakuten', button: 'COMPRE AGORA' },
+                { name: 'apple', button: 'COMPRE AGORA' },
               ],
             },
           },
@@ -152,24 +166,28 @@ export const BOOKS_CONTENT = [
         },
         about_author: {
           title: 'SOBRE O AUTOR',
-          description:
-            "Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.\n\nEntre seus livros estão 'Ainda no Jardim', 'Entre Pães e Peixes, Uma Nova História!' e uma obra inspiradora de narrativas clássicas, 'Casa de Papelão', que revela a resiliência humana em tempos difíceis.\n\nComo praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar as pessoas a desbloquearem seu potencial e alcançar seus objetivos. Sua fé e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e a alinhar de tudo uma experiência com Deus nos dias atuais.",
-          signature: 'Paulo C.',
+          description: `Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.
+Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
+Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
+          signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'OUTRAS PUBLICAÇÕES DO AUTOR',
+          title: 'Outras publicações',
           books: [
             {
-              title: 'Entre Pães e Peixes',
-              cover_image: 'caminho/para/imagemEntrePaesEPeixes.jpg',
-            },
-            {
               title: 'Casa de Papelão',
-              cover_image: 'caminho/para/imagemCasaDePapeleo.jpg',
+              cover_image: 'card-board-house.jpeg',
+              link: '/casa-de-papelao',
             },
             {
-              title: 'Uma Nova História!',
-              cover_image: 'caminho/para/imagemUmaNovaHistoria.jpg',
+              title: 'Pães e Peixes',
+              cover_image: 'bread-and-fish.jpeg',
+              link: '/paes-e-peixes',
+            },
+            {
+              title: 'Ainda No Jardim',
+              cover_image: 'still-in-the-garden.jpeg',
+              link: '/ainda-no-jardim',
             },
           ],
         },
@@ -214,7 +232,7 @@ export const BOOKS_CONTENT = [
               },
               {
                 label: 'Outras publicações',
-                link: '#outras-publicações',
+                link: '#outras-publicacoes',
               },
             ],
           ],
@@ -259,22 +277,26 @@ export const BOOKS_CONTENT = [
           price: {
             physical: {
               label: 'FÍSICO',
-              value: 'R$49,19',
+              prefix: 'R$',
+              value: '49',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Americanas', button: 'COMPRE AGORA' },
-                { name: 'Mercado Livre', button: 'COMPRE AGORA' },
-                { name: 'Estante Virtual', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'americanas', button: 'COMPRE AGORA' },
+                { name: 'ml', button: 'COMPRE AGORA' },
+                { name: 'ev', button: 'COMPRE AGORA' },
               ],
             },
             ebook: {
               label: 'eBOOK',
-              value: 'R$26,19',
+              prefix: 'R$',
+              value: '26',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Google Play', button: 'COMPRE AGORA' },
-                { name: 'Kobo Rakuten', button: 'COMPRE AGORA' },
-                { name: 'Apple', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'gp', button: 'COMPRE AGORA' },
+                { name: 'rakuten', button: 'COMPRE AGORA' },
+                { name: 'apple', button: 'COMPRE AGORA' },
               ],
             },
           },
@@ -318,24 +340,28 @@ export const BOOKS_CONTENT = [
         },
         about_author: {
           title: 'SOBRE O AUTOR',
-          description:
-            "Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.\n\nEntre seus livros estão 'Ainda no Jardim', 'Entre Pães e Peixes, Uma Nova História!' e uma obra inspiradora de narrativas clássicas, 'Casa de Papelão', que revela a resiliência humana em tempos difíceis.\n\nComo praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar as pessoas a desbloquearem seu potencial e alcançar seus objetivos. Sua fé e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e a alinhar de tudo uma experiência com Deus nos dias atuais.",
-          signature: 'Paulo C.',
+          description: `Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.
+Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
+Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
+          signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'OUTRAS PUBLICAÇÕES DO AUTOR',
+          title: 'Outras publicações',
           books: [
             {
-              title: 'Entre Pães e Peixes',
-              cover_image: 'caminho/para/imagemEntrePaesEPeixes.jpg',
-            },
-            {
               title: 'Casa de Papelão',
-              cover_image: 'caminho/para/imagemCasaDePapeleo.jpg',
+              cover_image: 'card-board-house.jpeg',
+              link: '/casa-de-papelao',
             },
             {
-              title: 'Uma Nova História!',
-              cover_image: 'caminho/para/imagemUmaNovaHistoria.jpg',
+              title: 'Ainda No Jardim',
+              cover_image: 'still-in-the-garden.jpeg',
+              link: '/ainda-no-jardim',
+            },
+            {
+              title: 'Uma Nova História',
+              cover_image: 'a-new-story.jpeg',
+              link: '/uma-nova-historia',
             },
           ],
         },
@@ -380,7 +406,7 @@ export const BOOKS_CONTENT = [
               },
               {
                 label: 'Outras publicações',
-                link: '#outras-publicações',
+                link: '#outras-publicacoes',
               },
             ],
           ],
@@ -404,7 +430,7 @@ export const BOOKS_CONTENT = [
         button: 'LEIA UM POUCO',
         synopsis: {
           title: 'Sinopse',
-          content: [
+          contents: [
             "Quando olhamos para as ruas de nossas cidades, muitas vezes somos confrontados com uma realidade desconcertante. Entre a correria do dia a dia, as conversas apressadas e os compromissos inadiáveis, há aqueles que vivem à margem, cujas histórias de vida se desenrolam sob a sombra dos edifícios, embaixo de pontes e nos bancos de parques. 'Casa de Papelão' surge como um tributo a essas vidas, um chamado à empatia e à reflexão.",
             'Este livro é mais do que uma coleção de histórias; é um testemunho da resiliência humana e um grito de socorro. Baseado nas experiências reais de Osmar, Sandro e Wilson, cujos nomes e narrativas são verdadeiros, ele nos leva a uma jornada profunda através de suas infâncias, sonhos e, inevitavelmente, a transição para a vida nas ruas. Cada capítulo revela não apenas os desafios que enfrentam, mas também a beleza de suas esperanças e a força de seus espíritos.',
             'Fui, inspirado pelo Espírito Santo, foi levado a este projeto ao observar um morador de rua deitado no chão, coberto apenas por uma caixa de papelão. Aquela cena tocou profundamente meu coração e  me motivou a buscar as histórias de vida de quem vive nessa realidade. Por meio de entrevistas reais com Osmar, Sandro e Wilson moradores de rua, este projeto se tornou um canal de amor e compaixão, vindo direto do coração de Deus, para aqueles que se sentem chamados, nascidos de novo e filhos de Deus. Ao ler estas páginas, será impossível não se emocionar com as histórias reais aqui contadas. Osmar, Sandro e Wilson não são apenas personagens; são vozes que ecoam o sofrimento e a luta por dignidade de milhões de pessoas. Suas narrativas nos convidam a olhar além dos estigmas e preconceitos que cercam a população de rua, desafiando-nos a reconhecer a humanidade que reside em cada um deles. Em suas histórias, encontramos risos e lágrimas, triunfos, medos, anseios, sonhos e derrotas, mas, acima de tudo, a busca incessante por um lugar ao sol.',
@@ -423,22 +449,26 @@ export const BOOKS_CONTENT = [
           price: {
             physical: {
               label: 'FÍSICO',
-              value: 'R$49,19',
+              prefix: 'R$',
+              value: '49',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Americanas', button: 'COMPRE AGORA' },
-                { name: 'Mercado Livre', button: 'COMPRE AGORA' },
-                { name: 'Estante Virtual', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'americanas', button: 'COMPRE AGORA' },
+                { name: 'ml', button: 'COMPRE AGORA' },
+                { name: 'ev', button: 'COMPRE AGORA' },
               ],
             },
             ebook: {
               label: 'eBOOK',
-              value: 'R$26,19',
+              prefix: 'R$',
+              value: '26',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Google Play', button: 'COMPRE AGORA' },
-                { name: 'Kobo Rakuten', button: 'COMPRE AGORA' },
-                { name: 'Apple', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'gp', button: 'COMPRE AGORA' },
+                { name: 'rakuten', button: 'COMPRE AGORA' },
+                { name: 'apple', button: 'COMPRE AGORA' },
               ],
             },
           },
@@ -482,24 +512,28 @@ export const BOOKS_CONTENT = [
         },
         about_author: {
           title: 'SOBRE O AUTOR',
-          description:
-            "Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.\n\nEntre seus livros estão 'Ainda no Jardim', 'Entre Pães e Peixes, Uma Nova História!' e uma obra inspiradora de narrativas clássicas, 'Casa de Papelão', que revela a resiliência humana em tempos difíceis.\n\nComo praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar as pessoas a desbloquearem seu potencial e alcançar seus objetivos. Sua fé e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e a alinhar de tudo uma experiência com Deus nos dias atuais.",
-          signature: 'Paulo C.',
+          description: `Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.
+Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
+Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
+          signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'OUTRAS PUBLICAÇÕES DO AUTOR',
+          title: 'Outras publicações',
           books: [
             {
-              title: 'Entre Pães e Peixes',
-              cover_image: 'caminho/para/imagemEntrePaesEPeixes.jpg',
+              title: 'Ainda No Jardim',
+              cover_image: 'still-in-the-garden.jpeg',
+              link: '/ainda-no-jardim',
             },
             {
-              title: 'Casa de Papelão',
-              cover_image: 'caminho/para/imagemCasaDePapeleo.jpg',
+              title: 'Pães e Peixes',
+              cover_image: 'bread-and-fish.jpeg',
+              link: '/paes-e-peixes',
             },
             {
-              title: 'Uma Nova História!',
-              cover_image: 'caminho/para/imagemUmaNovaHistoria.jpg',
+              title: 'Uma Nova História',
+              cover_image: 'a-new-story.jpeg',
+              link: '/uma-nova-historia',
             },
           ],
         },
@@ -544,7 +578,7 @@ export const BOOKS_CONTENT = [
               },
               {
                 label: 'Outras publicações',
-                link: '#outras-publicações',
+                link: '#outras-publicacoes',
               },
             ],
           ],
@@ -588,22 +622,26 @@ export const BOOKS_CONTENT = [
           price: {
             physical: {
               label: 'FÍSICO',
-              value: 'R$49,19',
+              prefix: 'R$',
+              value: '49',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Americanas', button: 'COMPRE AGORA' },
-                { name: 'Mercado Livre', button: 'COMPRE AGORA' },
-                { name: 'Estante Virtual', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'americanas', button: 'COMPRE AGORA' },
+                { name: 'ml', button: 'COMPRE AGORA' },
+                { name: 'ev', button: 'COMPRE AGORA' },
               ],
             },
             ebook: {
               label: 'eBOOK',
-              value: 'R$26,19',
+              prefix: 'R$',
+              value: '26',
+              suffix: ',19',
               platforms: [
-                { name: 'Amazon', button: 'COMPRE AGORA' },
-                { name: 'Google Play', button: 'COMPRE AGORA' },
-                { name: 'Kobo Rakuten', button: 'COMPRE AGORA' },
-                { name: 'Apple', button: 'COMPRE AGORA' },
+                { name: 'amazon', button: 'COMPRE AGORA' },
+                { name: 'gp', button: 'COMPRE AGORA' },
+                { name: 'rakuten', button: 'COMPRE AGORA' },
+                { name: 'apple', button: 'COMPRE AGORA' },
               ],
             },
           },
@@ -647,24 +685,28 @@ export const BOOKS_CONTENT = [
         },
         about_author: {
           title: 'SOBRE O AUTOR',
-          description:
-            "Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.\n\nEntre seus livros estão 'Ainda no Jardim', 'Entre Pães e Peixes, Uma Nova História!' e uma obra inspiradora de narrativas clássicas, 'Casa de Papelão', que revela a resiliência humana em tempos difíceis.\n\nComo praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar as pessoas a desbloquearem seu potencial e alcançar seus objetivos. Sua fé e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e a alinhar de tudo uma experiência com Deus nos dias atuais.",
-          signature: 'Paulo C.',
+          description: `Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.
+Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
+Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
+          signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'OUTRAS PUBLICAÇÕES DO AUTOR',
+          title: 'Outras publicações',
           books: [
             {
-              title: 'Entre Pães e Peixes',
-              cover_image: 'caminho/para/imagemEntrePaesEPeixes.jpg',
-            },
-            {
               title: 'Casa de Papelão',
-              cover_image: 'caminho/para/imagemCasaDePapeleo.jpg',
+              cover_image: 'card-board-house.jpeg',
+              link: '/casa-de-papelao',
             },
             {
-              title: 'Uma Nova História!',
-              cover_image: 'caminho/para/imagemUmaNovaHistoria.jpg',
+              title: 'Pães e Peixes',
+              cover_image: 'bread-and-fish.jpeg',
+              link: '/paes-e-peixes',
+            },
+            {
+              title: 'Uma Nova História',
+              cover_image: 'a-new-story.jpeg',
+              link: '/uma-nova-historia',
             },
           ],
         },
@@ -709,7 +751,7 @@ export const BOOKS_CONTENT = [
               },
               {
                 label: 'Outras publicações',
-                link: '#outras-publicações',
+                link: '#outras-publicacoes',
               },
             ],
           ],
@@ -724,6 +766,6 @@ export const BOOKS_CONTENT = [
   },
 ];
 
-export function getBookContentById(id: ThemeKeys) {
+export function getBookContentById(id: ThemeKeys): BookContent | undefined {
   return BOOKS_CONTENT.find((book) => book.id === id);
 }

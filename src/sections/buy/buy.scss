@@ -1,0 +1,83 @@
+@use '../../styles/core/settings/breakpoints';
+
+.pcn-buy {
+  $buy: &;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--pcn-spacing-lg);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: var(--pcn-spacing-lg);
+
+    #{$buy}__title {
+      max-width: 695px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--pcn-spacing-md);
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: var(--pcn-spacing-md);
+
+    &__group {
+      display: flex;
+      font-weight: var(--pcn-font-weight-bold);
+      color: rgb(var(--pcn-color-neutral-60));
+
+      &__prefix {
+        align-self: center;
+        font-size: var(--pcn-font-size-xl);
+      }
+
+      &__value {
+        font-size: var(--pcn-font-size-giga);
+      }
+
+      &__suffix {
+        align-self: end;
+        position: relative;
+        top: -10px;
+        font-size: var(--pcn-font-size-sm);
+      }
+    }
+  }
+
+  &__book {
+    display: flex;
+    gap: var(--pcn-spacing-md);
+    margin-top: var(--pcn-spacing-md);
+
+    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      flex-wrap: wrap;
+    }
+
+    &__btn-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: var(--pcn-spacing-sm);
+
+      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+        flex: 1;
+        flex-basis: 142px;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    color: rgb(var(--pcn-color-neutral-30));
+    height: 75px;
+    min-width: 75px;
+  }
+}

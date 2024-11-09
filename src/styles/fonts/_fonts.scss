@@ -25,7 +25,7 @@ html {
   font-size: var(--pcn-font-size-xl);
   font-weight: var(--pcn-font-weight-bold);
   letter-spacing: var(--pcn-letter-spacing-sm);
-  color: rgb(var(--pcn-color-neutral-40));
+  color: rgb(var(--pcn-color-neutral-60));
 
   @media (max-width: breakpoints.$pcn-breakpoint-md) {
     font-size: var(--pcn-font-size-lg);
@@ -34,9 +34,8 @@ html {
 
 .pcn-font-subheading {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-lxm);
+  font-size: var(--pcn-font-size-lg);
   font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-neutral-40));
 }
 
@@ -46,6 +45,10 @@ html {
   font-weight: var(--pcn-font-weight-bold);
   letter-spacing: var(--pcn-letter-spacing-sm);
   color: rgb(var(--pcn-color-neutral-30));
+
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    font-size: var(--pcn-font-size-md);
+  }
 }
 
 .pcn-font-body {

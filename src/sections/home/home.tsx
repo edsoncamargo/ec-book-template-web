@@ -9,7 +9,7 @@ export function Home() {
   const content = bookContent!.content.pt;
 
   return (
-    <section id='inicio'>
+    <section id='inicio' data-aos='fade-up'>
       <Banner>
         <Banner.Book currentTheme={currentTheme} />
 

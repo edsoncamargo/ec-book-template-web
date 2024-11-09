@@ -1,5 +1,9 @@
 .pcn-button {
+  max-height: 46px;
+  display: flex;
   align-self: flex-start;
+  align-items: center;
+  justify-content: center;
   font-weight: var(--pcn-font-weight-extra-bold);
   letter-spacing: var(--pcn-letter-spacing-xs);
   border-radius: var(--pcn-border-radius-sm);
@@ -28,6 +32,188 @@
         color: rgb(var(--pcn-color-secondary));
         border: solid 2px rgb(var(--pcn-color-secondary));
         box-shadow: 0 0 8px rgb(var(--pcn-color-secondary));
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--amazon {
+    background-color: #f7971f;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #f7971f;
+    box-shadow: 0 0 8px #f7971f;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #f7971f;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #f7971f;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #f7971f;
+        box-shadow: 0 0 8px #f7971f;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--americanas {
+    background-color: #ed1c24;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #ed1c24;
+    box-shadow: 0 0 8px #ed1c24;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #ed1c24;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #ed1c24;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #ed1c24;
+        box-shadow: 0 0 8px #ed1c24;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--ml {
+    background-color: #292e78;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #292e78;
+    box-shadow: 0 0 8px #292e78;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #292e78;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #292e78;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #292e78;
+        box-shadow: 0 0 8px #292e78;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--ev {
+    background-color: #04bfb0;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #04bfb0;
+    box-shadow: 0 0 8px #04bfb0;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #04bfb0;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #04bfb0;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #04bfb0;
+        box-shadow: 0 0 8px #04bfb0;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--gp {
+    background-color: #6b6b6b;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #6b6b6b;
+    box-shadow: 0 0 8px #6b6b6b;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #6b6b6b;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #6b6b6b;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #6b6b6b;
+        box-shadow: 0 0 8px #6b6b6b;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--rakuten {
+    background-color: #bf0101;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #bf0101;
+    box-shadow: 0 0 8px #bf0101;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #bf0101;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #bf0101;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #bf0101;
+        box-shadow: 0 0 8px #bf0101;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
+
+  &--apple {
+    background-color: #666666;
+    color: rgb(var(--pcn-color-neutral-0));
+    border: solid 2px #666666;
+    box-shadow: 0 0 8px #666666;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #666666;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #666666;
+        color: rgb(var(--pcn-color-neutral-0));
+        border: solid 2px #666666;
+        box-shadow: 0 0 8px #666666;
       }
     }
 

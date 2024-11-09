@@ -7,6 +7,10 @@
   background-color: rgba(var(--pcn-color-primary), 0.9);
   padding: var(--pcn-spacing-giga) 0px;
 
+  @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    padding: var(--pcn-spacing-lg) 0px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -24,11 +28,12 @@
     &__book {
       width: 355px;
       position: relative;
+      z-index: 1;
 
       img {
         width: 100%;
         position: absolute;
-        bottom: -192px;
+        bottom: -202px;
       }
     }
 
