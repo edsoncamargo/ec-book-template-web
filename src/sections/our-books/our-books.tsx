@@ -21,7 +21,6 @@ export default function OurBooks() {
     variableWidth: true,
     dots: true,
     arrows: false,
-    touchMove: false,
     autoplay: true,
     autoplaySpeed: 10000,
   };

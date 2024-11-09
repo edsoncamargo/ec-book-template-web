@@ -4,7 +4,7 @@
 .pcn-our-books {
   position: relative;
   background-color: rgba(var(--pcn-color-primary), 0.9);
-  padding: var(--pcn-spacing-md) 0px;
+  padding: var(--pcn-spacing-lg) 0px;
   padding-bottom: var(--pcn-spacing-xl);
 
   @media (max-width: breakpoints.$pcn-breakpoint-md) {
