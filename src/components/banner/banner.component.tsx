@@ -28,7 +28,7 @@ function Book({
       <img
         alt='Capa do Livro'
         title='Capa do Livro'
-        src={`/assets/images/books/${currentTheme.replace('-theme', '')}.svg`}
+        src={`/assets/images/books/${currentTheme.replace('-theme', '')}.png`}
       ></img>
     </div>
   );

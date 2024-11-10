@@ -29,13 +29,17 @@ export default function OurBooks() {
     <div data-aos='fade-up'>
       <Line />
       <section id='outras-publicacoes' className='pcn-our-books'>
-        <h2
+        <div
           className='pcn-our-books__title pcn-font-heading pcn-uppercase pcn-text-color-secondary'
           data-aos='fade-up'
         >
-          {content.other_publications.title}
+          <h2
+            dangerouslySetInnerHTML={{
+              __html: content.other_publications.title,
+            }}
+          ></h2>
           <small className='pcn-font-number'>.</small>
-        </h2>
+        </div>
 
         <div className='pcn-our-books__carousel pcn-our-books__slider'>
           <Slider {...settings}>
@@ -49,7 +53,7 @@ export default function OurBooks() {
                 <a href={book.link} target='_blank'>
                   <img
                     src={`/assets/images/covers/${book.cover_image}`}
-                    alt='A New Story'
+                    alt={book.title}
                   />
                 </a>
               </div>

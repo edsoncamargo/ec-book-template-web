@@ -172,7 +172,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'Outras publicações',
+          title: 'Outras <br/> publicações',
           books: [
             {
               title: 'Casa de Papelão',
@@ -346,7 +346,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'Outras publicações',
+          title: 'Outras <br/> publicações',
           books: [
             {
               title: 'Casa de Papelão',
@@ -518,7 +518,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'Outras publicações',
+          title: 'Outras <br/> publicações',
           books: [
             {
               title: 'Ainda No Jardim',
@@ -691,7 +691,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           signature: 'subscription.svg',
         },
         other_publications: {
-          title: 'Outras publicações',
+          title: 'Outras <br/> publicações',
           books: [
             {
               title: 'Casa de Papelão',
