@@ -3,6 +3,7 @@ import './banner.component.scss';
 import { ReactNode } from 'react';
 import { THEME_MAPPINGS } from '../../constants/theme.constants';
 import { ThemeKeys } from '../../enums/theme.enum';
+import { replaceAllTags } from '../../utils/strings.utils';
 
 type BannerProps = {
   children: ReactNode;
@@ -53,6 +54,7 @@ function Emphasis({ children }: Readonly<EmphasisProps>) {
   return (
     <h1
       className='pcn-banner__title pcn-font-emphasis'
+      aria-label={replaceAllTags(typeof children === 'string' ? children : '')}
       dangerouslySetInnerHTML={{
         __html: typeof children === 'string' ? children : '',
       }}
