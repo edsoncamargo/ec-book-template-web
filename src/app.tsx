@@ -7,6 +7,7 @@ import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import AOS from 'aos';
 import { CurrentThemeContext } from './context';
 import LoadingSquare from './components/loadings/loading.square';
+import Seo from './components/seo';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
 import { useLocation } from 'react-router-dom';
@@ -61,6 +62,13 @@ function App() {
   return (
     <main className={`pcn-${currentTheme} pcn-app`}>
       <CurrentThemeContext.Provider value={contextValue}>
+        <Seo
+          title={bookContent?.seo.title ?? ''}
+          description={bookContent?.seo.description ?? ''}
+          theme={currentTheme}
+          isbn={bookContent?.content.pt.characteristics.details[0].value ?? ''}
+        />
+
         <Suspense fallback={<LoadingSquare />}>
           <Home />
           <Sinopse />

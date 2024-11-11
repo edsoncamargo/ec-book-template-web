@@ -3,6 +3,10 @@ import { ThemeKeys } from '../enums/theme.enum';
 export interface BookContent {
   id: string;
   theme: string;
+  seo: {
+    title: string;
+    description: string;
+  };
   content: {
     pt: {
       title: string;
@@ -69,6 +73,11 @@ export const BOOKS_CONTENT = [
   {
     id: 'uma-nova-historia',
     theme: 'a-new-story-theme',
+    seo: {
+      title: 'Uma Nova História',
+      description:
+        'Plantar uma árvore, escrever um livro e ter um filho, seja biológico ou na fé, são os principais desafios abordados neste projeto de vida. Inspirado por José Martí, este livro oferece uma reflexão profunda sobre como não desperdiçar o tempo e registrar momentos importantes. Com ênfase em biografia, vida cristã, e autoajuda, o autor Paulo Cesar Nascimento dos Santos convida o leitor a criar seu próprio legado, seja por meio da escrita ou da adoção de práticas que transformam a vida e o mundo ao redor.',
+    },
     content: {
       pt: {
         title:
@@ -248,6 +257,10 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
   {
     id: 'paes-e-peixes',
     theme: 'bread-and-fish-theme',
+    seo: {
+      title: 'Pães e Peixes',
+      description: `Em 'Entre Pães e Peixes', Paulo Cesar Nascimento dos Santos nos conduz por uma jornada de fé, esperança e transformação, inspirada no milagre da multiplicação dos pães e peixes. A história de Arthur, um homem comum com um propósito extraordinário, revela como, nas mãos de Deus, o pouco que oferecemos pode ser multiplicado para alimentar multidões. Com uma narrativa que atravessa a infância até a maturidade espiritual, este livro inspiracional e cristão nos ensina sobre o poder da fé e da renovação, mesmo nas adversidades da vida.`,
+    },
     content: {
       pt: {
         title:
@@ -422,6 +435,10 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
   {
     id: 'casa-de-papelao',
     theme: 'card-board-house-theme',
+    seo: {
+      title: 'Casa de Papelão',
+      description: `Em 'Casa de Papelão', Paulo Cesar Nascimento dos Santos nos apresenta as emocionantes histórias de vida de Osmar, Sandro e Wilson, três moradores de rua que enfrentam desafios extremos, mas mantêm a esperança. Este livro é um tributo à resiliência humana e um chamado à empatia e ação social. Através de relatos reais, ele nos desafia a olhar além dos estigmas e reconhecer a dignidade daqueles que vivem à margem da sociedade. Com o objetivo de transformar realidades, 100% das vendas serão destinadas a apoiar entidades que cuidam dos mais vulneráveis, incentivando o amor e a ação em prol de um mundo mais justo.`,
+    },
     content: {
       pt: {
         title: 'LANÇAMENTO EM <strong>BREVE</strong>.',
@@ -594,6 +611,10 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
   {
     id: 'ainda-no-jardim',
     theme: 'still-in-the-garden-theme',
+    seo: {
+      title: 'Ainda No Jardim',
+      description: `Em 'Ainda no Jardim', Paulo Cesar Nascimento dos Santos nos convida a uma jornada espiritual profunda, redescobrindo o propósito original da humanidade, plantado por Deus no Jardim do Éden. Inspirado em Gênesis 2:15, este livro explora como a missão de 'lavrar e guardar' o Éden se aplica ao nosso cotidiano moderno. Com foco em espiritualidade, vida cristã e conexão com Deus, ele oferece uma perspectiva renovada sobre como viver com propósito, equilíbrio e harmonia, em adoração constante ao Criador. Um convite para todos que buscam um retorno à verdadeira essência e ao significado da vida.`,
+    },
     content: {
       pt: {
         title: 'Uma jornada interior na presença de <strong>Deus</strong>.',
