@@ -11,7 +11,14 @@ export default function Characteristics() {
 
   return (
     <section id='caracteristicas' className='pcn-characteristics pcn-container'>
-      <h2 className='pcn-font-heading pcn-uppercase' data-aos='fade-up'>
+      <h2
+        className='pcn-font-heading pcn-uppercase'
+        data-aos='fade-up'
+        aria-label={content.characteristics.title.replace(
+          /<\/?[^>]+(>|$)/g,
+          ''
+        )}
+      >
         {content.characteristics.title}
       </h2>
 
@@ -22,6 +29,7 @@ export default function Characteristics() {
             className='pcn-characteristics__line'
             data-aos='fade-up'
             aria-label={`${detail.type}: ${detail.value}`}
+            role='text'
           >
             <div className='pcn-characteristics__item' aria-hidden='true'>
               <Card variant='left'>
