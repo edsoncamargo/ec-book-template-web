@@ -37,9 +37,12 @@ export default function Footer() {
         </div>
 
         <div className='pcn-footer__middle'>
-          <p>
+          <p
+            aria-label={`${content.footer.rights.label} ${content.footer.rights.year}`}
+            role='text'
+          >
             {content.footer.rights.label}{' '}
-            <small className='pcn-font-number'>
+            <small className='pcn-font-number' aria-hidden='true'>
               {content.footer.rights.year}
             </small>
             {''}.
