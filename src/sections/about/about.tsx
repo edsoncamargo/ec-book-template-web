@@ -1,11 +1,24 @@
 import './about.scss';
 
+import { useContext, useEffect, useState } from 'react';
+
 import { CurrentThemeContext } from '../../context';
-import { useContext } from 'react';
 
 export default function About() {
   const { bookContent, language } = useContext(CurrentThemeContext);
   const content = bookContent!.content[language]!;
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  useEffect(() => {
+    const image = document.querySelector('.pcn-about__subscription');
+    if (image instanceof HTMLImageElement && image?.complete)
+      setImageLoaded(true);
+  }, []);
 
   return (
     <section id='sobre-o-autor' className='pcn-about' data-aos='fade-up'>
@@ -24,10 +37,13 @@ export default function About() {
           </p>
 
           <img
-            className='pcn-about__subscription'
+            className={`pcn-about__subscription ${
+              imageLoaded ? 'pcn-about__subscription--loaded' : ''
+            }`}
             src={`/assets/images/subscriptions/${content.about_author.signature}`}
             alt={content.about_author.signature_alt}
             loading='lazy'
+            onLoad={handleImageLoad}
             data-aos='fade-up'
           />
         </div>

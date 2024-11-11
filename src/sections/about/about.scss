@@ -45,6 +45,12 @@
 
       #{$about}__subscription {
         width: 144px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        &--loaded {
+          opacity: 1;
+        }
       }
     }
   }
