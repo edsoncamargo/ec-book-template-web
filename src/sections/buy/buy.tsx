@@ -6,8 +6,8 @@ import { FaCartShopping } from 'react-icons/fa6';
 import { useContext } from 'react';
 
 export default function Buy() {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <section id='onde-adquirir-o-livro' className='pcn-buy pcn-container'>
@@ -37,8 +37,8 @@ type PurchaseProps = {
 };
 
 function Purchase({ type }: Readonly<PurchaseProps>) {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <div className={`pcn-buy__${type}`}>

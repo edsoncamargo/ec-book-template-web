@@ -8,7 +8,7 @@ export interface BookContent {
     description: string;
   };
   content: {
-    pt: {
+    pt?: {
       title: string;
       author: string;
       category: string[];
@@ -16,6 +16,7 @@ export interface BookContent {
       synopsis: {
         title: string;
         contents?: Array<string>;
+        show?: boolean;
       };
       purchase: {
         title: string;
@@ -42,28 +43,99 @@ export interface BookContent {
             }[];
           };
         };
+        show?: boolean;
       };
       characteristics: {
         title: string;
         details: { type: string; value: string }[];
+        show?: boolean;
       };
       about_author: {
         title: string;
         description: string;
         signature: string;
+        show?: boolean;
       };
       other_publications: {
         title: string;
         books: { title: string; cover_image: string; link: string }[];
+        show?: boolean;
       };
       partners: {
         title: string;
         logos: string[];
+        show?: boolean;
       };
       footer: {
         menu: Array<Array<{ label: string; link: string }>>;
         rights: { label: string; year: string };
         developer: string;
+        show?: boolean;
+      };
+    };
+    en?: {
+      title: string;
+      author: string;
+      category: string[];
+      button: string;
+      synopsis: {
+        title: string;
+        contents?: Array<string>;
+        show?: boolean;
+      };
+      purchase: {
+        title: string;
+        description: string;
+        price: {
+          physical: {
+            label: string;
+            prefix: string;
+            value: string;
+            suffix: string;
+            platforms: {
+              name: string;
+              button: string;
+            }[];
+          };
+          ebook: {
+            label: string;
+            prefix: string;
+            value: string;
+            suffix: string;
+            platforms: {
+              name: string;
+              button: string;
+            }[];
+          };
+        };
+        show?: boolean;
+      };
+      characteristics: {
+        title: string;
+        details: { type: string; value: string }[];
+        show?: boolean;
+      };
+      about_author: {
+        title: string;
+        description: string;
+        signature: string;
+        show?: boolean;
+      };
+      other_publications: {
+        title: string;
+        books: { title: string; cover_image: string; link: string }[];
+        show?: boolean;
+      };
+      partners: {
+        title: string;
+        logos: string[];
+        show?: boolean;
+      };
+      footer: {
+        menu: Array<Array<{ label: string; link: string }>>;
+        rights: { label: string; year: string };
+        developer: string;
+        show?: boolean;
       };
     };
   };
@@ -104,6 +176,7 @@ export const BOOKS_CONTENT = [
             'Para complementar este projeto você poderá plantar uma árvore de sua escolha cultivando-a com muito amor, colaborando assim para um meio ambiente melhor e mais saudável. Por último e não menos importante, ter um filho, mesmo que não seja biológico poderá ser um aprendiz, um aluno, um discípulo ou até mesmo um filho na fé, assim, após ganhar, integrar e consolidar todos seus projetos terá seu livro escrito.',
             'Que Deus te abençoe neste novo projeto de vida, e que você possa escrever uma nova história.',
           ],
+          show: true,
         },
         purchase: {
           title: 'ONDE ADQUIRIR O LIVRO?',
@@ -135,6 +208,7 @@ export const BOOKS_CONTENT = [
               ],
             },
           },
+          show: true,
         },
         characteristics: {
           title: 'CARACTERÍSTICAS',
@@ -172,6 +246,7 @@ export const BOOKS_CONTENT = [
               value: 'Português',
             },
           ],
+          show: true,
         },
         about_author: {
           title: 'SOBRE O AUTOR',
@@ -179,6 +254,7 @@ export const BOOKS_CONTENT = [
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          show: true,
         },
         other_publications: {
           title: 'Outras <br/> publicações',
@@ -199,6 +275,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               link: '/ainda-no-jardim',
             },
           ],
+          show: true,
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
@@ -211,6 +288,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'bruno-moreno.jpeg',
             'olympus.svg',
           ],
+          show: true,
         },
         footer: {
           menu: [
@@ -251,6 +329,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           },
           developer: 'Desenvolvido por',
         },
+        show: true,
       },
     },
   },
@@ -282,6 +361,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'Ao longo da narrativa, acompanhamos Arthur desde sua infância até sua jornada de maturidade espiritual, onde desafios, perdas e momentos de incerteza são transformados em ocasiões de crescimento, renovação e esperança. Unidos por laços de amor e fé, Arthur e sua família enfrentam a perseguição, as adversidades e os mistérios da vida, tudo com a convicção de que, assim como o milagre dos pães e peixes, Deus nunca abandona aqueles que n’Ele confiam.',
             'Este livro é um convite para que cada leitor perceba que, mesmo em meio aos momentos mais difíceis, Jesus está presente, multiplicando a graça, o amor e a esperança em nossas vidas. Assim como o pão e os peixes alimentaram milhares, a mensagem de Jesus, entregue por meio desta história, continua a nutrir e transformar corações ao longo dos séculos.',
           ],
+          show: true,
         },
         purchase: {
           title: 'ONDE ADQUIRIR O LIVRO?',
@@ -313,6 +393,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               ],
             },
           },
+          show: true,
         },
         characteristics: {
           title: 'CARACTERÍSTICAS',
@@ -350,6 +431,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: 'Português',
             },
           ],
+          show: true,
         },
         about_author: {
           title: 'SOBRE O AUTOR',
@@ -357,6 +439,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          show: true,
         },
         other_publications: {
           title: 'Outras <br/> publicações',
@@ -377,6 +460,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               link: '/uma-nova-historia',
             },
           ],
+          show: true,
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
@@ -389,6 +473,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'bruno-moreno.jpeg',
             'olympus.svg',
           ],
+          show: true,
         },
         footer: {
           menu: [
@@ -429,6 +514,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           },
           developer: 'Desenvolvido por',
         },
+        show: true,
       },
     },
   },
@@ -458,6 +544,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'Não há como permanecer indiferente ao ler estas histórias. Cada um de nós é chamado a agir, a olhar nos olhos de quem sofre e a lembrar que, por trás de cada rosto, há uma história e um ser humano que merece respeito e dignidade. Que possamos, juntos, construir uma sociedade onde não haja espaço para o abandono e onde todos possam encontrar seu lugar. Agradeço a Osmar, Sandro e Wilson por confiarem em mim suas histórias. Que suas vozes ressoem e inspirem muitos a se unirem em solidariedade, para que possamos, juntos, transformar realidades e construir um mundo melhor através deste livro.',
             'Com gratidão, Paulo Cesar Nascimento dos Santos (Autor).',
           ],
+          show: true,
         },
         purchase: {
           title: 'ONDE ADQUIRIR O LIVRO?',
@@ -489,6 +576,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               ],
             },
           },
+          show: true,
         },
         characteristics: {
           title: 'CARACTERÍSTICAS',
@@ -526,6 +614,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: 'Português',
             },
           ],
+          show: true,
         },
         about_author: {
           title: 'SOBRE O AUTOR',
@@ -533,6 +622,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          show: true,
         },
         other_publications: {
           title: 'Outras <br/> publicações',
@@ -553,6 +643,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               link: '/uma-nova-historia',
             },
           ],
+          show: true,
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
@@ -565,6 +656,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'bruno-moreno.jpeg',
             'olympus.svg',
           ],
+          show: true,
         },
         footer: {
           menu: [
@@ -605,6 +697,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           },
           developer: 'Desenvolvido por',
         },
+        show: true,
       },
     },
   },
@@ -635,6 +728,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'Com uma narrativa envolvente, Paulo Cesar Nascimento dos Santos explora a conexão entre o Jardim do Éden e o mundo moderno, revelando como podemos aplicar os princípios divinos em nossas vidas hoje. Seja para entender melhor seu propósito, encontrar equilíbrio em meio ao caos ou simplesmente para se reconectar com o Criador, "Ainda no Jardim" oferece uma perspectiva renovada e profundamente espiritual.',
             'Este livro é um convite para todos aqueles que buscam algo mais — um chamado para retornar ao jardim, onde o trabalho e a vida encontram seu verdadeiro significado. Descubra como viver de forma que honre a criação e o Criador, e como, mesmo em um mundo caótico, podemos permanecer "Ainda no Jardim."',
           ],
+          show: true,
         },
         purchase: {
           title: 'ONDE ADQUIRIR O LIVRO?',
@@ -666,6 +760,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               ],
             },
           },
+          show: true,
         },
         characteristics: {
           title: 'CARACTERÍSTICAS',
@@ -703,6 +798,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: 'Português',
             },
           ],
+          show: true,
         },
         about_author: {
           title: 'SOBRE O AUTOR',
@@ -710,6 +806,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          show: true,
         },
         other_publications: {
           title: 'Outras <br/> publicações',
@@ -730,6 +827,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               link: '/uma-nova-historia',
             },
           ],
+          show: true,
         },
         partners: {
           title: 'NOSSOS PARCEIROS',
@@ -742,6 +840,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             'bruno-moreno.jpeg',
             'olympus.svg',
           ],
+          show: true,
         },
         footer: {
           menu: [
@@ -781,6 +880,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             year: '2024',
           },
           developer: 'Desenvolvido por',
+          show: true,
         },
       },
     },

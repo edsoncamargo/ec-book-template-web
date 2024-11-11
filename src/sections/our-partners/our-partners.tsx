@@ -4,8 +4,8 @@ import { CurrentThemeContext } from '../../context';
 import { useContext } from 'react';
 
 export default function OurPartners() {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <section className='pcn-our-partners pcn-container'>

@@ -1,4 +1,4 @@
-import './app.scss';
+import './root.scss';
 import 'aos/dist/aos.css';
 
 import { BookContent, getBookContentById } from './data/books-content';
@@ -39,6 +39,8 @@ function App() {
     initialContent
   );
 
+  const language: 'pt' | 'en' = 'pt';
+
   useEffect(() => {
     AOS.init();
 
@@ -55,8 +57,8 @@ function App() {
   }, [location.pathname]);
 
   const contextValue = useMemo(
-    () => ({ currentTheme, bookContent }),
-    [currentTheme, bookContent]
+    () => ({ currentTheme, bookContent, language }),
+    [currentTheme, bookContent, language]
   );
 
   return (
@@ -66,17 +68,25 @@ function App() {
           title={bookContent?.seo.title ?? ''}
           description={bookContent?.seo.description ?? ''}
           theme={currentTheme}
-          isbn={bookContent?.content.pt.characteristics.details[0].value ?? ''}
+          isbn={
+            bookContent?.content[language]!.characteristics.details[0].value ??
+            ''
+          }
         />
 
         <Suspense fallback={<LoadingSquare />}>
           <Home />
-          <Sinopse />
-          <Buy />
-          <Characteristics />
-          <About />
-          <OurBooks />
-          <OurPartners />
+          {bookContent?.content[language]!.synopsis.show && <Sinopse />}
+          {bookContent?.content[language]!.purchase.show && <Buy />}
+          {bookContent?.content[language]!.characteristics.show && (
+            <Characteristics />
+          )}
+          {bookContent?.content[language]!.about_author.show && <About />}
+          {bookContent?.content[language]!.other_publications.show && (
+            <OurBooks />
+          )}
+          {bookContent?.content[language]!.partners.show && <OurPartners />}
+          {bookContent?.content[language]!.footer.show && <Footer />}
           <Footer />
         </Suspense>
       </CurrentThemeContext.Provider>

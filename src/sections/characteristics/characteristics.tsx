@@ -6,8 +6,8 @@ import { hasNumber } from '../../utils/strings.utils';
 import { useContext } from 'react';
 
 export default function Characteristics() {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <section id='caracteristicas' className='pcn-characteristics pcn-container'>

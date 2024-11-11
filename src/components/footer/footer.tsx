@@ -4,8 +4,9 @@ import { CurrentThemeContext } from '../../context';
 import { useContext } from 'react';
 
 export default function Footer() {
-  const { currentTheme, bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { currentTheme, bookContent, language } =
+    useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <footer className='pcn-footer pcn-uppercase'>

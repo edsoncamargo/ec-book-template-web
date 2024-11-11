@@ -9,8 +9,8 @@ import Line from '../../components/line/line.component';
 import { useContext } from 'react';
 
 export default function OurBooks() {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   const settings: Settings = {
     className: 'center',

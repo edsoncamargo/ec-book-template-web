@@ -4,8 +4,8 @@ import { CurrentThemeContext } from '../../context';
 import { useContext } from 'react';
 
 export default function About() {
-  const { bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { bookContent, language } = useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <section id='sobre-o-autor' className='pcn-about' data-aos='fade-up'>

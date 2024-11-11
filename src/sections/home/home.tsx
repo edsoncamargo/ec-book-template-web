@@ -5,8 +5,9 @@ import Line from '../../components/line/line.component';
 import { useContext } from 'react';
 
 export default function Home() {
-  const { currentTheme, bookContent } = useContext(CurrentThemeContext);
-  const content = bookContent!.content.pt;
+  const { currentTheme, bookContent, language } =
+    useContext(CurrentThemeContext);
+  const content = bookContent!.content[language]!;
 
   return (
     <section id='inicio' data-aos='fade-up'>
