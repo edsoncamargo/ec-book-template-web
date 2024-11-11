@@ -44,7 +44,6 @@ export default function About() {
             alt={content.about_author.signature_alt}
             loading='lazy'
             onLoad={handleImageLoad}
-            data-aos='fade-up'
           />
         </div>
       </div>
