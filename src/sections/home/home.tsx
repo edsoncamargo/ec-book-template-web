@@ -4,7 +4,7 @@ import { CurrentThemeContext } from '../../context';
 import Line from '../../components/line/line.component';
 import { useContext } from 'react';
 
-export function Home() {
+export default function Home() {
   const { currentTheme, bookContent } = useContext(CurrentThemeContext);
   const content = bookContent!.content.pt;
 

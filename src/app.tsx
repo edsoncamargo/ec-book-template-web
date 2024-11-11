@@ -2,21 +2,27 @@ import './app.scss';
 import 'aos/dist/aos.css';
 
 import { BookContent, getBookContentById } from './data/books-content';
-import { useEffect, useMemo, useState } from 'react';
+import React, { Suspense, useEffect, useMemo, useState } from 'react';
 
 import AOS from 'aos';
-import About from './sections/about/about';
-import Buy from './sections/buy/buy';
-import Characteristics from './sections/characteristics/characteristics';
 import { CurrentThemeContext } from './context';
-import Footer from './components/footer/footer';
-import { Home } from './sections/home/home';
-import OurBooks from './sections/our-books/our-books';
-import OurPartners from './sections/our-partners/our-partners';
-import Sinopse from './sections/sinopse/sinopse';
+import LoadingSquare from './components/loadings/loading.square';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
 import { useLocation } from 'react-router-dom';
+
+const Home = React.lazy(() => import('./sections/home/home'));
+const About = React.lazy(() => import('./sections/about/about'));
+const Buy = React.lazy(() => import('./sections/buy/buy'));
+const Characteristics = React.lazy(
+  () => import('./sections/characteristics/characteristics')
+);
+const OurBooks = React.lazy(() => import('./sections/our-books/our-books'));
+const OurPartners = React.lazy(
+  () => import('./sections/our-partners/our-partners')
+);
+const Footer = React.lazy(() => import('./components/footer/footer'));
+const Sinopse = React.lazy(() => import('./sections/sinopse/sinopse'));
 
 function App() {
   const location = useLocation();
@@ -32,8 +38,6 @@ function App() {
     initialContent
   );
 
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     AOS.init();
 
@@ -47,8 +51,6 @@ function App() {
       getBookContentById(updatedThemeKey) ||
         getBookContentById(ThemeKeys.AindaNoJardim)
     );
-
-    setLoading(false);
   }, [location.pathname]);
 
   const contextValue = useMemo(
@@ -56,21 +58,19 @@ function App() {
     [currentTheme, bookContent]
   );
 
-  if (loading) {
-    return <Home />;
-  }
-
   return (
     <main className={`pcn-${currentTheme} pcn-app`}>
       <CurrentThemeContext.Provider value={contextValue}>
-        <Home />
-        <Sinopse />
-        <Buy />
-        <Characteristics />
-        <About />
-        <OurBooks />
-        <OurPartners />
-        <Footer />
+        <Suspense fallback={<LoadingSquare />}>
+          <Home />
+          <Sinopse />
+          <Buy />
+          <Characteristics />
+          <About />
+          <OurBooks />
+          <OurPartners />
+          <Footer />
+        </Suspense>
       </CurrentThemeContext.Provider>
     </main>
   );
