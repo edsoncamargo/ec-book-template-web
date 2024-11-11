@@ -18,10 +18,12 @@ function Banner({ children }: Readonly<BannerProps>) {
 
 type BookProps = {
   currentTheme: string;
+  bookAlt: string;
 };
 
 function Book({
   currentTheme = THEME_MAPPINGS[ThemeKeys.AindaNoJardim],
+  bookAlt,
 }: Readonly<BookProps>) {
   const imageSrc = `/assets/images/books/${currentTheme.replace(
     '-theme',
@@ -30,12 +32,7 @@ function Book({
 
   return (
     <div className='pcn-banner__body__book'>
-      <img
-        alt='Capa do Livro'
-        title='Capa do Livro'
-        src={imageSrc}
-        loading='lazy'
-      />
+      <img alt={bookAlt} title={bookAlt} src={imageSrc} loading='lazy' />
     </div>
   );
 }
@@ -70,11 +67,15 @@ type AboutProps = {
 
 function About({ actor, categories }: Readonly<AboutProps>) {
   return (
-    <p className='pcn-banner__about'>
-      <span>
+    <p
+      className='pcn-banner__about'
+      aria-label={`Por ${actor}, ${categories}.`}
+    >
+      <span aria-hidden='true'>
         Por <strong>{actor}</strong>
       </span>
-      <small>{categories}</small>
+
+      <small aria-hidden='true'>{categories}</small>
     </p>
   );
 }

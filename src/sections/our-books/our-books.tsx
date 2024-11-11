@@ -38,7 +38,9 @@ export default function OurBooks() {
               __html: content.other_publications.title,
             }}
           ></h2>
-          <small className='pcn-font-number'>.</small>
+          <small className='pcn-font-number' aria-hidden='true'>
+            .
+          </small>
         </div>
 
         <div className='pcn-our-books__carousel pcn-our-books__slider'>

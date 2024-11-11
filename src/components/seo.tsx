@@ -7,7 +7,7 @@ interface SEOProps {
   isbn: string;
 }
 
-export default function SEO({
+export default function Seo({
   title,
   description,
   theme,

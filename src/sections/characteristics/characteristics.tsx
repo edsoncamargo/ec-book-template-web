@@ -21,14 +21,15 @@ export default function Characteristics() {
             key={detail.value}
             className='pcn-characteristics__line'
             data-aos='fade-up'
+            aria-label={`${detail.type}: ${detail.value}`}
           >
-            <div className='pcn-characteristics__item'>
+            <div className='pcn-characteristics__item' aria-hidden='true'>
               <Card variant='left'>
                 <p>{detail.type}</p>
               </Card>
             </div>
 
-            <div className='pcn-characteristics__item'>
+            <div className='pcn-characteristics__item' aria-hidden='true'>
               <Card variant='right'>
                 {hasNumber(detail.value) ? (
                   <p className='pcn-font-number'>{detail.value}</p>

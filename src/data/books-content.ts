@@ -13,6 +13,7 @@ export interface BookContent {
       author: string;
       category: string[];
       button: string;
+      book_alt: string;
       synopsis: {
         title: string;
         contents?: Array<string>;
@@ -21,7 +22,7 @@ export interface BookContent {
       purchase: {
         title: string;
         description: string;
-        price: {
+        price?: {
           physical: {
             label: string;
             prefix: string;
@@ -54,6 +55,7 @@ export interface BookContent {
         title: string;
         description: string;
         signature: string;
+        signature_alt: string;
         show?: boolean;
       };
       other_publications: {
@@ -78,6 +80,7 @@ export interface BookContent {
       author: string;
       category: string[];
       button: string;
+      book_alt: string;
       synopsis: {
         title: string;
         contents?: Array<string>;
@@ -86,7 +89,7 @@ export interface BookContent {
       purchase: {
         title: string;
         description: string;
-        price: {
+        price?: {
           physical: {
             label: string;
             prefix: string;
@@ -119,6 +122,7 @@ export interface BookContent {
         title: string;
         description: string;
         signature: string;
+        signature_alt: string;
         show?: boolean;
       };
       other_publications: {
@@ -166,6 +170,7 @@ export const BOOKS_CONTENT = [
           'Autoajuda',
         ],
         button: 'LEIA UM POUCO',
+        book_alt: `"Capa do livro 'Uma Nova História'. O design é minimalista, com letras douradas em fundo branco. A capa traz a frase: 'Plantar uma árvore. Escrever um livro. Ter um filho, mesmo que seja na fé'. Na parte inferior, há a imagem de uma caneta dourada inclinada, simbolizando escrita e criação.`,
         synopsis: {
           title: 'Sinopse',
           contents: [
@@ -254,6 +259,7 @@ export const BOOKS_CONTENT = [
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
           show: true,
         },
         other_publications: {
@@ -328,8 +334,8 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             year: '2024',
           },
           developer: 'Desenvolvido por',
+          show: true,
         },
-        show: true,
       },
     },
   },
@@ -354,6 +360,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           'Ficção',
         ],
         button: 'LEIA UM POUCO',
+        book_alt: `Capa do livro 'Entre Pães e Peixes', de Paulo Cesar Nascimento dos Santos. A imagem mostra uma criança de costas, vestida com uma túnica, segurando uma cesta cheia de pães, em um fundo que lembra um pergaminho antigo. Abaixo do título, está o subtítulo: 'Uma Jornada de Esperança e Fé: Superando as Adversidades da Vida'. A capa tem tons terrosos e um estilo que evoca uma atmosfera histórica e espiritual.`,
         synopsis: {
           title: 'Sinopse',
           contents: [
@@ -439,6 +446,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
           show: true,
         },
         other_publications: {
@@ -513,8 +521,8 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             year: '2024',
           },
           developer: 'Desenvolvido por',
+          show: true,
         },
-        show: true,
       },
     },
   },
@@ -531,6 +539,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
         author: 'Por Paulo Cesar Nascimento dos Santos',
         category: [],
         button: 'LEIA UM POUCO',
+        book_alt: `Capa do livro 'Casa de Papelão: O Último Refúgio', de Paulo Cesar Nascimento dos Santos. A imagem mostra um homem idoso com barba e cabelos desgrenhados, com expressão triste e olhos marejados, cercado por dois gatos em uma cena chuvosa e sombria. O título está escrito em letras grandes e rústicas na parte superior, com o subtítulo abaixo dele.`,
         synopsis: {
           title: 'Sinopse',
           contents: [
@@ -549,33 +558,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
         purchase: {
           title: 'ONDE ADQUIRIR O LIVRO?',
           description:
-            'Disponível em formato físico e eBook, compre agora nas seguintes plataformas:',
-          price: {
-            physical: {
-              label: 'FÍSICO',
-              prefix: 'R$',
-              value: '49',
-              suffix: ',19',
-              platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'americanas', button: 'COMPRAR' },
-                { name: 'ml', button: 'COMPRAR' },
-                { name: 'ev', button: 'COMPRAR' },
-              ],
-            },
-            ebook: {
-              label: 'eBOOK',
-              prefix: 'R$',
-              value: '26',
-              suffix: ',19',
-              platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'gp', button: 'COMPRAR' },
-                { name: 'rakuten', button: 'COMPRAR' },
-                { name: 'apple', button: 'COMPRAR' },
-              ],
-            },
-          },
+            'O lançamento estará disponível em formato físico e eBook no dia 20 de dezembro.',
           show: true,
         },
         characteristics: {
@@ -614,7 +597,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: 'Português',
             },
           ],
-          show: true,
+          show: false,
         },
         about_author: {
           title: 'SOBRE O AUTOR',
@@ -622,6 +605,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
           show: true,
         },
         other_publications: {
@@ -696,8 +680,8 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             year: '2024',
           },
           developer: 'Desenvolvido por',
+          show: true,
         },
-        show: true,
       },
     },
   },
@@ -720,6 +704,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           'Religião',
         ],
         button: 'LEIA UM POUCO',
+        book_alt: `Capa do livro "Ainda no Jardim: Uma Jornada Interior na Presença de Deus" de Paulo Cesar Nascimento dos Santos. A imagem central mostra uma pessoa caminhando em direção a uma grande árvore iluminada, com raízes que se estendem em direção ao solo e galhos que alcançam o céu. A cena transmite uma atmosfera mística e espiritual, com tons suaves e luzes douradas.`,
         synopsis: {
           title: 'Sinopse',
           contents: [
@@ -806,6 +791,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
 Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
           signature: 'subscription.svg',
+          signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
           show: true,
         },
         other_publications: {

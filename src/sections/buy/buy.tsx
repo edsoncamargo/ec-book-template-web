@@ -8,6 +8,11 @@ import { useContext } from 'react';
 export default function Buy() {
   const { bookContent, language } = useContext(CurrentThemeContext);
   const content = bookContent!.content[language]!;
+  const purchase = content.purchase;
+
+  if (purchase) {
+    return;
+  }
 
   return (
     <section id='onde-adquirir-o-livro' className='pcn-buy pcn-container'>
@@ -39,27 +44,32 @@ type PurchaseProps = {
 function Purchase({ type }: Readonly<PurchaseProps>) {
   const { bookContent, language } = useContext(CurrentThemeContext);
   const content = bookContent!.content[language]!;
+  const purchase = content.purchase;
+
+  if (purchase) {
+    return;
+  }
 
   return (
     <div className={`pcn-buy__${type}`}>
       <h3 className='pcn-buy__price pcn-font-subheading' data-aos='fade-up'>
-        {content.purchase.price[type].label}
+        {content.purchase.price![type].label}
 
         <div className='pcn-buy__price__group pcn-font-number'>
           <span className='pcn-buy__price__group__prefix'>
-            {content.purchase.price[type].prefix}
+            {content.purchase.price![type].prefix}
           </span>
           <span className='pcn-buy__price__group__value'>
-            {content.purchase.price[type].value}
+            {content.purchase.price![type].value}
           </span>
           <span className='pcn-buy__price__group__suffix'>
-            {content.purchase.price[type].suffix}
+            {content.purchase.price![type].suffix}
           </span>
         </div>
       </h3>
 
       <div className='pcn-buy__book'>
-        {content.purchase.price[type].platforms.map((book) => (
+        {content.purchase.price![type].platforms.map((book) => (
           <div
             key={`${book.name}-${type}`}
             className='pcn-buy__book__btn-group'

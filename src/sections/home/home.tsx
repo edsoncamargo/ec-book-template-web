@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <section id='inicio' data-aos='fade-up'>
       <Banner>
-        <Banner.Book currentTheme={currentTheme} />
+        <Banner.Book currentTheme={currentTheme} bookAlt={content.book_alt} />
 
         <Banner.Content>
           <Banner.Emphasis>{content.title}</Banner.Emphasis>

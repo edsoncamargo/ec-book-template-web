@@ -87,7 +87,6 @@ function App() {
           )}
           {bookContent?.content[language]!.partners.show && <OurPartners />}
           {bookContent?.content[language]!.footer.show && <Footer />}
-          <Footer />
         </Suspense>
       </CurrentThemeContext.Provider>
     </main>
