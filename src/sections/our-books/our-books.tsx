@@ -37,6 +37,7 @@ export default function OurBooks() {
             dangerouslySetInnerHTML={{
               __html: content.other_publications.title,
             }}
+            aria-label={content.other_publications.title.replace('<br/>', '')}
           ></h2>
           <small className='pcn-font-number' aria-hidden='true'>
             .

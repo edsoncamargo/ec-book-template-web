@@ -158,7 +158,7 @@ export const BOOKS_CONTENT = [
       pt: {
         title:
           'Plantar uma árvore, escrever um livro, ter um filho, mesmo que seja na fé.',
-        author: 'Por Paulo Cesar Nascimento dos Santos',
+        author: 'Paulo Cesar Nascimento dos Santos',
         category: [
           'Biografia e Autobiografia',
           'Autoria',
@@ -350,7 +350,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
       pt: {
         title:
           'Uma jornada de <strong>esperança</strong> e <strong>fé</strong>.',
-        author: 'Por Paulo Cesar Nascimento dos Santos',
+        author: 'Paulo Cesar Nascimento dos Santos',
         category: [
           'Inspiracional & Religioso',
           'Cristã Contemporânea',
@@ -536,7 +536,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
     content: {
       pt: {
         title: 'LANÇAMENTO EM <strong>BREVE</strong>.',
-        author: 'Por Paulo Cesar Nascimento dos Santos',
+        author: 'Paulo Cesar Nascimento dos Santos',
         category: [],
         button: 'LEIA UM POUCO',
         book_alt: `Capa do livro 'Casa de Papelão: O Último Refúgio', de Paulo Cesar Nascimento dos Santos. A imagem mostra um homem idoso com barba e cabelos desgrenhados, com expressão triste e olhos marejados, cercado por dois gatos em uma cena chuvosa e sombria. O título está escrito em letras grandes e rústicas na parte superior, com o subtítulo abaixo dele.`,
@@ -695,7 +695,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
     content: {
       pt: {
         title: 'Uma jornada interior na presença de <strong>Deus</strong>.',
-        author: 'Por Paulo Cesar Nascimento dos Santos',
+        author: 'Paulo Cesar Nascimento dos Santos',
         category: [
           'Religião',
           'Espiritualidade',

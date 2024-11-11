@@ -67,15 +67,12 @@ type AboutProps = {
 
 function About({ actor, categories }: Readonly<AboutProps>) {
   return (
-    <p
-      className='pcn-banner__about'
-      aria-label={`Por ${actor}, ${categories}.`}
-    >
-      <span aria-hidden='true'>
+    <p className='pcn-banner__about'>
+      <span>
         Por <strong>{actor}</strong>
       </span>
 
-      <small aria-hidden='true'>{categories}</small>
+      <small>{categories}</small>
     </p>
   );
 }
