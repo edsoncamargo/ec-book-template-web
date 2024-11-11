@@ -1,8 +1,9 @@
 import './characteristics.scss';
 
+import { hasNumber, replaceAllTags } from '../../utils/strings.utils';
+
 import Card from '../../components/card/card.component';
 import { CurrentThemeContext } from '../../context';
-import { hasNumber } from '../../utils/strings.utils';
 import { useContext } from 'react';
 
 export default function Characteristics() {
@@ -14,17 +15,14 @@ export default function Characteristics() {
       <h2
         className='pcn-font-heading pcn-uppercase'
         data-aos='fade-up'
-        aria-label={content.characteristics.title.replace(
-          /<\/?[^>]+(>|$)/g,
-          ''
-        )}
+        aria-label={replaceAllTags(content.characteristics.title)}
       >
         {content.characteristics.title}
       </h2>
 
-      <ul className='pcn-characteristics__items pcn-uppercase'>
+      <div className='pcn-characteristics__items pcn-uppercase'>
         {content.characteristics.details.map((detail) => (
-          <li
+          <div
             key={detail.value}
             className='pcn-characteristics__line'
             data-aos='fade-up'
@@ -46,9 +44,9 @@ export default function Characteristics() {
                 )}
               </Card>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }

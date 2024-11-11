@@ -6,6 +6,7 @@ import Slider, { Settings } from 'react-slick';
 
 import { CurrentThemeContext } from '../../context';
 import Line from '../../components/line/line.component';
+import { replaceAllTags } from '../../utils/strings.utils';
 import { useContext } from 'react';
 
 export default function OurBooks() {
@@ -37,7 +38,7 @@ export default function OurBooks() {
             dangerouslySetInnerHTML={{
               __html: content.other_publications.title,
             }}
-            aria-label={content.other_publications.title.replace('<br/>', '')}
+            aria-label={replaceAllTags(content.other_publications.title)}
           ></h2>
           <small className='pcn-font-number' aria-hidden='true'>
             .

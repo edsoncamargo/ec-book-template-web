@@ -51,12 +51,12 @@ type EmphasisProps = {
 
 function Emphasis({ children }: Readonly<EmphasisProps>) {
   return (
-    <p
+    <h1
       className='pcn-banner__title pcn-font-emphasis'
       dangerouslySetInnerHTML={{
         __html: typeof children === 'string' ? children : '',
       }}
-    ></p>
+    ></h1>
   );
 }
 
