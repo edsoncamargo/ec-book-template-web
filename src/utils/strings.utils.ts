@@ -3,5 +3,5 @@ export const hasNumber = function (str: string) {
 };
 
 export const replaceAllTags = function (str: string) {
-  return str.replace(/<\/?[^>]+(>|$)/g, '');
+  return str.replace(/<\/?[^>]+(>|$)/g, '').replace(/\s+/g, ' ');
 };
