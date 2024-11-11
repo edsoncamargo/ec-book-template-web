@@ -15,9 +15,9 @@ export default function Characteristics() {
         {content.characteristics.title}
       </h2>
 
-      <div className='pcn-characteristics__items pcn-uppercase'>
+      <ul className='pcn-characteristics__items pcn-uppercase'>
         {content.characteristics.details.map((detail) => (
-          <div
+          <li
             key={detail.value}
             className='pcn-characteristics__line'
             data-aos='fade-up'
@@ -38,9 +38,9 @@ export default function Characteristics() {
                 )}
               </Card>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
