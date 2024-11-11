@@ -24,7 +24,11 @@ export default function OurPartners() {
             data-aos='flip-left'
             data-aos-delay={30 * index}
           >
-            <img src={`/assets/images/partners/${logo}`} alt={logo}></img>
+            <img
+              alt={logo}
+              src={`/assets/images/partners/${logo}`}
+              loading='lazy'
+            ></img>
           </div>
         ))}
       </div>

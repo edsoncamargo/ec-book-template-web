@@ -23,13 +23,19 @@ type BookProps = {
 function Book({
   currentTheme = THEME_MAPPINGS[ThemeKeys.AindaNoJardim],
 }: Readonly<BookProps>) {
+  const imageSrc = `/assets/images/books/${currentTheme.replace(
+    '-theme',
+    ''
+  )}.png`;
+
   return (
     <div className='pcn-banner__body__book'>
       <img
         alt='Capa do Livro'
         title='Capa do Livro'
-        src={`/assets/images/books/${currentTheme.replace('-theme', '')}.png`}
-      ></img>
+        src={imageSrc}
+        loading='lazy'
+      />
     </div>
   );
 }

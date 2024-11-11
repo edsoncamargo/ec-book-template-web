@@ -32,6 +32,8 @@ function App() {
     initialContent
   );
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init();
 
@@ -45,12 +47,18 @@ function App() {
       getBookContentById(updatedThemeKey) ||
         getBookContentById(ThemeKeys.AindaNoJardim)
     );
+
+    setLoading(false);
   }, [location.pathname]);
 
   const contextValue = useMemo(
     () => ({ currentTheme, bookContent }),
     [currentTheme, bookContent]
   );
+
+  if (loading) {
+    return <Home />;
+  }
 
   return (
     <main className={`pcn-${currentTheme} pcn-app`}>

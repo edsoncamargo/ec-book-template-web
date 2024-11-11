@@ -68,6 +68,7 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
             <img
               alt={book.name}
               src={`/assets/images/logos/${book.name}.png`}
+              loading='lazy'
             ></img>
 
             <Button

@@ -52,8 +52,9 @@ export default function OurBooks() {
               >
                 <a href={book.link} target='_blank'>
                   <img
-                    src={`/assets/images/covers/${book.cover_image}`}
                     alt={book.title}
+                    src={`/assets/images/covers/${book.cover_image}`}
+                    loading='lazy'
                   />
                 </a>
               </div>

@@ -13,11 +13,12 @@ export default function Footer() {
         <div className='pcn-footer__top'>
           <div className='pcn-footer__cover'>
             <img
+              alt=''
               src={`/assets/images/covers/${currentTheme.replace(
                 '-theme',
                 ''
               )}.jpeg`}
-              alt=''
+              loading='lazy'
             />
           </div>
 

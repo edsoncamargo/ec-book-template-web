@@ -27,6 +27,7 @@ export default function About() {
             className='pcn-about__subscription'
             src={`/assets/images/subscriptions/${content.about_author.signature}`}
             alt='Assinatura'
+            loading='lazy'
             data-aos='fade-up'
           />
         </div>
