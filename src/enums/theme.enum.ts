@@ -3,4 +3,5 @@ export enum ThemeKeys {
   PaesEPeixes = 'paes-e-peixes',
   CasaDePapelao = 'casa-de-papelao',
   AindaNoJardim = 'ainda-no-jardim',
+  AsIncriveisAventurasDoCaoCebolaEAGatinhaMica = 'as-incriveis-aventuras-do-cao-cebola-e-a-gatinha-mica',
 }

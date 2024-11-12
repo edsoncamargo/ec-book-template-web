@@ -2,16 +2,16 @@
 
 $colors: (
   primary: (
-    // #D1B99A
-    209,
-    185,
-    154,
+    // #ffcc33
+    255,
+    204,
+    42,
   ),
   secondary: (
-    //  #63513B
-    99,
-    81,
-    59,
+    //  #393336
+    57,
+    51,
+    54,
   ),
   on-bg: (
     // #000000
@@ -21,6 +21,6 @@ $colors: (
   ),
 );
 
-.the-amazing-adventures-of-dog-onion-and-kitty-mica-theme {
+.pcn-the-amazing-adventures-of-dog-onion-and-kitty-mica-theme {
   @include colors.generate-vars($colors);
 }

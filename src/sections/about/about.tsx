@@ -36,15 +36,17 @@ export default function About() {
             {content.about_author.description}
           </p>
 
-          <img
-            className={`pcn-about__subscription ${
-              imageLoaded ? 'pcn-about__subscription--loaded' : ''
-            }`}
-            src={`/assets/images/subscriptions/${content.about_author.signature}`}
-            alt={content.about_author.signature_alt}
-            loading='lazy'
-            onLoad={handleImageLoad}
-          />
+          <figure className='pcn-font' data-aos='fade-up'>
+            <img
+              className={`pcn-about__subscription ${
+                imageLoaded ? 'pcn-about__subscription--loaded' : ''
+              }`}
+              src={`/assets/images/subscriptions/${content.about_author.signature}`}
+              alt={content.about_author.signature_alt}
+              loading='lazy'
+              onLoad={handleImageLoad}
+            />
+          </figure>
         </div>
       </div>
     </section>

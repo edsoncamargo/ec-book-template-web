@@ -5,4 +5,6 @@ export const THEME_MAPPINGS: Record<ThemeKeys, string> = {
   [ThemeKeys.PaesEPeixes]: 'bread-and-fish-theme',
   [ThemeKeys.CasaDePapelao]: 'card-board-house-theme',
   [ThemeKeys.AindaNoJardim]: 'still-in-the-garden-theme',
+  [ThemeKeys.AsIncriveisAventurasDoCaoCebolaEAGatinhaMica]:
+    'the-amazing-adventures-of-dog-onion-and-kitty-mica-theme',
 };
