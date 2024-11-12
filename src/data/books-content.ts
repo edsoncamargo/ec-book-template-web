@@ -990,6 +990,11 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               cover_image: 'a-new-story.jpeg',
               link: '/uma-nova-historia',
             },
+            {
+              title: 'Casa de Papelão',
+              cover_image: 'card-board-house.jpeg',
+              link: '/casa-de-papelao',
+            },
           ],
           show: true,
         },
