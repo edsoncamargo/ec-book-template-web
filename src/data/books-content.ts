@@ -908,6 +908,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
         author: 'Paulo Cesar Nascimento dos Santos',
         category: ['Infantil'],
         button: 'LEIA UM POUCO',
+        book_alt: `Capa do livro 'As Incríveis Aventuras do Cão Cebola e a Gatinha Mica', de Paulo Cesar Nascimento dos Santos. A imagem mostra um cachorrinho marrom com expressão alegre, ao lado de uma gatinha cinza com olhos brilhantes e curiosos, ambos sentados lado a lado sobre um fundo colorido com elementos vibrantes. O título está em letras divertidas no topo da capa amarela, decorado com pequenas pegadas de patinhas ao redor.`,
         synopsis: {
           title: 'Sinopse',
           contents: [
