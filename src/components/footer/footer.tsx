@@ -1,5 +1,7 @@
 import './footer.scss';
 
+import { FaFacebook, FaInstagram } from 'react-icons/fa6';
+
 import { CurrentThemeContext } from '../../context';
 import { useContext } from 'react';
 
@@ -37,6 +39,22 @@ export default function Footer() {
         </div>
 
         <div className='pcn-footer__middle'>
+          <div className='pcn-footer__middle__medias'>
+            <a
+              href='https://www.instagram.com/advogadopaulocesar?igsh=MXR5ZmVsc2NwN216bw=='
+              target='_blank'
+            >
+              <FaInstagram className='pcn-i' />
+            </a>
+
+            <a
+              href='https://www.facebook.com/profile.php?id=100008682103402&mibextid=LQQJ4d'
+              target='_blank'
+            >
+              <FaFacebook className='pcn-i' />
+            </a>
+          </div>
+
           <p
             aria-label={`${content.footer.rights.label} ${content.footer.rights.year}`}
             role='text'

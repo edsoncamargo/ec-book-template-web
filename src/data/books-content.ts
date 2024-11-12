@@ -31,6 +31,7 @@ export interface BookContent {
             platforms: {
               name: string;
               button: string;
+              link: string;
             }[];
           };
           ebook: {
@@ -191,25 +192,57 @@ export const BOOKS_CONTENT = [
             physical: {
               label: 'FÍSICO',
               prefix: 'R$',
-              value: '49',
-              suffix: ',19',
+              value: '41',
+              suffix: ',60',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'americanas', button: 'COMPRAR' },
-                { name: 'ml', button: 'COMPRAR' },
-                { name: 'ev', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9788567403069',
+                },
+                {
+                  name: 'americanas',
+                  button: 'COMPRAR',
+                  link: 'https://www.americanas.com.br/busca/9788567403069',
+                },
+                {
+                  name: 'ml',
+                  button: 'COMPRAR',
+                  link: 'https://lista.mercadolivre.com.br/9788567403069',
+                },
+                {
+                  name: 'ev',
+                  button: 'COMPRAR',
+                  link: 'https://www.estantevirtual.com.br/busca?utf8=%E2%9C%93&q=Uma%20Nova%20Hist%C3%B3ria%20Paulo%20Cesar%20Nascimento%20dos%20Santos',
+                },
               ],
             },
             ebook: {
               label: 'eBOOK',
               prefix: 'R$',
-              value: '26',
-              suffix: ',19',
+              value: '23',
+              suffix: ',86',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'gp', button: 'COMPRAR' },
-                { name: 'rakuten', button: 'COMPRAR' },
-                { name: 'apple', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9788567403069',
+                },
+                {
+                  name: 'gp',
+                  button: 'COMPRAR',
+                  link: 'https://play.google.com/store/search?q=9788567403069&c=apps',
+                },
+                {
+                  name: 'rakuten',
+                  button: 'COMPRAR',
+                  link: 'https://www.kobo.com/br/pt/search?query=9788567403069',
+                },
+                {
+                  name: 'apple',
+                  button: 'COMPRAR',
+                  link: 'https://clubedeautores.com.br/livro/uma-nova-historia-3#',
+                },
               ],
             },
           },
@@ -384,13 +417,29 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             physical: {
               label: 'FÍSICO',
               prefix: 'R$',
-              value: '49',
-              suffix: ',19',
+              value: '48',
+              suffix: ',32',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'americanas', button: 'COMPRAR' },
-                { name: 'ml', button: 'COMPRAR' },
-                { name: 'ev', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9786501140810',
+                },
+                {
+                  name: 'americanas',
+                  button: 'COMPRAR',
+                  link: 'https://www.americanas.com.br/busca/9786501140810',
+                },
+                {
+                  name: 'ml',
+                  button: 'COMPRAR',
+                  link: 'https://lista.mercadolivre.com.br/9786501140810',
+                },
+                {
+                  name: 'ev',
+                  button: 'COMPRAR',
+                  link: 'https://www.estantevirtual.com.br/busca?utf8=%E2%9C%93&q=Entre%20P%C3%A3es%20e%20Peixes%20Paulo%20Cesar%20Nascimento%20dos%20Santos',
+                },
               ],
             },
             ebook: {
@@ -399,10 +448,26 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: '26',
               suffix: ',19',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'gp', button: 'COMPRAR' },
-                { name: 'rakuten', button: 'COMPRAR' },
-                { name: 'apple', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9786501140810',
+                },
+                {
+                  name: 'gp',
+                  button: 'COMPRAR',
+                  link: 'https://play.google.com/store/search?q=9786501140810&c=apps',
+                },
+                {
+                  name: 'rakuten',
+                  button: 'COMPRAR',
+                  link: 'https://www.kobo.com/br/pt/search?query=9786501140810',
+                },
+                {
+                  name: 'apple',
+                  button: 'COMPRAR',
+                  link: 'https://clubedeautores.com.br/livro/entre-paes-e-peixes#',
+                },
               ],
             },
           },
@@ -579,10 +644,26 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: '49',
               suffix: ',19',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'americanas', button: 'COMPRAR' },
-                { name: 'ml', button: 'COMPRAR' },
-                { name: 'ev', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9786501130637',
+                },
+                {
+                  name: 'americanas',
+                  button: 'COMPRAR',
+                  link: 'https://clubedeautores.com.br/livro/ainda-no-jardim',
+                },
+                {
+                  name: 'ml',
+                  button: 'COMPRAR',
+                  link: 'https://lista.mercadolivre.com.br/9786501130637',
+                },
+                {
+                  name: 'ev',
+                  button: 'COMPRAR',
+                  link: 'https://www.estantevirtual.com.br/busca?utf8=%E2%9C%93&q=Ainda%20no%20Jardim%20Paulo%20Cesar%20Nascimento%20dos%20Santos',
+                },
               ],
             },
             ebook: {
@@ -591,10 +672,26 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
               value: '26',
               suffix: ',19',
               platforms: [
-                { name: 'amazon', button: 'COMPRAR' },
-                { name: 'gp', button: 'COMPRAR' },
-                { name: 'rakuten', button: 'COMPRAR' },
-                { name: 'apple', button: 'COMPRAR' },
+                {
+                  name: 'amazon',
+                  button: 'COMPRAR',
+                  link: 'https://www.amazon.com.br/s?k=9786501130637',
+                },
+                {
+                  name: 'gp',
+                  button: 'COMPRAR',
+                  link: 'https://play.google.com/store/search?q=9786501130637&c=apps',
+                },
+                {
+                  name: 'rakuten',
+                  button: 'COMPRAR',
+                  link: 'https://www.kobo.com/br/pt/search?query=9786501130637',
+                },
+                {
+                  name: 'apple',
+                  button: 'COMPRAR',
+                  link: 'https://clubedeautores.com.br/livro/ainda-no-jardim#',
+                },
               ],
             },
           },

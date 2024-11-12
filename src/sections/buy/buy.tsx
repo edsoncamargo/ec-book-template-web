@@ -8,11 +8,6 @@ import { useContext } from 'react';
 export default function Buy() {
   const { bookContent, language } = useContext(CurrentThemeContext);
   const content = bookContent!.content[language]!;
-  const purchase = content.purchase;
-
-  if (purchase) {
-    return;
-  }
 
   return (
     <section id='onde-adquirir-o-livro' className='pcn-buy pcn-container'>
@@ -46,7 +41,7 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
   const content = bookContent!.content[language]!;
   const purchase = content.purchase;
 
-  if (purchase) {
+  if (!purchase.price) {
     return;
   }
 
