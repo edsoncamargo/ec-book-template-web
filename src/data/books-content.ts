@@ -739,7 +739,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
     },
     content: {
       pt: {
-        title: 'LANÇAMENTO EM <strong>BREVE</strong>.',
+        title: 'Pré <br/> lançamento.',
         author: 'Paulo Cesar Nascimento dos Santos',
         category: [],
         button: 'LEIA UM POUCO',
@@ -904,7 +904,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
     },
     content: {
       pt: {
-        title: 'LANÇAMENTO EM <strong>BREVE</strong>.',
+        title: 'Pré- <br/> <strong>lançamento</strong>.',
         author: 'Paulo Cesar Nascimento dos Santos',
         category: ['Infantil'],
         button: 'LEIA UM POUCO',
