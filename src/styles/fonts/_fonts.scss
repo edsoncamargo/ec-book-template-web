@@ -16,7 +16,8 @@ html {
   color: rgb(var(--pcn-color-secondary));
 
   @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    font-size: var(--pcn-font-size-xxxl);
+    font-size: var(--pcn-font-size-xxl);
+    line-height: 48px;
   }
 }
 
