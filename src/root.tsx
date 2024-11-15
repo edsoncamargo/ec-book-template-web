@@ -7,10 +7,8 @@ import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import AOS from 'aos';
 import { CurrentThemeContext } from './context';
 import LoadingSquare from './components/loadings/loading.square';
-import Seo from './components/seo';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
-import { useLocation } from 'react-router-dom';
 
 const Home = React.lazy(() => import('./sections/home/home'));
 const About = React.lazy(() => import('./sections/about/about'));
@@ -26,9 +24,7 @@ const Footer = React.lazy(() => import('./components/footer/footer'));
 const Sinopse = React.lazy(() => import('./sections/sinopse/sinopse'));
 
 function App() {
-  const location = useLocation();
-
-  const themeKey = location.pathname?.split('/')[1]?.trim() as ThemeKeys;
+  const themeKey = import.meta.env.VITE_TEMPLATE_NAME as ThemeKeys;
   const initialTheme =
     THEME_MAPPINGS[themeKey] || THEME_MAPPINGS[ThemeKeys.AindaNoJardim];
   const initialContent =
@@ -44,9 +40,8 @@ function App() {
   useEffect(() => {
     AOS.init();
 
-    const updatedThemeKey = location.pathname
-      ?.split('/')[1]
-      ?.trim() as ThemeKeys;
+    const updatedThemeKey =
+      import.meta.env.VITE_TEMPLATE_NAME?.trim() as ThemeKeys;
     setCurrentTheme(
       THEME_MAPPINGS[updatedThemeKey] || THEME_MAPPINGS[ThemeKeys.AindaNoJardim]
     );
@@ -54,7 +49,7 @@ function App() {
       getBookContentById(updatedThemeKey) ||
         getBookContentById(ThemeKeys.AindaNoJardim)
     );
-  }, [location.pathname]);
+  }, [themeKey]);
 
   const contextValue = useMemo(
     () => ({ currentTheme, bookContent, language }),
@@ -64,16 +59,6 @@ function App() {
   return (
     <main className={`pcn-${currentTheme} pcn-app`}>
       <CurrentThemeContext.Provider value={contextValue}>
-        <Seo
-          title={bookContent?.seo.title ?? ''}
-          description={bookContent?.seo.description ?? ''}
-          theme={currentTheme}
-          isbn={
-            bookContent?.content[language]!.characteristics.details[0].value ??
-            ''
-          }
-        />
-
         <Suspense fallback={<LoadingSquare />}>
           <Home />
           {bookContent?.content[language]!.synopsis.show && <Sinopse />}
