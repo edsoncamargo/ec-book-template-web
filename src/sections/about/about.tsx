@@ -9,12 +9,21 @@ export default function About() {
   const content = bookContent!.content[language]!;
 
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageAuthorLoaded, setImageAuthorLoaded] = useState(false);
+
+  const handleImageAuthorLoad = () => {
+    setImageAuthorLoaded(true);
+  };
 
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
 
   useEffect(() => {
+    const imageAuthor = document.querySelector('.pcn-about__subscription');
+    if (imageAuthor instanceof HTMLImageElement && imageAuthor?.complete)
+      setImageLoaded(true);
+
     const image = document.querySelector('.pcn-about__subscription');
     if (image instanceof HTMLImageElement && image?.complete)
       setImageLoaded(true);
@@ -24,7 +33,17 @@ export default function About() {
     <section id='sobre-o-autor' className='pcn-about' data-aos='fade-up'>
       <div className='pcn-about__body'>
         <div className='pcn-about__author'>
-          <em className='pcn-about__author__image'></em>
+          <figure className='pcn-font'>
+            <img
+              className={`pcn-about__author__image ${
+                imageAuthorLoaded ? 'pcn-about__author__image--loaded' : ''
+              }`}
+              src='/assets/images/author.jpeg'
+              alt={content.about_author.signature_alt}
+              loading='lazy'
+              onLoad={handleImageAuthorLoad}
+            />
+          </figure>
         </div>
 
         <div className='pcn-about__caption'>

@@ -24,10 +24,13 @@
         min-height: 400px;
         height: 100%;
         width: 100%;
-        background-size: cover;
-        background-image: url('/assets/images/author.jpeg');
-        background-repeat: no-repeat;
-        background-position: center center;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        &--loaded {
+          opacity: 1;
+        }
       }
     }
 
