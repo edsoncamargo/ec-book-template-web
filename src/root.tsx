@@ -67,11 +67,7 @@ function App() {
           {bookContent?.content[language]!.characteristics.show && (
             <Characteristics />
           )}
-          {bookContent?.content[language]!.about_author.show && (
-            <div>
-              <About />
-            </div>
-          )}
+          {bookContent?.content[language]!.about_author.show && <About />}
           {bookContent?.content[language]!.other_publications.show && (
             <OurBooks />
           )}
