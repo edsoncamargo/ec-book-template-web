@@ -8,8 +8,8 @@ export default function About() {
   const { bookContent, language } = useContext(CurrentThemeContext);
   const content = bookContent!.content[language]!;
 
-  const [imageLoaded, setImageLoaded] = useState(false);
   const [imageAuthorLoaded, setImageAuthorLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleImageAuthorLoad = () => {
     setImageAuthorLoaded(true);
