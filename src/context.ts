@@ -1,7 +1,7 @@
-import { BookContent, getBookContentById } from './data/books-content';
-
+import { BookContent } from './enums/book-content.enum';
 import { ThemeKeys } from './enums/theme.enum';
 import { createContext } from 'react';
+import { getBookContentById } from './data/books-content';
 
 interface ThemeContextType {
   currentTheme: string;

@@ -1,14 +1,15 @@
 import './root.scss';
 import 'aos/dist/aos.css';
 
-import { BookContent, getBookContentById } from './data/books-content';
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
 
 import AOS from 'aos';
+import { BookContent } from './enums/book-content.enum';
 import { CurrentThemeContext } from './context';
 import LoadingSquare from './components/loadings/loading.square';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
+import { getBookContentById } from './data/books-content';
 
 const Home = React.lazy(() => import('./sections/home/home'));
 const About = React.lazy(() => import('./sections/about/about'));
