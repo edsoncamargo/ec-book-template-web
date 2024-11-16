@@ -41,7 +41,7 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
   const content = bookContent!.content[language]!;
   const purchase = content.purchase;
 
-  if (!purchase.price) {
+  if (!purchase.price?.[type]) {
     return;
   }
 
@@ -64,7 +64,7 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
       </h3>
 
       <div className='pcn-buy__book'>
-        {content.purchase.price![type].platforms.map((book) => (
+        {content.purchase.price![type].platforms?.map((book) => (
           <div
             key={`${book.name}-${type}`}
             className='pcn-buy__book__btn-group'
@@ -76,22 +76,24 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
               loading='lazy'
             ></img>
 
-            <Button
-              variant={
-                book.name as
-                  | 'cta'
-                  | 'amazon'
-                  | 'americanas'
-                  | 'ml'
-                  | 'ev'
-                  | 'gp'
-                  | 'rakuten'
-                  | 'apple'
-                  | undefined
-              }
-            >
-              {book.button}
-            </Button>
+            <a href={book.link} target='_blank'>
+              <Button
+                variant={
+                  book.name as
+                    | 'cta'
+                    | 'amazon'
+                    | 'americanas'
+                    | 'ml'
+                    | 'ev'
+                    | 'gp'
+                    | 'rakuten'
+                    | 'apple'
+                    | undefined
+                }
+              >
+                {book.button}
+              </Button>
+            </a>
           </div>
         ))}
       </div>

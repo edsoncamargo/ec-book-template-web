@@ -26,7 +26,14 @@ export default function Home() {
             }
           ></Banner.About>
 
-          <Button>{content.button}</Button>
+          <a
+            href={`/${content.sneak_peak}`}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={!content.sneak_peak ? 'pcn-disabled' : ''}
+          >
+            <Button>{content.button}</Button>
+          </a>
         </Banner.Content>
       </Banner>
       <Line />

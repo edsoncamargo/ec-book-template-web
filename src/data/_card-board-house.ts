@@ -30,7 +30,22 @@ export const CARD_BOARD_HOUSE = {
       purchase: {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
-          'O lançamento estará disponível em formato físico e eBook no dia 20 de dezembro.',
+          'O lançamento estará disponível em formato físico e digital no dia 21 de novembro.',
+        price: {
+          ebook: {
+            label: 'eBOOK',
+            prefix: 'R$',
+            value: '1',
+            suffix: ',99',
+            platforms: [
+              {
+                name: 'amazon',
+                button: 'COMPRAR',
+                link: 'https://www.amazon.com.br/dp/B0DMX1761B?ref=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&starsLeft=1&skipTwisterOG=1&bestFormat=true',
+              },
+            ],
+          },
+        },
         show: true,
       },
       characteristics: {
@@ -110,6 +125,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
       partners: {
         title: 'NOSSOS PARCEIROS',
         logos: [
+          'eleve.png',
           'brasil-formulas.jpeg',
           'aa.jpeg',
           'iatd.jpeg',

@@ -11,6 +11,7 @@ export const THE_AMAZING_ADVENTURES_OF_DOG_ONION_AND_KITTY_MICA = {
       author: 'Paulo Cesar Nascimento dos Santos',
       category: ['Infantil'],
       button: 'LEIA UM POUCO',
+      sneak_peak: 'the-amazing-adventures-of-dog-onion-and-kitty-mica.pdf',
       book_alt: `Capa do livro 'As Incríveis Aventuras do Cão Cebola e a Gatinha Mica', de Paulo Cesar Nascimento dos Santos. A imagem mostra um cachorrinho marrom com expressão alegre, ao lado de uma gatinha cinza com olhos brilhantes e curiosos, ambos sentados lado a lado sobre um fundo colorido com elementos vibrantes. O título está em letras divertidas no topo da capa amarela, decorado com pequenas pegadas de patinhas ao redor.`,
       synopsis: {
         title: 'Sinopse',
@@ -25,7 +26,22 @@ Cão Cebola vivia com seus pais amorosos, Lili e Bob, que sempre o incentivaram 
       purchase: {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
-          'O lançamento estará disponível em formato físico e eBook no dia 20 de dezembro.',
+          'O lançamento estará disponível em formato físico e digital no dia 21 de novembro.',
+        price: {
+          ebook: {
+            label: 'eBOOK',
+            prefix: 'R$',
+            value: '1',
+            suffix: ',99',
+            platforms: [
+              {
+                name: 'amazon',
+                button: 'COMPRAR',
+                link: 'https://www.amazon.com.br/dp/B0DMWX9FNC?ref=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&starsLeft=1&skipTwisterOG=1&bestFormat=true',
+              },
+            ],
+          },
+        },
         show: true,
       },
       characteristics: {
@@ -104,6 +120,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
       partners: {
         title: 'NOSSOS PARCEIROS',
         logos: [
+          'eleve.png',
           'brasil-formulas.jpeg',
           'aa.jpeg',
           'iatd.jpeg',

@@ -107,7 +107,7 @@ button {
 
 a {
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -156,4 +156,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.pcn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }

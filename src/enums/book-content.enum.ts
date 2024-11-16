@@ -11,6 +11,7 @@ export interface BookContent {
       author: string;
       category: string[];
       button: string;
+      sneak_peak?: string;
       book_alt: string;
       synopsis: {
         title: string;
@@ -26,10 +27,10 @@ export interface BookContent {
             prefix: string;
             value: string;
             suffix: string;
-            platforms: {
+            platforms?: {
               name: string;
               button: string;
-              link: string;
+              link?: string;
             }[];
           };
           ebook: {
@@ -37,9 +38,10 @@ export interface BookContent {
             prefix: string;
             value: string;
             suffix: string;
-            platforms: {
+            platforms?: {
               name: string;
               button: string;
+              link?: string;
             }[];
           };
         };
@@ -79,6 +81,7 @@ export interface BookContent {
       author: string;
       category: string[];
       button: string;
+      sneak_peak?: string;
       book_alt: string;
       synopsis: {
         title: string;
@@ -97,6 +100,7 @@ export interface BookContent {
             platforms: {
               name: string;
               button: string;
+              link?: string;
             }[];
           };
           ebook: {
@@ -107,6 +111,7 @@ export interface BookContent {
             platforms: {
               name: string;
               button: string;
+              link?: string;
             }[];
           };
         };
