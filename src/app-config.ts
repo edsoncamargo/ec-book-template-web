@@ -11,7 +11,7 @@ export const appConfig = () => {
   return {
     title: currentContent!.seo.title,
     description: currentContent!.seo.description,
-    image: `/assets/images/covers/${currentTheme.replace('-theme', '')}.png`,
+    image: `/assets/images/covers/${currentTheme.replace('-theme', '')}.jpeg`,
     favicon: `/assets/images/favicons/${currentTheme.replace(
       '-theme',
       ''
