@@ -42,29 +42,29 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
   const purchase = content.purchase;
 
   if (!purchase.price?.[type]) {
-    return;
+    return null;
   }
 
   return (
     <div className={`pcn-buy__${type}`}>
       <h3 className='pcn-buy__price pcn-font-subheading' data-aos='fade-up'>
-        {content.purchase.price![type].label}
+        {purchase.price[type].label}
 
         <div className='pcn-buy__price__group pcn-font-number'>
           <span className='pcn-buy__price__group__prefix'>
-            {content.purchase.price![type].prefix}
+            {purchase.price[type].prefix}
           </span>
           <span className='pcn-buy__price__group__value'>
-            {content.purchase.price![type].value}
+            {purchase.price[type].value}
           </span>
           <span className='pcn-buy__price__group__suffix'>
-            {content.purchase.price![type].suffix}
+            {purchase.price[type].suffix}
           </span>
         </div>
       </h3>
 
       <div className='pcn-buy__book'>
-        {content.purchase.price![type].platforms?.map((book) => (
+        {purchase.price[type].platforms?.map((book) => (
           <div
             key={`${book.name}-${type}`}
             className='pcn-buy__book__btn-group'
@@ -74,7 +74,7 @@ function Purchase({ type }: Readonly<PurchaseProps>) {
               alt={book.name}
               src={`/assets/images/logos/${book.name}.png`}
               loading='lazy'
-            ></img>
+            />
 
             <a href={book.link} target='_blank'>
               <Button
