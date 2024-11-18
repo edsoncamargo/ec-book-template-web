@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
 
 import AOS from 'aos';
+import { Analytics } from '@vercel/analytics/react';
 import { BookContent } from './enums/book-content.enum';
 import { CurrentThemeContext } from './context';
 import LoadingSquare from './components/loadings/loading.square';
@@ -75,6 +76,8 @@ function App() {
           {bookContent?.content[language]!.footer.show && <Footer />}
         </Suspense>
       </CurrentThemeContext.Provider>
+
+      <Analytics />
     </main>
   );
 }
