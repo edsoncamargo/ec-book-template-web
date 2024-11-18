@@ -145,7 +145,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           {
             title: 'Casa de Papelão',
             cover_image: 'card-board-house.jpeg',
-            link: '/casa-de-papelao',
+            link: 'https://www.projetocasadepapelao.com.br/',
           },
           {
             title: 'Ainda No Jardim',
@@ -161,7 +161,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             title: 'As Incríveis Aventuras do Cão Cebola e a Gatinha Mica',
             cover_image:
               'the-amazing-adventures-of-dog-onion-and-kitty-mica.jpeg',
-            link: '/as-incriveis-aventuras-do-cao-cebola-e-a-gatinha-mica',
+            link: 'https://www.caocebola.com.br/',
           },
         ],
         show: true,
