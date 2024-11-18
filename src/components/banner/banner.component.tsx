@@ -1,6 +1,7 @@
 import './banner.component.scss';
 
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
+
 import { THEME_MAPPINGS } from '../../constants/theme.constants';
 import { ThemeKeys } from '../../enums/theme.enum';
 import { replaceAllTags } from '../../utils/strings.utils';
@@ -26,14 +27,26 @@ function Book({
   currentTheme = THEME_MAPPINGS[ThemeKeys.AindaNoJardim],
   bookAlt,
 }: Readonly<BookProps>) {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const imageSrc = `/assets/images/books/${currentTheme.replace(
     '-theme',
     ''
   )}.png`;
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className='pcn-banner__body__book'>
-      <img alt={bookAlt} title={bookAlt} src={imageSrc} loading='lazy' />
+      <img
+        className={`${imageLoaded ? 'book--loaded' : ''}`}
+        alt={bookAlt}
+        title={bookAlt}
+        src={imageSrc}
+        loading='lazy'
+        onLoad={handleImageLoad}
+      />
     </div>
   );
 }

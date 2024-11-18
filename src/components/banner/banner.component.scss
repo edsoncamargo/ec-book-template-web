@@ -23,6 +23,7 @@
   &__body {
     display: flex;
     gap: var(--pcn-spacing-md);
+    min-height: 300px;
 
     &__book {
       width: 355px;
@@ -33,6 +34,11 @@
         width: 100%;
         position: absolute;
         bottom: -216px;
+        transition: all 0.3s ease-in-out;
+
+        &.book--loaded {
+          opacity: 1;
+        }
       }
     }
 
