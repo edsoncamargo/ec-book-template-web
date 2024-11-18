@@ -8,8 +8,8 @@ import react from '@vitejs/plugin-react-swc';
 dotenv.config();
 
 export default defineConfig({
+  base: '/',
   plugins: [
-    react(),
     createHtmlPlugin({
       inject: {
         data: {
@@ -20,5 +20,6 @@ export default defineConfig({
         },
       },
     }),
+    react(),
   ],
 });
