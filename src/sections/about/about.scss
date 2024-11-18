@@ -31,6 +31,7 @@
         object-fit: cover;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        transition-delay: 0.3s;
 
         &--loaded {
           opacity: 1;
@@ -54,6 +55,7 @@
         width: 144px;
         opacity: 0;
         transition: all 0.3s ease-in-out;
+        transition-delay: 0.3s;
 
         &--loaded {
           opacity: 1;
