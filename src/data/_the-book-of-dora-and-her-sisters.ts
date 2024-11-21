@@ -2,9 +2,9 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
   id: 'o-livro-de-dora-e-suas-irmas',
   theme: 'the-book-of-dora-and-her-sisters-theme',
   seo: {
-    title: 'Uma Nova História',
+    title: 'O Livro de Dora e Suas Irmãs',
     description:
-      'Plantar uma árvore, escrever um livro e ter um filho, seja biológico ou na fé, são os principais desafios abordados neste projeto de vida. Inspirado por José Martí, este livro oferece uma reflexão profunda sobre como não desperdiçar o tempo e registrar momentos importantes. Com ênfase em biografia, vida cristã, e autoajuda, o autor Paulo Cesar Nascimento dos Santos convida o leitor a criar seu próprio legado, seja por meio da escrita ou da adoção de práticas que transformam a vida e o mundo ao redor.',
+      'Descubra a história de Maria Dora, uma mulher forte e resiliente, cujo relato de vida transcende afetos, dores e silêncios. Em um enredo de superação e renascimento, Maria Dora, uma costureira simples de Minas Gerais, enfrenta o impossível e busca sua identidade no meio de desafios e perdas. Explore uma narrativa de amor, amizade, liberdade e resistência, onde mulheres e homens lutam pela sua verdade e humanidade. Acompanhe a jornada de Maria Dora em uma trama cheia de emoção, sororidade e transformação..',
   },
   content: {
     pt: {
