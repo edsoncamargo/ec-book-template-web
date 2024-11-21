@@ -2,16 +2,16 @@
 
 $colors: (
   primary: (
-    // #E0CAB5
-    224,
-    202,
-    181,
+    // #EDE6D8
+    237,
+    230,
+    216,
   ),
   secondary: (
-    // #8C1116
-    140,
-    17,
-    22,
+    // #9C2731
+    156,
+    39,
+    49,
   ),
   on-bg: (
     // #000000
@@ -21,6 +21,6 @@ $colors: (
   ),
 );
 
-.ec-bread-and-fish-theme {
+.ec-the-book-of-dora-and-her-sisters-theme {
   @include colors.generate-vars($colors);
 }

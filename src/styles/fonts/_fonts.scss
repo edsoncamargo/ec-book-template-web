@@ -7,71 +7,71 @@ html {
   font-size: 16px;
 }
 
-.pcn-font-emphasis {
+.ec-font-emphasis {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-colossal);
-  font-weight: var(--pcn-font-weight-semibold);
-  letter-spacing: var(--pcn-letter-spacing-xs);
+  font-size: var(--ec-font-size-colossal);
+  font-weight: var(--ec-font-weight-semibold);
+  letter-spacing: var(--ec-letter-spacing-xs);
   line-height: 68px;
-  color: rgb(var(--pcn-color-secondary));
+  color: rgb(var(--ec-color-secondary));
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    font-size: var(--pcn-font-size-xxl);
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    font-size: var(--ec-font-size-xxl);
     line-height: 48px;
   }
 }
 
-.pcn-font-heading {
+.ec-font-heading {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-xl);
-  font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: var(--pcn-letter-spacing-sm);
-  color: rgb(var(--pcn-color-neutral-60));
+  font-size: var(--ec-font-size-xl);
+  font-weight: var(--ec-font-weight-bold);
+  letter-spacing: var(--ec-letter-spacing-sm);
+  color: rgb(var(--ec-color-neutral-60));
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    font-size: var(--pcn-font-size-lg);
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    font-size: var(--ec-font-size-lg);
   }
 }
 
-.pcn-font-subheading {
+.ec-font-subheading {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-lg);
-  font-weight: var(--pcn-font-weight-bold);
-  color: rgb(var(--pcn-color-neutral-40));
+  font-size: var(--ec-font-size-lg);
+  font-weight: var(--ec-font-weight-bold);
+  color: rgb(var(--ec-color-neutral-40));
 }
 
-.pcn-font-caption {
+.ec-font-caption {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-lg);
-  font-weight: var(--pcn-font-weight-bold);
-  letter-spacing: var(--pcn-letter-spacing-sm);
-  color: rgb(var(--pcn-color-neutral-30));
+  font-size: var(--ec-font-size-lg);
+  font-weight: var(--ec-font-weight-bold);
+  letter-spacing: var(--ec-letter-spacing-sm);
+  color: rgb(var(--ec-color-neutral-30));
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    font-size: var(--pcn-font-size-md);
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    font-size: var(--ec-font-size-md);
   }
 }
 
-.pcn-font-body {
+.ec-font-body {
   font-family: 'Raleway', sans-serif;
-  font-size: var(--pcn-font-size-xsm);
-  font-weight: var(--pcn-font-weight-regular);
+  font-size: var(--ec-font-size-xsm);
+  font-weight: var(--ec-font-weight-regular);
   line-height: 24px;
-  color: rgb(var(--pcn-color-neutral-30));
+  color: rgb(var(--ec-color-neutral-30));
 }
 
-.pcn-font-number {
+.ec-font-number {
   font-family: 'Roboto', sans-serif;
 }
 
 strong {
-  font-weight: var(--pcn-font-weight-extra-bold);
+  font-weight: var(--ec-font-weight-extra-bold);
 }
 
-.pcn-uppercase {
+.ec-uppercase {
   text-transform: uppercase;
 }
 
-.pcn-text-align-justify {
+.ec-text-align-justify {
   text-align: justify;
 }

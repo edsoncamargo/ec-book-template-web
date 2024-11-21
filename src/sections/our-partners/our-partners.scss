@@ -1,13 +1,13 @@
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-our-partners {
+.ec-our-partners {
   $our-partners: &;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--pcn-spacing-lg);
+  gap: var(--ec-spacing-lg);
 
   &__title {
     text-align: center;
@@ -17,25 +17,25 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--pcn-spacing-md);
-    max-width: breakpoints.$pcn-breakpoint-md;
+    gap: var(--ec-spacing-md);
+    max-width: breakpoints.$ec-breakpoint-md;
 
     &__item {
       min-height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: var(--pcn-border-radius-lg);
-      box-shadow: 0px 2px 2px 0px rgba(var(--pcn-color-neutral-100), 0.12);
-      padding: var(--pcn-spacing-md);
+      border-radius: var(--ec-border-radius-lg);
+      box-shadow: 0px 2px 2px 0px rgba(var(--ec-color-neutral-100), 0.12);
+      padding: var(--ec-spacing-md);
 
-      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      @media (max-width: breakpoints.$ec-breakpoint-md) {
         width: calc(50% - 40px);
       }
 
       img {
         width: 100px;
-        border-radius: var(--pcn-border-radius-lg);
+        border-radius: var(--ec-border-radius-lg);
       }
     }
   }

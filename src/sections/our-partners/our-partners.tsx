@@ -8,19 +8,19 @@ export default function OurPartners() {
   const content = bookContent!.content[language]!;
 
   return (
-    <section className='pcn-our-partners pcn-container'>
+    <section className='ec-our-partners ec-container'>
       <h2
-        className='pcn-our-partners__title pcn-font-heading pcn-uppercase'
+        className='ec-our-partners__title ec-font-heading ec-uppercase'
         data-aos='fade-up'
       >
         {content.partners.title}
       </h2>
 
-      <div className='pcn-our-partners__logos'>
+      <div className='ec-our-partners__logos'>
         {content.partners.logos.map((logo, index) => (
           <div
             key={logo}
-            className='pcn-our-partners__logos__item'
+            className='ec-our-partners__logos__item'
             data-aos='flip-left'
             data-aos-delay={30 * index}
           >

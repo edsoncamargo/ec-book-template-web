@@ -1,14 +1,14 @@
 @use '../../styles/core/settings/patterns';
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-banner {
+.ec-banner {
   $banner: &;
   position: relative;
-  background-color: rgba(var(--pcn-color-primary), 0.9);
-  padding: var(--pcn-spacing-giga) 0px;
+  background-color: rgba(var(--ec-color-primary), 0.9);
+  padding: var(--ec-spacing-giga) 0px;
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    padding: var(--pcn-spacing-lg) 0px;
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    padding: var(--ec-spacing-lg) 0px;
   }
 
   &::before {
@@ -17,12 +17,12 @@
     top: 0;
     left: 0;
     z-index: -1;
-    @extend .pcn-pattern-clouds;
+    @extend .ec-pattern-clouds;
   }
 
   &__body {
     display: flex;
-    gap: var(--pcn-spacing-md);
+    gap: var(--ec-spacing-md);
     min-height: 300px;
 
     &__book {
@@ -43,7 +43,7 @@
       }
     }
 
-    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    @media (max-width: breakpoints.$ec-breakpoint-md) {
       flex-wrap: wrap;
 
       #{$banner}__body__book {
@@ -57,7 +57,7 @@
     &__content {
       display: flex;
       flex-direction: column;
-      gap: var(--pcn-spacing-md);
+      gap: var(--ec-spacing-md);
 
       #{$banner}__title {
         max-width: 680px;
@@ -66,16 +66,16 @@
       #{$banner}__about {
         display: flex;
         flex-direction: column;
-        font-size: var(--pcn-font-size-xsm);
-        color: rgb(var(--pcn-color-on-bg));
-        gap: var(--pcn-spacing-sm);
+        font-size: var(--ec-font-size-xsm);
+        color: rgb(var(--ec-color-on-bg));
+        gap: var(--ec-spacing-sm);
 
         p {
           display: flex;
           flex-direction: column;
 
           small {
-            font-size: var(--pcn-font-size-xs);
+            font-size: var(--ec-font-size-xs);
           }
         }
       }

@@ -5,9 +5,9 @@
 @use './fonts/fonts';
 @use './core/themes/themes';
 
-.pcn-container {
-  width: calc(100% - var(--pcn-spacing-lg) * 2);
-  max-width: breakpoints.$pcn-breakpoint-lg;
+.ec-container {
+  width: calc(100% - var(--ec-spacing-lg) * 2);
+  max-width: breakpoints.$ec-breakpoint-lg;
   margin: 0 auto;
-  padding: 0px var(--pcn-spacing-lg);
+  padding: 0px var(--ec-spacing-lg);
 }

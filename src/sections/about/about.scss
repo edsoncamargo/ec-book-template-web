@@ -1,19 +1,19 @@
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-about {
+.ec-about {
   $about: &;
 
-  background-color: rgb(var(--pcn-color-neutral-20));
+  background-color: rgb(var(--ec-color-neutral-20));
   padding: 0px;
 
   &__body {
     display: flex;
     justify-content: space-between;
-    gap: var(--pcn-spacing-md);
+    gap: var(--ec-spacing-md);
 
-    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    @media (max-width: breakpoints.$ec-breakpoint-md) {
       flex-direction: column;
-      gap: var(--pcn-spacing-lg);
+      gap: var(--ec-spacing-lg);
     }
 
     #{$about}__author {
@@ -43,12 +43,12 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: var(--pcn-spacing-lg);
-      padding: var(--pcn-spacing-xxl);
+      gap: var(--ec-spacing-lg);
+      padding: var(--ec-spacing-xxl);
 
-      @media (max-width: breakpoints.$pcn-breakpoint-md) {
-        padding: var(--pcn-spacing-lg);
-        padding-top: var(--pcn-spacing-0);
+      @media (max-width: breakpoints.$ec-breakpoint-md) {
+        padding: var(--ec-spacing-lg);
+        padding-top: var(--ec-spacing-0);
       }
 
       #{$about}__subscription {

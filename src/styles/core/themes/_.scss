@@ -66,11 +66,11 @@ $colors: (
 @include colors.generate-classes($colors);
 @include blobs.generate-classes(
   primary,
-  --pcn-color-primary,
-  --pcn-color-neutral-100
+  --ec-color-primary,
+  --ec-color-neutral-100
 );
 @include blobs.generate-classes(
   secondary,
-  --pcn-color-secondary,
-  --pcn-color-neutral-0
+  --ec-color-secondary,
+  --ec-color-neutral-0
 );

@@ -21,6 +21,6 @@ $colors: (
   ),
 );
 
-.pcn-still-in-the-garden-theme {
+.ec-still-in-the-garden-theme {
   @include colors.generate-vars($colors);
 }

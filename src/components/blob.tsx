@@ -3,11 +3,11 @@ import { VariantProps, tv } from 'tailwind-variants';
 import { ComponentProps } from 'react';
 
 const blob = tv({
-  base: 'pcn-blob',
+  base: 'ec-blob',
   variants: {
     type: {
-      primary: 'pcn-blob--primary',
-      secondary: 'pcn-blob--secondary',
+      primary: 'ec-blob--primary',
+      secondary: 'ec-blob--secondary',
     },
   },
   defaultVariants: {
@@ -42,8 +42,8 @@ export default function Blob({ type }: Props) {
             y2='150.732'
             gradientUnits='userSpaceOnUse'
           >
-            <stop className='pcn-blob__start' />
-            <stop className='pcn-blob__end' offset='1' />
+            <stop className='ec-blob__start' />
+            <stop className='ec-blob__end' offset='1' />
           </linearGradient>
         </defs>
       </svg>

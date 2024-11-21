@@ -59,7 +59,7 @@ function App() {
   );
 
   return (
-    <main className={`pcn-${currentTheme} pcn-app`}>
+    <main className={`ec-${currentTheme} ec-app`}>
       <CurrentThemeContext.Provider value={contextValue}>
         <Suspense fallback={<LoadingSquare />}>
           <Home />

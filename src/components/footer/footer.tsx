@@ -11,10 +11,10 @@ export default function Footer() {
   const content = bookContent!.content[language]!;
 
   return (
-    <footer className='pcn-footer pcn-uppercase'>
-      <div className='pcn-footer__body pcn-container'>
-        <div className='pcn-footer__top'>
-          <div className='pcn-footer__cover'>
+    <footer className='ec-footer ec-uppercase'>
+      <div className='ec-footer__body ec-container'>
+        <div className='ec-footer__top'>
+          <div className='ec-footer__cover'>
             <img
               alt=''
               src={`/assets/images/covers/${currentTheme.replace(
@@ -25,7 +25,7 @@ export default function Footer() {
             />
           </div>
 
-          <div className='pcn-footer__links'>
+          <div className='ec-footer__links'>
             {content.footer.menu.map((items, index) => (
               <ul key={items.toString() + index}>
                 {items.map((item) => (
@@ -38,20 +38,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='pcn-footer__middle'>
-          <div className='pcn-footer__middle__medias'>
+        <div className='ec-footer__middle'>
+          <div className='ec-footer__middle__medias'>
             <a
               href='https://www.instagram.com/advogadopaulocesar?igsh=MXR5ZmVsc2NwN216bw=='
               target='_blank'
             >
-              <FaInstagram className='pcn-i' />
+              <FaInstagram className='ec-i' />
             </a>
 
             <a
               href='https://www.facebook.com/profile.php?id=100008682103402&mibextid=LQQJ4d'
               target='_blank'
             >
-              <FaFacebook className='pcn-i' />
+              <FaFacebook className='ec-i' />
             </a>
           </div>
 
@@ -60,15 +60,15 @@ export default function Footer() {
             role='text'
           >
             {content.footer.rights.label}{' '}
-            <small className='pcn-font-number' aria-hidden='true'>
+            <small className='ec-font-number' aria-hidden='true'>
               {content.footer.rights.year}
             </small>
             {''}.
           </p>
         </div>
 
-        <div className='pcn-footer__bottom'>
-          <p className='pcn-footer__developer'>
+        <div className='ec-footer__bottom'>
+          <p className='ec-footer__developer'>
             {content.footer.developer}
             {''}
             <a href='https://edsoncamargo.dev'>edsoncamargo.dev</a>

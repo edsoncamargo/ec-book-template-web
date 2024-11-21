@@ -1,17 +1,17 @@
 @mixin generate-font-size-vars($font-sizes) {
   @each $name, $size in $font-sizes {
-    --pcn-font-size-#{$name}: #{$size};
+    --ec-font-size-#{$name}: #{$size};
   }
 }
 
 @mixin generate-font-weight-vars($weights) {
   @each $name, $weight in $weights {
-    --pcn-font-weight-#{"#{$name}"}: #{$weight};
+    --ec-font-weight-#{"#{$name}"}: #{$weight};
   }
 }
 
 @mixin generate-letter-spacing-vars($letter-spacing) {
   @each $name, $size in $letter-spacing {
-    --pcn-letter-spacing-#{$name}: #{$size};
+    --ec-letter-spacing-#{$name}: #{$size};
   }
 }

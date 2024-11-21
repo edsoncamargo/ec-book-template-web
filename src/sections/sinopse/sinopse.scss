@@ -1,18 +1,18 @@
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-sinopse {
+.ec-sinopse {
   display: flex;
   flex-direction: column;
-  gap: var(--pcn-spacing-lg);
-  margin-top: var(--pcn-spacing-colossal);
+  gap: var(--ec-spacing-lg);
+  margin-top: var(--ec-spacing-colossal);
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    margin-top: var(--pcn-spacing-0);
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    margin-top: var(--ec-spacing-0);
   }
 
   &__contents {
     display: flex;
     flex-direction: column;
-    gap: var(--pcn-spacing-sm);
+    gap: var(--ec-spacing-sm);
   }
 }

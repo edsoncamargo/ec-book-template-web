@@ -1,22 +1,22 @@
-.pcn-characteristics {
+.ec-characteristics {
   $characteristics: &;
 
   display: flex;
   flex-direction: column;
-  gap: var(--pcn-spacing-lg);
+  gap: var(--ec-spacing-lg);
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: var(--pcn-spacing-md);
+    gap: var(--ec-spacing-md);
 
     #{$characteristics}__line {
       display: flex;
-      gap: var(--pcn-spacing-md);
+      gap: var(--ec-spacing-md);
 
-      & > .pcn-characteristics__item {
+      & > .ec-characteristics__item {
         display: flex;
-        font-size: var(--pcn-font-size-xsm);
+        font-size: var(--ec-font-size-xsm);
 
         &:nth-child(1) {
           flex: 1;
@@ -26,7 +26,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: var(--pcn-font-weight-semibold);
+            font-weight: var(--ec-font-weight-semibold);
             text-align: center;
             white-space: nowrap;
           }
@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
 
-            &.pcn-font-number {
+            &.ec-font-number {
               word-break: break-all;
             }
           }

@@ -29,9 +29,9 @@ export default function OurBooks() {
   return (
     <div data-aos='fade-up'>
       <Line />
-      <section id='outras-publicacoes' className='pcn-our-books'>
+      <section id='outras-publicacoes' className='ec-our-books'>
         <div
-          className='pcn-our-books__title pcn-font-heading pcn-uppercase pcn-text-color-secondary'
+          className='ec-our-books__title ec-font-heading ec-uppercase ec-text-color-secondary'
           data-aos='fade-up'
         >
           <h2
@@ -40,17 +40,17 @@ export default function OurBooks() {
             }}
             aria-label={replaceAllTags(content.other_publications.title)}
           ></h2>
-          <small className='pcn-font-number' aria-hidden='true'>
+          <small className='ec-font-number' aria-hidden='true'>
             .
           </small>
         </div>
 
-        <div className='pcn-our-books__carousel pcn-our-books__slider'>
+        <div className='ec-our-books__carousel ec-our-books__slider'>
           <Slider {...settings}>
             {content.other_publications.books.map((book, index) => (
               <div
                 key={book.title}
-                className='pcn-our-books__slider__item'
+                className='ec-our-books__slider__item'
                 data-aos='fade-up'
                 data-aos-delay={30 * index}
               >

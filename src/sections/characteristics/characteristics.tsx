@@ -11,34 +11,34 @@ export default function Characteristics() {
   const content = bookContent!.content[language]!;
 
   return (
-    <section id='caracteristicas' className='pcn-characteristics pcn-container'>
+    <section id='caracteristicas' className='ec-characteristics ec-container'>
       <h2
-        className='pcn-font-heading pcn-uppercase'
+        className='ec-font-heading ec-uppercase'
         data-aos='fade-up'
         aria-label={replaceAllTags(content.characteristics.title)}
       >
         {content.characteristics.title}
       </h2>
 
-      <div className='pcn-characteristics__items pcn-uppercase'>
+      <div className='ec-characteristics__items ec-uppercase'>
         {content.characteristics.details.map((detail) => (
           <div
             key={detail.value}
-            className='pcn-characteristics__line'
+            className='ec-characteristics__line'
             data-aos='fade-up'
             aria-label={`${detail.type}: ${detail.value}`}
             role='text'
           >
-            <div className='pcn-characteristics__item' aria-hidden='true'>
+            <div className='ec-characteristics__item' aria-hidden='true'>
               <Card variant='left'>
                 <p>{detail.type}</p>
               </Card>
             </div>
 
-            <div className='pcn-characteristics__item' aria-hidden='true'>
+            <div className='ec-characteristics__item' aria-hidden='true'>
               <Card variant='right'>
                 {hasNumber(detail.value) ? (
-                  <p className='pcn-font-number'>{detail.value}</p>
+                  <p className='ec-font-number'>{detail.value}</p>
                 ) : (
                   <p>{detail.value}</p>
                 )}

@@ -1,34 +1,34 @@
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-footer {
+.ec-footer {
   $this: &;
 
-  background-color: rgb(var(--pcn-color-primary));
-  font-size: var(--pcn-font-size-xs);
-  letter-spacing: var(--pcn-letter-spacing-sm);
-  color: rgb(var(--pcn-color-secondary));
-  padding: var(--pcn-spacing-lg) 0px;
+  background-color: rgb(var(--ec-color-primary));
+  font-size: var(--ec-font-size-xs);
+  letter-spacing: var(--ec-letter-spacing-sm);
+  color: rgb(var(--ec-color-secondary));
+  padding: var(--ec-spacing-lg) 0px;
 
   &__body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--pcn-spacing-lg);
+    gap: var(--ec-spacing-lg);
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
-    gap: var(--pcn-spacing-lg);
+    gap: var(--ec-spacing-lg);
 
-    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    @media (max-width: breakpoints.$ec-breakpoint-md) {
       flex-direction: column;
     }
 
     #{$this}__cover {
       img {
         width: 42px;
-        border: 1px solid rgb(var(--pcn-color-on-bg));
+        border: 1px solid rgb(var(--ec-color-on-bg));
       }
     }
 
@@ -36,20 +36,20 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: var(--pcn-spacing-lxm);
+      gap: var(--ec-spacing-lxm);
 
-      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      @media (max-width: breakpoints.$ec-breakpoint-md) {
         flex-direction: column;
       }
 
       ul {
         display: flex;
         flex-direction: column;
-        gap: var(--pcn-spacing-md);
+        gap: var(--ec-spacing-md);
 
         a {
-          font-weight: var(--pcn-font-weight-bold);
-          color: rgb(var(--pcn-color-secondary));
+          font-weight: var(--ec-font-weight-bold);
+          color: rgb(var(--ec-color-secondary));
         }
       }
     }
@@ -59,31 +59,31 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: var(--pcn-spacing-md);
-    padding: var(--pcn-spacing-lg);
+    gap: var(--ec-spacing-md);
+    padding: var(--ec-spacing-lg);
     border: {
-      top: 1px solid rgb(var(--pcn-color-secondary));
-      bottom: 1px solid rgb(var(--pcn-color-secondary));
+      top: 1px solid rgb(var(--ec-color-secondary));
+      bottom: 1px solid rgb(var(--ec-color-secondary));
     }
     text-align: center;
-    font-weight: var(--pcn-font-weight-bold);
+    font-weight: var(--ec-font-weight-bold);
 
     &__medias {
       display: flex;
       justify-content: center;
-      gap: var(--pcn-spacing-sm);
+      gap: var(--ec-spacing-sm);
 
-      .pcn-i {
-        color: rgb(var(--pcn-color-secondary));
-        font-size: var(--pcn-font-size-lg);
-        border: 1px solid rgb(var(--pcn-color-secondary));
-        border-radius: var(--pcn-border-radius-lg);
-        padding: var(--pcn-spacing-sm);
+      .ec-i {
+        color: rgb(var(--ec-color-secondary));
+        font-size: var(--ec-font-size-lg);
+        border: 1px solid rgb(var(--ec-color-secondary));
+        border-radius: var(--ec-border-radius-lg);
+        padding: var(--ec-spacing-sm);
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          color: rgb(var(--pcn-color-on-bg));
-          border-color: rgb(var(--pcn-color-on-bg));
+          color: rgb(var(--ec-color-on-bg));
+          border-color: rgb(var(--ec-color-on-bg));
         }
       }
     }
@@ -95,12 +95,12 @@
       display: flex;
       align-items: center;
       justify-content: end;
-      color: rgb(var(--pcn-color-on-bg));
+      color: rgb(var(--ec-color-on-bg));
 
       a {
-        font-weight: var(--pcn-font-weight-bold);
-        color: rgb(var(--pcn-color-on-bg));
-        margin-left: var(--pcn-spacing-xs);
+        font-weight: var(--ec-font-weight-bold);
+        color: rgb(var(--ec-color-on-bg));
+        margin-left: var(--ec-spacing-xs);
       }
     }
   }

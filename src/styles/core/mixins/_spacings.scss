@@ -2,48 +2,48 @@ $directions: (left, top, bottom, right, y, x);
 
 @mixin generate-vars($spacings) {
   @each $key, $value in $spacings {
-    --pcn-spacing-#{$key}: #{$value};
+    --ec-spacing-#{$key}: #{$value};
   }
 }
 
 @mixin generate-classes($vars) {
   @each $key, $value in $vars {
-    .pcn-padding-#{$key} {
-      padding: var(--pcn-spacing-#{$key});
+    .ec-padding-#{$key} {
+      padding: var(--ec-spacing-#{$key});
     }
 
-    .pcn-margin-#{$key} {
-      margin: var(--pcn-spacing-#{$key});
+    .ec-margin-#{$key} {
+      margin: var(--ec-spacing-#{$key});
     }
 
     @each $dir in $directions {
       @if $dir == 'y' {
-        .pcn-padding-#{$key}-#{$dir} {
-          padding-top: var(--pcn-spacing-#{$key});
-          padding-bottom: var(--pcn-spacing-#{$key});
+        .ec-padding-#{$key}-#{$dir} {
+          padding-top: var(--ec-spacing-#{$key});
+          padding-bottom: var(--ec-spacing-#{$key});
         }
 
-        .pcn-margin-#{$key}-#{$dir} {
-          margin-top: var(--pcn-spacing-#{$key});
-          margin-bottom: var(--pcn-spacing-#{$key});
+        .ec-margin-#{$key}-#{$dir} {
+          margin-top: var(--ec-spacing-#{$key});
+          margin-bottom: var(--ec-spacing-#{$key});
         }
       } @else if $dir == 'x' {
-        .pcn-padding-#{$key}-#{$dir} {
-          padding-left: var(--pcn-spacing-#{$key});
-          padding-right: var(--pcn-spacing-#{$key});
+        .ec-padding-#{$key}-#{$dir} {
+          padding-left: var(--ec-spacing-#{$key});
+          padding-right: var(--ec-spacing-#{$key});
         }
 
-        .pcn-margin-#{$key}-#{$dir} {
-          margin-left: var(--pcn-spacing-#{$key});
-          margin-right: var(--pcn-spacing-#{$key});
+        .ec-margin-#{$key}-#{$dir} {
+          margin-left: var(--ec-spacing-#{$key});
+          margin-right: var(--ec-spacing-#{$key});
         }
       } @else {
-        .pcn-padding-#{$key}-#{$dir} {
-          padding-#{$dir}: var(--pcn-spacing-#{$key});
+        .ec-padding-#{$key}-#{$dir} {
+          padding-#{$dir}: var(--ec-spacing-#{$key});
         }
 
-        .pcn-margin-#{$key}-#{$dir} {
-          margin-#{$dir}: var(--pcn-spacing-#{$key});
+        .ec-margin-#{$key}-#{$dir} {
+          margin-#{$dir}: var(--ec-spacing-#{$key});
         }
       }
     }

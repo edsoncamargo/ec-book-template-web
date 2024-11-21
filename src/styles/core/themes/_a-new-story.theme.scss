@@ -21,6 +21,6 @@ $colors: (
   ),
 );
 
-.pcn-a-new-story-theme {
+.ec-a-new-story-theme {
   @include colors.generate-vars($colors);
 }

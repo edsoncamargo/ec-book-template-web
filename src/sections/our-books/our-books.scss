@@ -1,14 +1,14 @@
 @use '../../styles/core/settings/patterns';
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-our-books {
+.ec-our-books {
   position: relative;
-  background-color: rgba(var(--pcn-color-primary), 0.9);
-  padding: var(--pcn-spacing-lg) 0px;
-  padding-bottom: var(--pcn-spacing-xl);
+  background-color: rgba(var(--ec-color-primary), 0.9);
+  padding: var(--ec-spacing-lg) 0px;
+  padding-bottom: var(--ec-spacing-xl);
 
-  @media (max-width: breakpoints.$pcn-breakpoint-md) {
-    padding-bottom: var(--pcn-spacing-xl);
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    padding-bottom: var(--ec-spacing-xl);
   }
 
   &::before {
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    @extend .pcn-pattern-clouds;
+    @extend .ec-pattern-clouds;
   }
 
   &__title {
@@ -27,11 +27,11 @@
     align-items: end;
     text-align: center;
     white-space: nowrap;
-    padding: 0px var(--pcn-spacing-md);
-    padding-bottom: var(--pcn-spacing-sm);
+    padding: 0px var(--ec-spacing-md);
+    padding-bottom: var(--ec-spacing-sm);
     margin: 0 auto;
 
-    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    @media (max-width: breakpoints.$ec-breakpoint-md) {
       max-width: 244px;
       min-width: 244px;
     }
@@ -40,8 +40,8 @@
       font-size: 96px;
       margin-bottom: -8px;
 
-      @media (max-width: breakpoints.$pcn-breakpoint-md) {
-        font-size: var(--pcn-font-size-xxl);
+      @media (max-width: breakpoints.$ec-breakpoint-md) {
+        font-size: var(--ec-font-size-xxl);
         margin-bottom: 0px;
       }
     }
@@ -93,13 +93,13 @@
   li {
     button:before {
       font-size: 8px;
-      color: rgb(var(--pcn-color-secondary));
+      color: rgb(var(--ec-color-secondary));
       transition: all 0.3s ease;
     }
 
     &.slick-active {
       button:before {
-        color: rgb(var(--pcn-color-secondary));
+        color: rgb(var(--ec-color-secondary));
         opacity: 1;
       }
     }

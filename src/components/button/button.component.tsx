@@ -4,17 +4,17 @@ import { ComponentProps, ReactNode } from 'react';
 import { VariantProps, tv } from 'tailwind-variants';
 
 const button = tv({
-  base: 'pcn-button',
+  base: 'ec-button',
   variants: {
     variant: {
-      cta: 'pcn-button--cta',
-      amazon: 'pcn-button--amazon',
-      americanas: 'pcn-button--americanas',
-      ml: 'pcn-button--ml',
-      ev: 'pcn-button--ev',
-      gp: 'pcn-button--gp',
-      rakuten: 'pcn-button--rakuten',
-      apple: 'pcn-button--apple',
+      cta: 'ec-button--cta',
+      amazon: 'ec-button--amazon',
+      americanas: 'ec-button--americanas',
+      ml: 'ec-button--ml',
+      ev: 'ec-button--ev',
+      gp: 'ec-button--gp',
+      rakuten: 'ec-button--rakuten',
+      apple: 'ec-button--apple',
     },
   },
   defaultVariants: {

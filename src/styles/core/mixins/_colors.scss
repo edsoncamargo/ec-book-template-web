@@ -1,21 +1,21 @@
 @mixin generate-vars($colors) {
   @each $key, $value in $colors {
-    --pcn-color-#{$key}: #{$value};
+    --ec-color-#{$key}: #{$value};
   }
 }
 
 @mixin generate-classes($vars) {
   @each $key, $value in $vars {
-    .pcn-bg-color-#{$key} {
-      background-color: rgb(var(--pcn-color-#{$key}));
+    .ec-bg-color-#{$key} {
+      background-color: rgb(var(--ec-color-#{$key}));
     }
 
-    .pcn-text-color-#{$key} {
-      color: rgb(var(--pcn-color-#{$key}));
+    .ec-text-color-#{$key} {
+      color: rgb(var(--ec-color-#{$key}));
     }
 
-    .pcn-border-color-#{$key} {
-      border-color: rgb(var(--pcn-color-#{$key}));
+    .ec-border-color-#{$key} {
+      border-color: rgb(var(--ec-color-#{$key}));
     }
   }
 }

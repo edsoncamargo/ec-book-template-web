@@ -7,4 +7,5 @@ export const THEME_MAPPINGS: Record<ThemeKeys, string> = {
   [ThemeKeys.AindaNoJardim]: 'still-in-the-garden-theme',
   [ThemeKeys.AsIncriveisAventurasDoCaoCebolaEAGatinhaMica]:
     'the-amazing-adventures-of-dog-onion-and-kitty-mica-theme',
+  [ThemeKeys.OLivroDeDoraESuasIrmas]: 'the-book-of-dora-and-her-sisters-theme',
 };

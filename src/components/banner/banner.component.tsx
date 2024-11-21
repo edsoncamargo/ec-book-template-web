@@ -12,8 +12,8 @@ type BannerProps = {
 
 function Banner({ children }: Readonly<BannerProps>) {
   return (
-    <div className='pcn-banner'>
-      <div className='pcn-banner__body pcn-container'>{children}</div>
+    <div className='ec-banner'>
+      <div className='ec-banner__body ec-container'>{children}</div>
     </div>
   );
 }
@@ -38,7 +38,7 @@ function Book({
   };
 
   return (
-    <div className='pcn-banner__body__book'>
+    <div className='ec-banner__body__book'>
       <img
         className={`${imageLoaded ? 'book--loaded' : ''}`}
         alt={bookAlt}
@@ -56,7 +56,7 @@ type ContentProps = {
 };
 
 function Content({ children }: Readonly<ContentProps>) {
-  return <div className='pcn-banner__body__content'>{children}</div>;
+  return <div className='ec-banner__body__content'>{children}</div>;
 }
 
 type EmphasisProps = {
@@ -66,7 +66,7 @@ type EmphasisProps = {
 function Emphasis({ children }: Readonly<EmphasisProps>) {
   return (
     <h1
-      className='pcn-banner__title pcn-font-emphasis'
+      className='ec-banner__title ec-font-emphasis'
       aria-label={replaceAllTags(typeof children === 'string' ? children : '')}
       dangerouslySetInnerHTML={{
         __html: typeof children === 'string' ? children : '',
@@ -82,7 +82,7 @@ type AboutProps = {
 
 function About({ actor, categories }: Readonly<AboutProps>) {
   return (
-    <p className='pcn-banner__about'>
+    <p className='ec-banner__about'>
       <span aria-label={`Por ${actor}`} role='text'>
         Por <strong>{actor}</strong>
       </span>

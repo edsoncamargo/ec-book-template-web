@@ -1,28 +1,28 @@
-.pcn-button {
+.ec-button {
   height: 46px;
   display: flex;
   align-self: flex-start;
   align-items: center;
   justify-content: center;
-  font-weight: var(--pcn-font-weight-extra-bold);
-  letter-spacing: var(--pcn-letter-spacing-xs);
+  font-weight: var(--ec-font-weight-extra-bold);
+  letter-spacing: var(--ec-letter-spacing-xs);
   line-height: 28px;
-  border-radius: var(--pcn-border-radius-lg);
-  padding: var(--pcn-spacing-lg) var(--pcn-spacing-lxm);
+  border-radius: var(--ec-border-radius-lg);
+  padding: var(--ec-spacing-lg) var(--ec-spacing-lxm);
   cursor: pointer;
   transition: 0.3s;
 
   &--cta {
     background-color: transparent;
-    color: rgb(var(--pcn-color-secondary));
-    border: solid 2px rgb(var(--pcn-color-secondary));
-    box-shadow: 0 0 8px rgb(var(--pcn-color-secondary));
+    color: rgb(var(--ec-color-secondary));
+    border: solid 2px rgb(var(--ec-color-secondary));
+    box-shadow: 0 0 8px rgb(var(--ec-color-secondary));
 
     @mixin mouseEffect {
-      background-color: rgb(var(--pcn-color-secondary));
-      color: rgb(var(--pcn-color-primary));
-      border: solid 2px rgb(var(--pcn-color-secondary));
-      box-shadow: 0 0 0px rgb(var(--pcn-color-secondary));
+      background-color: rgb(var(--ec-color-secondary));
+      color: rgb(var(--ec-color-primary));
+      border: solid 2px rgb(var(--ec-color-secondary));
+      box-shadow: 0 0 0px rgb(var(--ec-color-secondary));
     }
 
     &:hover {
@@ -30,9 +30,9 @@
 
       @media (hover: none) {
         background-color: transparent;
-        color: rgb(var(--pcn-color-secondary));
-        border: solid 2px rgb(var(--pcn-color-secondary));
-        box-shadow: 0 0 8px rgb(var(--pcn-color-secondary));
+        color: rgb(var(--ec-color-secondary));
+        border: solid 2px rgb(var(--ec-color-secondary));
+        box-shadow: 0 0 8px rgb(var(--ec-color-secondary));
       }
     }
 
@@ -43,7 +43,7 @@
 
   &--amazon {
     background-color: #f7971f;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #f7971f;
     box-shadow: 0 0 8px #f7971f;
 
@@ -56,7 +56,7 @@
 
       @media (hover: none) {
         background-color: #f7971f;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #f7971f;
         box-shadow: 0 0 8px #f7971f;
       }
@@ -69,7 +69,7 @@
 
   &--americanas {
     background-color: #ed1c24;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #ed1c24;
     box-shadow: 0 0 8px #ed1c24;
 
@@ -82,7 +82,7 @@
 
       @media (hover: none) {
         background-color: #ed1c24;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #ed1c24;
         box-shadow: 0 0 8px #ed1c24;
       }
@@ -95,7 +95,7 @@
 
   &--ml {
     background-color: #292e78;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #292e78;
     box-shadow: 0 0 8px #292e78;
 
@@ -108,7 +108,7 @@
 
       @media (hover: none) {
         background-color: #292e78;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #292e78;
         box-shadow: 0 0 8px #292e78;
       }
@@ -121,7 +121,7 @@
 
   &--ev {
     background-color: #04bfb0;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #04bfb0;
     box-shadow: 0 0 8px #04bfb0;
 
@@ -134,7 +134,7 @@
 
       @media (hover: none) {
         background-color: #04bfb0;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #04bfb0;
         box-shadow: 0 0 8px #04bfb0;
       }
@@ -147,7 +147,7 @@
 
   &--gp {
     background-color: #6b6b6b;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #6b6b6b;
     box-shadow: 0 0 8px #6b6b6b;
 
@@ -160,7 +160,7 @@
 
       @media (hover: none) {
         background-color: #6b6b6b;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #6b6b6b;
         box-shadow: 0 0 8px #6b6b6b;
       }
@@ -173,7 +173,7 @@
 
   &--rakuten {
     background-color: #bf0101;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #bf0101;
     box-shadow: 0 0 8px #bf0101;
 
@@ -186,7 +186,7 @@
 
       @media (hover: none) {
         background-color: #bf0101;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #bf0101;
         box-shadow: 0 0 8px #bf0101;
       }
@@ -199,7 +199,7 @@
 
   &--apple {
     background-color: #666666;
-    color: rgb(var(--pcn-color-neutral-0));
+    color: rgb(var(--ec-color-neutral-0));
     border: solid 2px #666666;
     box-shadow: 0 0 8px #666666;
 
@@ -212,7 +212,7 @@
 
       @media (hover: none) {
         background-color: #666666;
-        color: rgb(var(--pcn-color-neutral-0));
+        color: rgb(var(--ec-color-neutral-0));
         border: solid 2px #666666;
         box-shadow: 0 0 8px #666666;
       }

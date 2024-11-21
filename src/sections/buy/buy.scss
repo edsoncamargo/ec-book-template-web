@@ -1,59 +1,59 @@
 @use '../../styles/core/settings/breakpoints';
 
-.pcn-buy {
+.ec-buy {
   $buy: &;
 
   display: flex;
   flex-direction: column;
-  gap: var(--pcn-spacing-lg);
+  gap: var(--ec-spacing-lg);
 
   &__header {
     display: flex;
     align-items: center;
-    gap: var(--pcn-spacing-lg);
+    gap: var(--ec-spacing-lg);
 
     #{$buy}__title {
       max-width: 695px;
       display: flex;
       flex-direction: column;
-      gap: var(--pcn-spacing-md);
+      gap: var(--ec-spacing-md);
     }
   }
 
   &__price {
     display: flex;
     align-items: center;
-    gap: var(--pcn-spacing-md);
+    gap: var(--ec-spacing-md);
 
     &__group {
       display: flex;
-      font-weight: var(--pcn-font-weight-bold);
-      color: rgb(var(--pcn-color-neutral-60));
+      font-weight: var(--ec-font-weight-bold);
+      color: rgb(var(--ec-color-neutral-60));
 
       &__prefix {
         align-self: center;
-        font-size: var(--pcn-font-size-xl);
+        font-size: var(--ec-font-size-xl);
       }
 
       &__value {
-        font-size: var(--pcn-font-size-giga);
+        font-size: var(--ec-font-size-giga);
       }
 
       &__suffix {
         align-self: end;
         position: relative;
         top: -10px;
-        font-size: var(--pcn-font-size-sm);
+        font-size: var(--ec-font-size-sm);
       }
     }
   }
 
   &__book {
     display: flex;
-    gap: var(--pcn-spacing-md);
-    margin-top: var(--pcn-spacing-md);
+    gap: var(--ec-spacing-md);
+    margin-top: var(--ec-spacing-md);
 
-    @media (max-width: breakpoints.$pcn-breakpoint-md) {
+    @media (max-width: breakpoints.$ec-breakpoint-md) {
       flex-wrap: wrap;
     }
 
@@ -62,9 +62,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: var(--pcn-spacing-sm);
+      gap: var(--ec-spacing-sm);
 
-      @media (max-width: breakpoints.$pcn-breakpoint-md) {
+      @media (max-width: breakpoints.$ec-breakpoint-md) {
         flex: 1;
         flex-basis: 142px;
 
@@ -77,7 +77,7 @@
   }
 
   &__icon {
-    color: rgb(var(--pcn-color-neutral-30));
+    color: rgb(var(--ec-color-neutral-30));
     height: 75px;
     min-width: 75px;
   }

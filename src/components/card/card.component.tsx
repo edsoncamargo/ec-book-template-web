@@ -4,11 +4,11 @@ import { ComponentProps, ReactNode } from 'react';
 import { VariantProps, tv } from 'tailwind-variants';
 
 const card = tv({
-  base: 'pcn-card',
+  base: 'ec-card',
   variants: {
     variant: {
-      left: 'pcn-card--left',
-      right: 'pcn-card--right',
+      left: 'ec-card--left',
+      right: 'ec-card--right',
     },
   },
   defaultVariants: {
