@@ -39,21 +39,23 @@ export default function Footer() {
         </div>
 
         <div className='ec-footer__middle'>
-          <div className='ec-footer__middle__medias'>
-            <a
-              href='https://www.instagram.com/advogadopaulocesar?igsh=MXR5ZmVsc2NwN216bw=='
-              target='_blank'
-            >
-              <FaInstagram className='ec-i' />
-            </a>
+          {content.footer.social_medias && (
+            <div className='ec-footer__middle__medias'>
+              <a
+                href='https://www.instagram.com/advogadopaulocesar?igsh=MXR5ZmVsc2NwN216bw=='
+                target='_blank'
+              >
+                <FaInstagram className='ec-i' />
+              </a>
 
-            <a
-              href='https://www.facebook.com/profile.php?id=100008682103402&mibextid=LQQJ4d'
-              target='_blank'
-            >
-              <FaFacebook className='ec-i' />
-            </a>
-          </div>
+              <a
+                href='https://www.facebook.com/profile.php?id=100008682103402&mibextid=LQQJ4d'
+                target='_blank'
+              >
+                <FaFacebook className='ec-i' />
+              </a>
+            </div>
+          )}
 
           <p
             aria-label={`${content.footer.rights.label} ${content.footer.rights.year}`}

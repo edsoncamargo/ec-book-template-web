@@ -165,10 +165,12 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             },
           ],
         ],
+        social_medias: true,
         rights: {
           label: 'Todos os direitos reservados',
           year: '2024',
         },
+
         developer: 'Desenvolvido por',
         show: true,
       },

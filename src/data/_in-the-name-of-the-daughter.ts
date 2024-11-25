@@ -152,6 +152,7 @@ export const IN_THE_NAME_OF_THE_DAUGHTER = {
             },
           ],
         ],
+        social_medias: false,
         rights: {
           label: 'Todos os direitos reservados',
           year: '2024',

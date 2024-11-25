@@ -64,6 +64,7 @@ interface CommonContent {
   };
   footer: {
     menu: Array<Array<{ label: string; link: string }>>;
+    social_medias: boolean;
     rights: { label: string; year: string };
     developer: string;
     show?: boolean;

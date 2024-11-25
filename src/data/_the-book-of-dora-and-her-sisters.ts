@@ -196,6 +196,7 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
             },
           ],
         ],
+        social_medias: false,
         rights: {
           label: 'Todos os direitos reservados',
           year: '2024',
