@@ -35,11 +35,13 @@
         object-fit: cover;
         object-position: 50% 10%;
         opacity: 0;
+        transform: translateY(32px);
         transition: opacity 0.3s ease-in-out;
         transition-delay: 0.3s;
 
         &--loaded {
           opacity: 1;
+          transform: translateY(0px);
         }
       }
     }
@@ -59,11 +61,13 @@
       #{$about}__subscription {
         width: 144px;
         opacity: 0;
+        transform: translateY(32px);
         transition: all 0.3s ease-in-out;
         transition-delay: 0.3s;
 
         &--loaded {
           opacity: 1;
+          transform: translateY(0px);
         }
       }
     }
