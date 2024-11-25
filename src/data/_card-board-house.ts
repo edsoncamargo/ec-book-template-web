@@ -93,6 +93,7 @@ Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova Hist�
 Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
         signature: 'subscription.svg',
         signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
+        author_image: 'paulo.jpeg',
         show: true,
       },
       other_publications: {

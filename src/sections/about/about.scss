@@ -7,9 +7,11 @@
   padding: 0px;
 
   &__body {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     gap: var(--ec-spacing-md);
+    margin: 0 auto;
 
     @media (max-width: breakpoints.$ec-breakpoint-md) {
       flex-direction: column;
@@ -25,10 +27,13 @@
 
       &__image {
         display: block;
+        max-height: 600px;
         min-height: 400px;
         height: 100%;
         width: 100%;
+        position: relative;
         object-fit: cover;
+        object-position: 50% 10%;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
         transition-delay: 0.3s;

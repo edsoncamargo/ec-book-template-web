@@ -10,18 +10,9 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
     pt: {
       title: 'De afetos, fantasias, dores e silêncios',
       author: 'Sulamita Esteliam',
-      category: [
-        'Biografia e Autobiografia',
-        'Autoria',
-        'Vida Cristã',
-        'Devocional',
-        'Corpo',
-        'Mente e Espírito',
-        'Biografia e Testemunho',
-        'Autoajuda',
-      ],
+      category: [],
       button: 'LEIA UM POUCO',
-      book_alt: `"Capa do livro 'Uma Nova História'. O design é minimalista, com letras douradas em fundo branco. A capa traz a frase: 'Plantar uma árvore. Escrever um livro. Ter um filho, mesmo que seja na fé'. Na parte inferior, há a imagem de uma caneta dourada inclinada, simbolizando escrita e criação.`,
+      book_alt: `: Capa do livro "O Livro de Dora e Suas Irmãs" de Sulamita Esteliam. O fundo tem um padrão de grade bege claro. O título "O Livro de Dora e Suas Irmãs" está em letras vermelhas em destaque no topo. Abaixo, há uma grande flor amarela com pétalas detalhadas, tendo um miolo marrom repleto de pequenos pontos brancos. Sobre uma das pétalas, uma abelha desenhada em estilo realista aparece em destaque. Na parte inferior, está o logotipo da "Comunicação de Fato Editora".`,
       synopsis: {
         title: 'Sinopse',
         contents: [
@@ -137,36 +128,23 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
       },
       about_author: {
         title: 'SOBRE O AUTOR',
-        description: `Paulo Cesar Nascimento dos Santos é advogado, teólogo, escritor, pastor e personal coaching. Com uma abordagem única que combina suas experiências jurídicas e teológicas, ele oferece insights profundos e transformadores.
-Entre suas obras estão "Ainda no Jardim", "Entre Pães e Peixes, Uma Nova História", e uma obra inspiradora de narrativas clássicas,  "Casa de Papelão", que revela a resiliência humana em tempos difíceis.
-Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se a ajudar pessoas a desbloquear seu potencial e alcançar seus objetivos. Sua escrita e seu trabalho têm inspirado muitos a buscar crescimento pessoal e profissional e acima de tudo uma experiência viva com Deus nos dias atuais.`,
-        signature: 'subscription.svg',
-        signature_alt: 'Assinatura do autor em letra cursiva: Paulo',
+        description: `Sulamita Esteliam é mineira de Belo Horizonte, formada em Jornalismo pela Fafich/UFMG, em 1979. Passou por várias redações de jornais, revistas e TVs em BH, Brasília-DF e Fortaleza-CE, quase sempre nas áreas de economia e política. Levou sua experiência para os movimentos popular e sindical, e fez breves incursões no poder público, nas assessorias de imprensa e comunicação. É autora dos livros "Estação Ferrugem", Vozes, 1988 e "Em Nome da Filha", Viseu, 2018. 
+          Mora no Recife-PE. Mãe de seis: cinco mulheres, e avó de sete, cinco rapazes. Aos 70 anos é bisavó de um menino. Vive com Júlio Soares Teixeira, pai de sua filha caçula e de outras filhas do coração. Além de escrever, ama cozinhar, dançar, cantar e reunir pessoas.`,
+        author_image: 'sulamita.jpg',
         show: true,
       },
       other_publications: {
         title: 'Outras <br/> publicações',
         books: [
           {
-            title: 'Casa de Papelão',
-            cover_image: 'card-board-house.jpeg',
-            link: 'https://www.projetocasadepapelao.com.br/',
+            title: 'O Livro de Dora e Suas Irmãs',
+            cover_image: 'the-book-of-dora-and-her-sisters.jpeg',
+            link: 'https://o-livro-de-dora-e-suas-irmas.vercel.app/',
           },
           {
-            title: 'Pães e Peixes',
-            cover_image: 'bread-and-fish.jpeg',
-            link: '/paes-e-peixes',
-          },
-          {
-            title: 'Ainda No Jardim',
-            cover_image: 'still-in-the-garden.jpeg',
-            link: '/ainda-no-jardim',
-          },
-          {
-            title: 'As Incríveis Aventuras do Cão Cebola e a Gatinha Mica',
-            cover_image:
-              'the-amazing-adventures-of-dog-onion-and-kitty-mica.jpeg',
-            link: 'https://www.caocebola.com.br/',
+            title: 'Em Nome da Filha',
+            cover_image: 'in-the-name-of-the-daughter.jpeg',
+            link: 'https://em-nome-da-filha.vercel.app/',
           },
         ],
         show: true,
@@ -183,7 +161,7 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
           'bruno-moreno.jpeg',
           'olympus.svg',
         ],
-        show: true,
+        show: false,
       },
       footer: {
         menu: [

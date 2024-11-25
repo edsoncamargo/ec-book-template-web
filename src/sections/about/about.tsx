@@ -38,7 +38,7 @@ export default function About() {
               className={`ec-about__author__image ${
                 imageAuthorLoaded ? 'ec-about__author__image--loaded' : ''
               }`}
-              src='/assets/images/author.jpeg'
+              src={`/assets/images/authors/${content.about_author.author_image}`}
               alt={content.about_author.signature_alt}
               loading='lazy'
               onLoad={handleImageAuthorLoad}
@@ -55,17 +55,19 @@ export default function About() {
             {content.about_author.description}
           </p>
 
-          <figure className='ec-font' data-aos='fade-up'>
-            <img
-              className={`ec-about__subscription ${
-                imageLoaded ? 'ec-about__subscription--loaded' : ''
-              }`}
-              src={`/assets/images/subscriptions/${content.about_author.signature}`}
-              alt={content.about_author.signature_alt}
-              loading='lazy'
-              onLoad={handleImageLoad}
-            />
-          </figure>
+          {content.about_author.signature && (
+            <figure className='ec-font' data-aos='fade-up'>
+              <img
+                className={`ec-about__subscription ${
+                  imageLoaded ? 'ec-about__subscription--loaded' : ''
+                }`}
+                src={`/assets/images/subscriptions/${content.about_author.signature}`}
+                alt={content.about_author.signature_alt}
+                loading='lazy'
+                onLoad={handleImageLoad}
+              />
+            </figure>
+          )}
         </div>
       </div>
     </section>

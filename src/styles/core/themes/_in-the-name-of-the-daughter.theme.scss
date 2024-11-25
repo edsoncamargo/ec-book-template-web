@@ -1,0 +1,26 @@
+@use '../mixins/colors';
+
+$colors: (
+  primary: (
+    // #db3d78
+    219,
+    61,
+    120,
+  ),
+  secondary: (
+    // #fff
+    255,
+    255,
+    255,
+  ),
+  on-bg: (
+    // #fff
+    255,
+    255,
+    255,
+  ),
+);
+
+.ec-in-the-name-of-the-daughter-theme {
+  @include colors.generate-vars($colors);
+}

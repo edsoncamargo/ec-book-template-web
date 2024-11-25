@@ -21,6 +21,6 @@ $colors: (
   ),
 );
 
-.the-amazing-adventures-of-dog-onion-and-kitty-mica-theme {
+.ec-the-amazing-adventures-of-dog-onion-and-kitty-mica-theme {
   @include colors.generate-vars($colors);
 }

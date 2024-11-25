@@ -47,8 +47,9 @@ interface CommonContent {
   about_author: {
     title: string;
     description: string;
-    signature: string;
-    signature_alt: string;
+    signature?: string;
+    signature_alt?: string;
+    author_image: string;
     show?: boolean;
   };
   other_publications: {
