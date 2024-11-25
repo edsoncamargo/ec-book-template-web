@@ -3,8 +3,9 @@ export const IN_THE_NAME_OF_THE_DAUGHTER = {
   theme: 'in-the-name-of-the-daughter-theme',
   seo: {
     title: 'Em Nome da Filha',
-    description:
-      'Descubra a história de Maria Dora, uma mulher forte e resiliente, cujo relato de vida transcende afetos, dores e silêncios. Em um enredo de superação e renascimento, Maria Dora, uma costureira simples de Minas Gerais, enfrenta o impossível e busca sua identidade no meio de desafios e perdas. Explore uma narrativa de amor, amizade, liberdade e resistência, onde mulheres e homens lutam pela sua verdade e humanidade. Acompanhe a jornada de Maria Dora em uma trama cheia de emoção, sororidade e transformação..',
+    description: `É uma história difícil, mas que alerta para os sinais e os riscos de um relacionamento abusivo. Amor que é amor respeita e se respeita, protege e se protege, não machuca e muito menos mata.
+O livro conta uma história de um predador sobre sua vítima, uma paixão desmedida que termina em tragédia: uma morte anunciada, onde o Estado também tem sua parcela de culpa, por omissão. Conta também a saga da mãe em busca de justiça contra o algoz de sua filha.
+É uma história real, como milhares que, infelizmente, existem por aí. E que só vai parar de se repetir quando meninas e meninos forem educados de forma igualitária, para o respeito, não para a posse, para dizer e ouvir não.`,
   },
   content: {
     pt: {

@@ -4,7 +4,7 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
   seo: {
     title: 'O Livro de Dora e Suas Irmãs',
     description:
-      'Descubra a história de Maria Dora, uma mulher forte e resiliente, cujo relato de vida transcende afetos, dores e silêncios. Em um enredo de superação e renascimento, Maria Dora, uma costureira simples de Minas Gerais, enfrenta o impossível e busca sua identidade no meio de desafios e perdas. Explore uma narrativa de amor, amizade, liberdade e resistência, onde mulheres e homens lutam pela sua verdade e humanidade. Acompanhe a jornada de Maria Dora em uma trama cheia de emoção, sororidade e transformação..',
+      'Descubra a história de Maria Dora, uma mulher forte e resiliente, cujo relato de vida transcende afetos, dores e silêncios. Em um enredo de superação e renascimento, Maria Dora, uma costureira simples de Minas Gerais, enfrenta o impossível e busca sua identidade no meio de desafios e perdas. Explore uma narrativa de amor, amizade, liberdade e resistência, onde mulheres e homens lutam pela sua verdade e humanidade. Acompanhe a jornada de Maria Dora em uma trama cheia de emoção, sororidade e transformação.',
   },
   content: {
     pt: {
