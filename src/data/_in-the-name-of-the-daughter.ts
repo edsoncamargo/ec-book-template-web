@@ -177,6 +177,9 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
         developer: 'Desenvolvido por',
         show: true,
       },
+      donation: {
+        show: true,
+      },
     },
   },
 };

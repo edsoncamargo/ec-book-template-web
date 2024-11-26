@@ -220,6 +220,9 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
         developer: 'Desenvolvido por',
         show: true,
       },
+      donation: {
+        show: true,
+      },
     },
   },
 };

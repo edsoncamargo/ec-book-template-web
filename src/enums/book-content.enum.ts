@@ -75,6 +75,9 @@ interface CommonContent {
     developer: string;
     show?: boolean;
   };
+  donation: {
+    show?: boolean;
+  };
 }
 
 export interface BookContent {

@@ -7,6 +7,7 @@ import AOS from 'aos';
 import { Analytics } from '@vercel/analytics/react';
 import { BookContent } from './enums/book-content.enum';
 import { CurrentThemeContext } from './context';
+import Donation from './components/donation/donation';
 import LoadingSquare from './components/loadings/loading.square';
 import { THEME_MAPPINGS } from './constants/theme.constants';
 import { ThemeKeys } from './enums/theme.enum';
@@ -74,6 +75,8 @@ function App() {
           )}
           {bookContent?.content[language]!.partners.show && <OurPartners />}
           {bookContent?.content[language]!.footer.show && <Footer />}
+
+          {bookContent?.content[language]!.donation.show && <Donation />}
         </Suspense>
       </CurrentThemeContext.Provider>
 
