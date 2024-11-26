@@ -75,11 +75,10 @@ function App() {
           )}
           {bookContent?.content[language]!.partners.show && <OurPartners />}
           {bookContent?.content[language]!.footer.show && <Footer />}
-
-          {bookContent?.content[language]!.donation.show && <Donation />}
         </Suspense>
       </CurrentThemeContext.Provider>
 
+      {bookContent?.content[language]!.donation.show && <Donation />}
       <Analytics />
     </main>
   );
