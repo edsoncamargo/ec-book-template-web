@@ -27,6 +27,7 @@ Cão Cebola vivia com seus pais amorosos, Lili e Bob, que sempre o incentivaram 
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
           'O lançamento estará disponível em formato físico e digital no dia 21 de novembro.',
+        link: '',
         price: {
           ebook: {
             label: 'eBOOK',

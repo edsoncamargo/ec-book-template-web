@@ -16,9 +16,24 @@ export default function Buy() {
           <h2 className='ec-font-heading ec-uppercase' data-aos='fade-up'>
             {content.purchase.title}
           </h2>
+
           <h3 className='ec-font-caption' data-aos='fade-up'>
             {content.purchase.description}
           </h3>
+
+          {content.purchase.link && (
+            <div className='ec-buy__book__btn-group' data-aos='fade-up'>
+              <img
+                alt='vakinha'
+                src={`/assets/images/logos/vakinha.png`}
+                loading='lazy'
+              />
+
+              <a href='' target='_blank'>
+                <Button variant='vakinha'>QUERO AJUDAR</Button>
+              </a>
+            </div>
+          )}
         </div>
 
         <span data-aos='fade-up'>

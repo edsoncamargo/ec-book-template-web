@@ -39,6 +39,7 @@ export const A_NEW_STORY = {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
           'Disponível em formato físico e eBook, compre agora nas seguintes plataformas:',
+        link: '',
         price: {
           physical: {
             label: 'FÍSICO',

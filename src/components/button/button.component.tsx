@@ -15,6 +15,7 @@ const button = tv({
       gp: 'ec-button--gp',
       rakuten: 'ec-button--rakuten',
       apple: 'ec-button--apple',
+      vakinha: 'ec-button--vakinha',
     },
   },
   defaultVariants: {

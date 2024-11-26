@@ -32,6 +32,7 @@ export const STILL_IN_THE_GARDEN = {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
           'Disponível em formato físico e eBook, compre agora nas seguintes plataformas:',
+        link: '',
         price: {
           physical: {
             label: 'FÍSICO',

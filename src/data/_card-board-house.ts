@@ -31,6 +31,7 @@ export const CARD_BOARD_HOUSE = {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
           'O lançamento estará disponível em formato físico e digital no dia 21 de novembro.',
+        link: '',
         price: {
           ebook: {
             label: 'eBOOK',

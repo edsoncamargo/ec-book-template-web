@@ -25,106 +25,16 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
         show: true,
       },
       purchase: {
-        title: 'ONDE ADQUIRIR O LIVRO?',
-        description:
-          'Disponível em formato físico e eBook, compre agora nas seguintes plataformas:',
-        price: {
-          physical: {
-            label: 'FÍSICO',
-            prefix: 'R$',
-            value: '41',
-            suffix: ',60',
-            platforms: [
-              {
-                name: 'amazon',
-                button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9788567403069',
-              },
-              {
-                name: 'americanas',
-                button: 'COMPRAR',
-                link: 'https://www.americanas.com.br/busca/9788567403069',
-              },
-              {
-                name: 'ml',
-                button: 'COMPRAR',
-                link: 'https://lista.mercadolivre.com.br/9788567403069',
-              },
-              {
-                name: 'ev',
-                button: 'COMPRAR',
-                link: 'https://www.estantevirtual.com.br/busca?utf8=%E2%9C%93&q=Uma%20Nova%20Hist%C3%B3ria%20Paulo%20Cesar%20Nascimento%20dos%20Santos',
-              },
-            ],
-          },
-          ebook: {
-            label: 'eBOOK',
-            prefix: 'R$',
-            value: '23',
-            suffix: ',86',
-            platforms: [
-              {
-                name: 'amazon',
-                button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9788567403069',
-              },
-              {
-                name: 'gp',
-                button: 'COMPRAR',
-                link: 'https://play.google.com/store/search?q=9788567403069&c=apps',
-              },
-              {
-                name: 'rakuten',
-                button: 'COMPRAR',
-                link: 'https://www.kobo.com/br/pt/search?query=9788567403069',
-              },
-              {
-                name: 'apple',
-                button: 'COMPRAR',
-                link: 'https://clubedeautores.com.br/livro/uma-nova-historia-3#',
-              },
-            ],
-          },
-        },
+        title: 'COMO POSSO AJUDAR A REALIZAR O SONHO DA DORA',
+        description: 'Você quer ajudar?',
+        link: 'https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora',
+        price: {},
         show: true,
       },
       characteristics: {
         title: 'CARACTERÍSTICAS',
-        details: [
-          {
-            type: 'ISBN',
-            value: '9786501130637',
-          },
-          {
-            type: 'N° de páginas',
-            value: '156',
-          },
-          {
-            type: 'Edição',
-            value: '1 (2024)',
-          },
-          {
-            type: 'Formato',
-            value: 'A5 (148x210)',
-          },
-          {
-            type: 'Acabamento',
-            value: 'Brochura c/ orelha',
-          },
-          {
-            type: 'Coloração',
-            value: 'Preto e branco',
-          },
-          {
-            type: 'Tipo de papel',
-            value: 'Polen',
-          },
-          {
-            type: 'Idioma',
-            value: 'Português',
-          },
-        ],
-        show: true,
+        details: [],
+        show: false,
       },
       about_author: {
         title: 'SOBRE O AUTOR',
@@ -151,16 +61,7 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
       },
       partners: {
         title: 'NOSSOS PARCEIROS',
-        logos: [
-          'eleve.png',
-          'brasil-formulas.jpeg',
-          'aa.jpeg',
-          'iatd.jpeg',
-          'demandas-tech.png',
-          'rcca.jpeg',
-          'bruno-moreno.jpeg',
-          'olympus.svg',
-        ],
+        logos: [],
         show: false,
       },
       footer: {

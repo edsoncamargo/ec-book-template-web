@@ -13,6 +13,7 @@ interface CommonContent {
   purchase: {
     title: string;
     description: string;
+    link?: string;
     price?: {
       physical?: {
         label: string;

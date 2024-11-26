@@ -222,4 +222,30 @@
       @include mouseEffect;
     }
   }
+
+  &--vakinha {
+    background-color: #24ca68;
+    color: rgb(var(--ec-color-neutral-0));
+    border: solid 2px #24ca68;
+    box-shadow: 0 0 8px #24ca68;
+
+    @mixin mouseEffect {
+      box-shadow: 0 0 0px #24ca68;
+    }
+
+    &:hover {
+      @include mouseEffect;
+
+      @media (hover: none) {
+        background-color: #24ca68;
+        color: rgb(var(--ec-color-neutral-0));
+        border: solid 2px #24ca68;
+        box-shadow: 0 0 8px #24ca68;
+      }
+    }
+
+    &:active {
+      @include mouseEffect;
+    }
+  }
 }
