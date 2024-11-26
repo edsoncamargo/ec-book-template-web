@@ -196,7 +196,23 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
             },
           ],
         ],
-        social_medias: false,
+        social_medias: {
+          buttons: [
+            {
+              icon: 'FaXTwitter',
+              link: 'https://x.com/sulaesteliam',
+            },
+            {
+              icon: 'FaBlog',
+              link: 'https://atalmineira.com/',
+            },
+            {
+              icon: 'FaHeart',
+              link: 'https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora',
+            },
+          ],
+          show: true,
+        },
         rights: {
           label: 'Todos os direitos reservados',
           year: '2024',

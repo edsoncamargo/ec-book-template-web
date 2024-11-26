@@ -1,6 +1,6 @@
 import './footer.scss';
 
-import { FaFacebook, FaInstagram } from 'react-icons/fa6';
+import * as Icons from 'react-icons/fa6';
 
 import { CurrentThemeContext } from '../../context';
 import { useContext } from 'react';
@@ -39,21 +39,16 @@ export default function Footer() {
         </div>
 
         <div className='ec-footer__middle'>
-          {content.footer.social_medias && (
+          {content.footer.social_medias.show && (
             <div className='ec-footer__middle__medias'>
-              <a
-                href='https://www.instagram.com/advogadopaulocesar?igsh=MXR5ZmVsc2NwN216bw=='
-                target='_blank'
-              >
-                <FaInstagram className='ec-i' />
-              </a>
-
-              <a
-                href='https://www.facebook.com/profile.php?id=100008682103402&mibextid=LQQJ4d'
-                target='_blank'
-              >
-                <FaFacebook className='ec-i' />
-              </a>
+              {content.footer.social_medias.buttons.map((button) => {
+                const IconComponent = Icons[button.icon as keyof typeof Icons];
+                return (
+                  <a href={button.link} key={button.link} target='_blank'>
+                    {IconComponent && <IconComponent className='ec-i' />}
+                  </a>
+                );
+              })}
             </div>
           )}
 
@@ -71,8 +66,7 @@ export default function Footer() {
 
         <div className='ec-footer__bottom'>
           <p className='ec-footer__developer'>
-            {content.footer.developer}
-            {''}
+            {content.footer.developer}{' '}
             <a href='https://edsoncamargo.dev'>edsoncamargo.dev</a>
           </p>
         </div>

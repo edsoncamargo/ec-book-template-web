@@ -64,7 +64,13 @@ interface CommonContent {
   };
   footer: {
     menu: Array<Array<{ label: string; link: string }>>;
-    social_medias: boolean;
+    social_medias: {
+      buttons: Array<{
+        icon: string;
+        link: string;
+      }>;
+      show: boolean;
+    };
     rights: { label: string; year: string };
     developer: string;
     show?: boolean;

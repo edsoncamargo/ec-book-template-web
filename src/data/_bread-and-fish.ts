@@ -214,7 +214,19 @@ Como praticante de Programação Neurolinguística (PNL), Paulo Cesar dedica-se 
             },
           ],
         ],
-        social_medias: true,
+        social_medias: {
+          buttons: [
+            {
+              icon: 'FaInstagram',
+              link: 'https://www.instagram.com/advogadopaulocesar',
+            },
+            {
+              icon: 'FaFacebook',
+              link: 'https://www.facebook.com/profile.php?id=100008682103402',
+            },
+          ],
+          show: false,
+        },
         rights: {
           label: 'Todos os direitos reservados',
           year: '2024',
