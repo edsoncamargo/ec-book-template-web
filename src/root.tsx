@@ -60,26 +60,28 @@ function App() {
   );
 
   return (
-    <main className={`ec-${currentTheme} ec-app`}>
-      <CurrentThemeContext.Provider value={contextValue}>
-        <Suspense fallback={<LoadingSquare />}>
-          <Home />
-          {bookContent?.content[language]!.synopsis.show && <Sinopse />}
-          {bookContent?.content[language]!.purchase.show && <Buy />}
-          {bookContent?.content[language]!.characteristics.show && (
-            <Characteristics />
-          )}
-          {bookContent?.content[language]!.about_author.show && <About />}
-          {bookContent?.content[language]!.other_publications.show && (
-            <OurBooks />
-          )}
-          {bookContent?.content[language]!.partners.show && <OurPartners />}
-          {bookContent?.content[language]!.footer.show && <Footer />}
-        </Suspense>
-      </CurrentThemeContext.Provider>
+    <main className={`ec-${currentTheme} `}>
+      <Suspense fallback={<LoadingSquare />}>
+        <CurrentThemeContext.Provider value={contextValue}>
+          <div className='ec-app'>
+            <Home />
+            {bookContent?.content[language]!.synopsis.show && <Sinopse />}
+            {bookContent?.content[language]!.purchase.show && <Buy />}
+            {bookContent?.content[language]!.characteristics.show && (
+              <Characteristics />
+            )}
+            {bookContent?.content[language]!.about_author.show && <About />}
+            {bookContent?.content[language]!.other_publications.show && (
+              <OurBooks />
+            )}
+            {bookContent?.content[language]!.partners.show && <OurPartners />}
+            {bookContent?.content[language]!.footer.show && <Footer />}
+          </div>
 
-      {bookContent?.content[language]!.donation.show && <Donation />}
-      <Analytics />
+          {bookContent?.content[language]!.donation.show && <Donation />}
+          <Analytics />
+        </CurrentThemeContext.Provider>
+      </Suspense>
     </main>
   );
 }
