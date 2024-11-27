@@ -30,7 +30,7 @@ export default function Home() {
             href={`/${content.sneak_peak}`}
             target='_blank'
             rel='noopener noreferrer'
-            className={!content.sneak_peak ? 'ec-disabled' : ''}
+            className={!content.sneak_peak ? 'ec-hidden' : ''}
           >
             <Button>{content.button}</Button>
           </a>
