@@ -29,7 +29,10 @@ export default function Buy() {
                 loading='lazy'
               />
 
-              <a href='' target='_blank'>
+              <a
+                href='https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora'
+                target='_blank'
+              >
                 <Button variant='vakinha'>QUERO AJUDAR</Button>
               </a>
             </div>
