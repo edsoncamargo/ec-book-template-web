@@ -16,11 +16,10 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
       synopsis: {
         title: 'Sinopse',
         contents: [
-          'Maria Dora é o centro dessa história que fala de afetos, fantasias, dores e silêncios. O ponto de partida são seus diários, entregues sob recomendação expressa para sua amiga desde a infância, confidente de uma vida inteira. Contam a saga de uma mulher simples, uma costureira, à frente do seu tempo, que desconhece preconceitos e leva a vida a trabalhar, criar sua prole e apaixonar-se.',
-          'Quando acredita ter encontrado o amor de sua vida, é colocada diante do inimaginável, um colosso emocional que desaba sobre sua realidade, que queria multicor, transformando tudo em sombra e incerteza. Quase vai à lona, mas encontra força para deixá-lo ir atrás da própria identidade, enquanto ela se solta no mundo em busca do próprio renascer. Que mulher é essa!?',
-          'Filha de gente simples, egressa do interior de Minas Gerais, batalhadora e gregária, ela, por assim dizer, cumpre o papel de abelha rainha da colmeia de irmãs, todas Marias como ela, que têm na mãe uma filósofa cúmplice. A vida se encarrega de mudar o rumo da saga, e as abelhas rainha e operárias são testadas ao limite de sua capacidade de produzir mel e superar perdas e desafios.',
-          'E tudo que queriam era levar vida normal, como gente normal, que ama, trabalha, come, bebe, procria, dorme e acorda para recomeçar a rotina do cotidiano. Ocorre que, se a vida é um ciclo, que morre e renasce todo dia, como o Sol e a Lua, a vida é milagre e é perda, é um fingimento.',
-          'Histórias que falam de liberdade e repressão, de amor e rejeição, de amizade, resistência, resiliência, sororidade, acolhimento e solidariedade. Histórias de silêncios e de negações – de mulheres e homens. Histórias guardadas a sete chaves, ainda que algumas sejam como segredos de polichinelo. Histórias da vida como ela é, porque de humanidade se trata, e o ser humano, visto de perto, é assim: múltiplo e único, plural e singular, rico e miserável, corajoso e pusilânime.',
+          'Maria Dora é o centro dessa história que fala de afetos, fantasias, dores e silêncios. O ponto de partida são seus diários, entregues sob recomendação expressa para sua amiga de infância e confidente. Contam a saga de uma mulher simples, uma costureira, à frente do seu tempo, que desconhece preconceitos e leva a vida a trabalhar, criar sua prole e apaixonar-se. Quando acredita ter encontrado o amor de sua vida, é colocada diante do inimaginável, um colosso emocional que desaba sobre sua realidade, que queria multicor, transformando tudo em sombra e incerteza. Quase vai à lona, mas encontra força para deixá-lo ir atrás da própria identidade, enquanto ela se solta no mundo em busca do próprio renascer. Que mulher é essa!?  ',
+          'Filha de gente simples, egressa do interior de Minas Gerais, batalhadora e gregária, ela, por assim dizer, cumpria o papel de abelha rainha da colmeia de irmãs, todas Marias como ela, que tinham na mãe uma filósofa cúmplice.',
+          'A vida se encarrega de mudar o rumo da saga, e as abelhas rainha e operárias são testadas ao limite de sua capacidade de produzir mel e superar perdas e desafios. E tudo que queriam era levar vida normal, como gente normal, que ama, trabalha, come, bebe, procria, dorme e acorda para recomeçar a rotina do cotidiano. Ocorre que, se a vida é um ciclo, que morre e renasce todo dia, como o Sol e a Lua, a vida é milagre e é perda, é um fingimento.',
+          'Histórias que falam de liberdade e repressão, de amor e rejeição, de amizade, resistência, resiliência, sororidade, acolhimento e solidariedade. Histórias de silêncios e de negações – de mulheres e homens. Histórias guardadas a sete chaves, ainda que algumas sejam como segredos de polichinelo. Histórias da vida como ela é, porque de humanidade se trata, e o ser humano, visto de perto, é assim: múltiplo e único, plural e singular, rico e miserável, corajoso e pusilânime. ',
         ],
         show: true,
       },
@@ -55,6 +54,11 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
             title: 'Em Nome da Filha',
             cover_image: 'in-the-name-of-the-daughter.jpeg',
             link: 'https://em-nome-da-filha.vercel.app/',
+          },
+          {
+            title: 'Estação Ferrugem',
+            cover_image: 'rust-season.jpeg',
+            link: 'https://www.estantevirtual.com.br/livro/estacao-ferrugem-altitude-898-280-graus-1N2-6833-000',
           },
         ],
         show: true,
@@ -99,6 +103,10 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
         ],
         social_medias: {
           buttons: [
+            {
+              icon: 'FaInstagram',
+              link: 'https://www.instagram.com/sulaesteliam/',
+            },
             {
               icon: 'FaXTwitter',
               link: 'https://x.com/sulaesteliam',

@@ -113,6 +113,11 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
             cover_image: 'in-the-name-of-the-daughter.jpeg',
             link: 'https://em-nome-da-filha.vercel.app/',
           },
+          {
+            title: 'Estação Ferrugem',
+            cover_image: 'rust-season.jpeg',
+            link: 'https://www.estantevirtual.com.br/livro/estacao-ferrugem-altitude-898-280-graus-1N2-6833-000',
+          },
         ],
         show: true,
       },
@@ -156,6 +161,10 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
         ],
         social_medias: {
           buttons: [
+            {
+              icon: 'FaInstagram',
+              link: 'https://www.instagram.com/sulaesteliam/',
+            },
             {
               icon: 'FaXTwitter',
               link: 'https://x.com/sulaesteliam',

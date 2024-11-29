@@ -7,7 +7,7 @@ export const CARD_BOARD_HOUSE = {
   },
   content: {
     pt: {
-      title: 'Pré <br/> lançamento.',
+      title: 'Best-seller <br/> O último refúgio.',
       author: 'Paulo Cesar Nascimento dos Santos',
       category: [],
       button: 'LEIA UM POUCO',
