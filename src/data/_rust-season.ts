@@ -145,8 +145,16 @@ export const RUST_SEASON = {
         social_medias: {
           buttons: [
             {
+              icon: 'FaLinkedin',
+              link: 'https://www.linkedin.com/in/sulamita-esteliam-02a21b2b/',
+            },
+            {
               icon: 'FaInstagram',
               link: 'https://www.instagram.com/sulaesteliam/',
+            },
+            {
+              icon: 'FaAt',
+              link: 'https://www.threads.net/@sulaesteliam',
             },
             {
               icon: 'FaXTwitter',

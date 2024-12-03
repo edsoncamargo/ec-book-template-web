@@ -162,8 +162,16 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
         social_medias: {
           buttons: [
             {
+              icon: 'FaLinkedin',
+              link: 'https://www.linkedin.com/in/sulamita-esteliam-02a21b2b/',
+            },
+            {
               icon: 'FaInstagram',
               link: 'https://www.instagram.com/sulaesteliam/',
+            },
+            {
+              icon: 'FaAt',
+              link: 'https://www.threads.net/@sulaesteliam',
             },
             {
               icon: 'FaXTwitter',
