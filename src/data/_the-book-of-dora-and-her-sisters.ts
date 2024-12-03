@@ -108,6 +108,14 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
               link: 'https://www.linkedin.com/in/sulamita-esteliam-02a21b2b/',
             },
             {
+              icon: 'FaYoutube',
+              link: 'https://www.youtube.com/@sulamitaesteliam',
+            },
+            {
+              icon: 'FaFacebook',
+              link: 'https://www.facebook.com/sulamitakaiowaguaraniesteliam',
+            },
+            {
               icon: 'FaInstagram',
               link: 'https://www.instagram.com/sulaesteliam/',
             },
@@ -122,10 +130,6 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
             {
               icon: 'FaBlog',
               link: 'https://atalmineira.com/',
-            },
-            {
-              icon: 'FaHeart',
-              link: 'https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora',
             },
           ],
           show: true,
