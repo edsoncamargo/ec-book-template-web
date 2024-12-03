@@ -1,58 +1,41 @@
-export const IN_THE_NAME_OF_THE_DAUGHTER = {
-  id: 'em-nome-da-filha',
-  theme: 'in-the-name-of-the-daughter-theme',
+export const RUST_SEASON = {
+  id: 'estacao-ferrugem',
+  theme: 'rust-season-theme',
   seo: {
-    title: 'Em Nome da Filha',
-    description: `É uma história difícil, mas que alerta para os sinais e os riscos de um relacionamento abusivo. Amor que é amor respeita e se respeita, protege e se protege, não machuca e muito menos mata.
-O livro conta uma história de um predador sobre sua vítima, uma paixão desmedida que termina em tragédia: uma morte anunciada, onde o Estado também tem sua parcela de culpa, por omissão. Conta também a saga da mãe em busca de justiça contra o algoz de sua filha.
-É uma história real, como milhares que, infelizmente, existem por aí. E que só vai parar de se repetir quando meninas e meninos forem educados de forma igualitária, para o respeito, não para a posse, para dizer e ouvir não.`,
+    title: 'Estação Ferrugem: Altitude 898.280 Graus',
+    description: `Descubra o emocionante romance "Estação Ferrugem: Altitude 898.280 Graus", de Sulamita Esteliam, que explora a formação do bairro Estação Ferrugem em Minas Gerais. A obra narra a luta de uma comunidade por melhores condições de vida durante o período da ditadura militar, revelando histórias de resistência, memórias e identidade local. Um retrato social que conecta passado e presente em Belo Horizonte e Contagem. Ideal para amantes de literatura histórica e crítica social. Saiba mais sobre este clássico publicado em 1998 e mergulhe em uma narrativa rica e inspiradora`,
   },
   content: {
     pt: {
-      title: 'De afetos, fantasias, dores e silêncios',
+      title: 'Estação Ferrugem:<br/>Altitude 898.280 Graus',
       author: 'Sulamita Esteliam',
       category: [],
       button: 'LEIA UM POUCO',
-      book_alt: `Capa do livro "Em nome da Filha" de Sulamita Esteliam. A capa tem um fundo em tons de rosa e vermelho em degradê. O título "Em nome da Filha" está em letras brancas com fonte em destaque, posicionado dentro do contorno de um coração. Abaixo do coração, há um símbolo feminino estilizado, também branco. No canto inferior direito, está o logotipo da editora Viseu.`,
+      book_alt: `Capa do livro "Estação Ferrugem: Altitude 898.280 Graus" de Sulamita Esteliam. A imagem apresenta um fundo claro com várias fotos em preto e branco organizadas verticalmente, retratando cenas históricas, como moradores, arquitetura local e eventos comunitários. O título aparece em destaque na parte superior, com letras pretas, e há uma faixa vermelha à esquerda. Publicado pela editora Vozes e Prefeitura de Belo Horizonte.`,
       synopsis: {
         title: 'Sinopse',
         contents: [
-          'Que estranho poder é esse que leva uma mulher a colocar a própria vida em risco para continuar ao lado de um homem que a maltrata!?',
-          'O que o move? Como explicar tamanha obsessão? Carlos dizia a Mônica que a amava, e que enlouqueceria se fosse obrigado a viver sem ela.',
-          'Mas que amor é esse que machuca, tortura, aterroriza, subjuga e mata?',
-          'E que amor é esse que se submete, se anula, se morre um pouco a cada dia?',
+          'O livro "Estação Ferrugem: Altitude 898.280 Graus", escrito por Sulamita Esteliam e publicado em 1998, narra a história do bairro Estação Ferrugem, localizado entre Belo Horizonte e Contagem, Minas Gerais. A obra explora as transformações da região, desde suas ruas e comércios até as gerações de moradores, com foco na saga de uma família que migrou do interior.',
+          'O título faz referência metafórica ao "calor" das lutas sociais vividas no local, particularmente durante o regime militar, destacando a resistência dos habitantes em busca de melhores condições de vida. É uma narrativa que mistura memória, história e a construção de identidade de uma comunidade.',
         ],
         show: true,
       },
       purchase: {
         title: 'ONDE ADQUIRIR O LIVRO?',
         description:
-          'Disponível em formato físico e eBook, compre agora nas seguintes plataformas:',
+          'Disponível em formato físico, compre agora nas seguintes plataformas:',
         link: '',
         price: {
           physical: {
             label: 'FÍSICO',
             prefix: 'R$',
-            value: '58',
-            suffix: ',58',
+            value: '48',
+            suffix: ',59',
             platforms: [
               {
-                name: 'amazon',
+                name: 'ev',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/dp/8530000137?ref=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&starsLeft=1&skipTwisterOG=1&bestFormat=true',
-              },
-            ],
-          },
-          ebook: {
-            label: 'eBOOK',
-            prefix: 'R$',
-            value: '34',
-            suffix: ',90',
-            platforms: [
-              {
-                name: 'amazon',
-                button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/Em-nome-filha-Sulamita-Esteliam-ebook/dp/B07NLC1HP5/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=',
+                link: 'https://www.estantevirtual.com.br/livro/estacao-ferrugem-altitude-898-280-graus-1N2-6833-000',
               },
             ],
           },
@@ -64,11 +47,11 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
         details: [
           {
             type: 'Editora',
-            value: 'Viseu',
+            value: 'Vozes',
           },
           {
             type: 'Edição',
-            value: '1 (2019)',
+            value: '1 (1998)',
           },
           {
             type: 'Idioma',
@@ -76,19 +59,19 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
           },
           {
             type: 'N° de páginas',
-            value: '196',
+            value: '301',
           },
           {
             type: 'ISBN-10',
-            value: '8530000137',
+            value: '8532620329',
           },
           {
             type: 'ISBN-13',
-            value: '978-8530000134',
+            value: '9788532620323',
           },
           {
             type: 'Dimensões',
-            value: '21 x 436 x 14 cm',
+            value: '16 x 23 x 3 cm',
           },
         ],
         show: true,

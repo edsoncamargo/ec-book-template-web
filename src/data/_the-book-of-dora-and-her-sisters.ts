@@ -58,7 +58,7 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
           {
             title: 'Estação Ferrugem',
             cover_image: 'rust-season.jpeg',
-            link: 'https://www.estantevirtual.com.br/livro/estacao-ferrugem-altitude-898-280-graus-1N2-6833-000',
+            link: 'https://estacao-ferrugem.vercel.app/',
           },
         ],
         show: true,
