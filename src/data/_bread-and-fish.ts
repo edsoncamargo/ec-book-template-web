@@ -43,7 +43,7 @@ export const BREAD_AND_FISH = {
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9786501140810',
+                link: 'https://amzn.to/3OMdGgJ',
               },
               {
                 name: 'americanas',
@@ -71,7 +71,7 @@ export const BREAD_AND_FISH = {
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9786501140810',
+                link: 'https://amzn.to/3VmYZ7I',
               },
               {
                 name: 'gp',

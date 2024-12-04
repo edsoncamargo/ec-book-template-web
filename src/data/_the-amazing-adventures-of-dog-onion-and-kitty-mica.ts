@@ -38,7 +38,7 @@ Cão Cebola vivia com seus pais amorosos, Lili e Bob, que sempre o incentivaram 
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/dp/B0DMWX9FNC?ref=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_9NWHA1GGNPP8AH5GCKFN&starsLeft=1&skipTwisterOG=1&bestFormat=true',
+                link: 'https://amzn.to/4gjvn2W',
               },
             ],
           },

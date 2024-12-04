@@ -39,7 +39,7 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/dp/8530000137?ref=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_1E6H8Y5KGTQEHENZ6221&starsLeft=1&skipTwisterOG=1&bestFormat=true',
+                link: 'https://amzn.to/3OD0fQv',
               },
             ],
           },
@@ -52,7 +52,7 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/Em-nome-filha-Sulamita-Esteliam-ebook/dp/B07NLC1HP5/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=',
+                link: 'https://amzn.to/3OJA8Hi',
               },
             ],
           },

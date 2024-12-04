@@ -36,13 +36,13 @@ export const CARD_BOARD_HOUSE = {
           ebook: {
             label: 'eBOOK',
             prefix: 'R$',
-            value: '1',
-            suffix: ',99',
+            value: '32',
+            suffix: ',00',
             platforms: [
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/dp/B0DMX1761B?ref=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&ref_=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&social_share=cm_sw_r_ffobk_cso_wa_apan_dp_9C491TS23EF08BW3PAH8&starsLeft=1&skipTwisterOG=1&bestFormat=true',
+                link: 'https://amzn.to/41k38Nx',
               },
             ],
           },

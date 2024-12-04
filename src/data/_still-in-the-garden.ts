@@ -43,7 +43,7 @@ export const STILL_IN_THE_GARDEN = {
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9786501130637',
+                link: 'https://amzn.to/3ZmoTJX',
               },
               {
                 name: 'americanas',
@@ -71,7 +71,7 @@ export const STILL_IN_THE_GARDEN = {
               {
                 name: 'amazon',
                 button: 'COMPRAR',
-                link: 'https://www.amazon.com.br/s?k=9786501130637',
+                link: 'https://amzn.to/4fXZVaW',
               },
               {
                 name: 'gp',
