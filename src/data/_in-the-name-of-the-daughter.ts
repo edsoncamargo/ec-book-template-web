@@ -9,7 +9,8 @@ O livro conta uma história de um predador sobre sua vítima, uma paixão desmed
   },
   content: {
     pt: {
-      title: 'De afetos, fantasias, dores e silêncios',
+      title:
+        'Uma história real sobre relacionamento abusivo, feminicídio e luta por justiça',
       author: 'Sulamita Esteliam',
       category: [],
       button: 'LEIA UM POUCO',

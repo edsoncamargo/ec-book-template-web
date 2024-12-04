@@ -2,8 +2,7 @@ import './donation.scss';
 
 import { useEffect, useRef, useState } from 'react';
 
-import Button from '../button/button.component';
-import { FaHeart } from 'react-icons/fa6';
+import { FaBell } from 'react-icons/fa6';
 
 export default function Donation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,19 +51,35 @@ export default function Donation() {
         ref={eButtonRef}
         onClick={toggleBalloon}
       >
-        <FaHeart />
-        <div className='ec-donation__ballon' ref={eBallonRef}>
-          <p>
-            Ajude a financiar o <br />
-            sonho de Dora 💖
-          </p>
+        <FaBell />
 
-          <a
-            href='https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora'
-            target='_blank'
-          >
-            <Button>QUERO AJUDAR</Button>
-          </a>
+        <div className='ec-donation__ballon' ref={eBallonRef}>
+          <h3 className='ec-font-emphasis--ballon'>
+            Convite - O Livro de Dora e Suas Irmãs
+          </h3>
+
+          <div>
+            <h4 className='ec-font-heading'>BELO HORIZONTE</h4>
+
+            <p>
+              <strong>7 de dezembro</strong>, SÁBADO, 10h30 – CERVEJARIA GALPÃO
+              FLOR DO CAMPO RUA CORONEL OTÁVIO DINIZ, 449, SANTA EFIGÊNIA
+            </p>
+
+            <p>
+              <strong>8 de dezembro</strong>, DOMINGO, 11h – MODA DE VIOLA RUA
+              JUIZ ELIZEU JARDIM, 153, BAIRRO DAS INDÚSTRIAS
+            </p>
+          </div>
+
+          <div>
+            <h4 className='ec-font-heading'>RECIFE</h4>
+
+            <p>
+              <strong>13 DE DEZEMBRO</strong>, SÁBADO, 10h30 – CERVEJARIA GALPÃO
+              FLOR DO CAMPO RUA CORONEL OTÁVIO DINIZ, 449, SANTA EFIGÊNIA
+            </p>
+          </div>
         </div>
       </button>
     </div>

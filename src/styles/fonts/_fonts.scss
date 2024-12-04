@@ -21,6 +21,20 @@ html {
   }
 }
 
+.ec-font-emphasis--ballon {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--ec-font-size-xxl);
+  font-weight: var(--ec-font-weight-semibold);
+  letter-spacing: var(--ec-letter-spacing-xs);
+  line-height: 48px;
+  color: rgb(var(--ec-color-secondary));
+
+  @media (max-width: breakpoints.$ec-breakpoint-md) {
+    font-size: var(--ec-font-size-lxm);
+    line-height: 42px;
+  }
+}
+
 .ec-font-heading {
   font-family: 'Raleway', sans-serif;
   font-size: var(--ec-font-size-xl);
