@@ -28,7 +28,7 @@ export const THE_BOOK_OF_DORA_AND_HER_SISTERS = {
         description: 'Você quer ajudar?',
         link: 'https://www.vakinha.com.br/vaquinha/ajude-a-financiar-o-sonho-de-dora',
         price: {},
-        show: true,
+        show: false,
       },
       characteristics: {
         title: 'CARACTERÍSTICAS',
